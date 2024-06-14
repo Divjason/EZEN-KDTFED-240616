@@ -7,6 +7,6 @@ Front-End Repository 입니다! 😎<br/>
 최선을 다해, 원하는 목표🎡를 향해 다같이🌈 GoGo!!<br/>
 
 #Slack URL Address : <br/>
-https://ezen-webstudy.slack.com/archives/C077Z9VA3D3
+https://join.slack.com/t/ezen-webstudy/shared_invite/zt-2ktymrs5e-nxRz5I_Bl9oP0Mm3fNSPQA
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdZXL93%2FbtrpyjBtzYP%2F37Lxbeko8hKK7O6bEALcmK%2Fimg.jpg" style="width: 600px"/>
