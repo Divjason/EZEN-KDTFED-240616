@@ -1,0 +1,60 @@
+1.UI/UX 관련 내용 => 피그마 툴 / 단일 페이지 / UX 파트
+> 기획요소
+
+2.html, css등 기초 문법 => 반응형 / 선택자 실습예제
+
+3.1시간 => 첫번째 프로젝트 준비 시간
+
+Lo-fi wireframe
+=> Low Fidelity(*품질 / 퀄리티)
+
+Hi-fi wireframe
+=> Hight Fidelity(*품질 / 퀄리티)
+
+전체너비 : 375px
+컨텐츠너비 : 327px
+좌.우측 패딩 : 48px / 2 = 24px
+
+Component > 피그마 UI 작업 > 개별적인 사이즈 변경을 최소화 + 통일감 있는 일관된 UI 디자인!!!!
+
+Instance > 부모요소인 Component 디자인 가이드를 무조건 상속!!!!
+
+Instance 독립적인 size 변경 불가!!!
+> 폰트 컬러 / 폰트 사이즈 
+
+예외사항 : detach Instance : Components와의 연결고리 해제!!!!
+
+Color & Components
+UI/Lo-fi Wireframe
+
+<Figma 핵심기능>
+1.AutoLayout
+2.LayoutGrid
+3.Component / instance
+4.Prototype
+5.Style Guide (Font / Color)
+6.Plugin (iconify / feather icons / unsplash)
+
+prototype_example(240624)
+
+576CC0
+EFEFEF
+
+content_title
+
+*html, css, js => class, id명 작명!!! 센스
+
+1) cammel 표기법 :
+contentTitle
+
+2) sneak 표기법 :
+content_title
+
+3) 헝가리언 표기법 :
+ContentTitle
+
+ffd966
+
+key : selectAnimal
+value : 선호하는 애완동물을 선택해주세요
+
