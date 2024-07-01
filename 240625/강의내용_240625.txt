@@ -1,0 +1,19 @@
+특정 웹 페이지 내 최상단 내비게이션 메뉴 > GNB : Global Navigation Bar / Banner
+
+LNB : Local Navigation Bar / Banner
+
+smart animate : 레이아웃 구조 및 이름을 절대 변경!!! (*처음 원본데이터를 생성 => 마우스 이벤트 => 편집데이터를 출력!!
+
+Components
+
+html 2가지 분류!!!
+1) block 태그
+- 하나의 행을 모두 차지하도록 설정
+- div
+
+2) inline 태그
+- 본인의 너비 및 높이값만큼만 차지하도록 설정
+- span
+
+3) inline-block 태그
+- 태생적으로 inline / block

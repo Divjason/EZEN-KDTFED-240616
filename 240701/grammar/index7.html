@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: whitesmoke;
+      }
+
+      .app-ui {
+        position: relative;
+        width: 340px;
+        height: 640px;
+        transform: rotate(-30deg) skewX(20deg) scale(0.7);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        background-color: #ddd;
+        transition: all 0.5s;
+        &:hover {
+          box-shadow: -50px 100px 60px rgba(0, 0, 0, 0.3);
+        }
+        img {
+          position: absolute;
+          transition: all 0.5s;
+        }
+        &:hover img:nth-child(1) {
+          transform: translate(40px, -40px);
+          opacity: 0.2;
+        }
+        &:hover img:nth-child(2) {
+          transform: translate(80px, -80px);
+          opacity: 0.4;
+        }
+        &:hover img:nth-child(3) {
+          transform: translate(120px, -120px);
+          opacity: 0.6;
+        }
+        &:hover img:nth-child(4) {
+          transform: translate(160px, -160px);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-ui">
+        <img src="./images/app-ui-01.jpg" alt="appui01" />
+        <img src="./images/app-ui-02.jpg" alt="appui02" />
+        <img src="./images/app-ui-03.jpg" alt="appui03" />
+        <img src="./images/app-ui-04.jpg" alt="appui04" />
+      </div>
+    </div>
+  </body>
+</html>

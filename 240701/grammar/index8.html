@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"]:enabled {
+        background-color: #ff0;
+      }
+      input[type="text"]:disabled {
+        background-color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/" method="get">
+      <h2>Enabled</h2>
+      <input type="text" name="enable" id="enable" />
+      <h2>Disabled</h2>
+      <input type="text" name="enable" id="enable" disabled />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<html5>
+
+*html : hyper text markup language
+
+*MDN
+
+*속성 & 속성값
+
+*주석
+
+*single tag VS multi tag : 열고닫는 형식
+- a / img / br / hr 등
+
+1.h(n) 태그 : heading 태그
+- h1~h6 : h1 > h6
+- h1 : 32px
+- 기본 속성이 없는 태그
+- 단락에서 타이틀을 정의
+
+2.p 태그 : paragraph 태그
+- 문장을 입력하고자 할 때
+- dummy 문장을 활용해서 임시로 문자열 입력!!!
+- lorem
+
+3.br 태그 : break 태그
+- 줄바꿈 태그
+
+4.hr 태그 : Horizonatal Ruler 태그
+
+5.a 태그 : anchor 태그
+- 특정 요소를 어딘가로 이동시켜주는 태그
+- 반드시 href와 같은 속성 / 속성값
+- 고유한 스타일 존재 => 초기 reset을 활용해서 제거!!!
+text-decoration: none;
+color: inherit;
+
+- 문서상에서 내부이동!!!
+- 1개의 요소 안에서 복수의 링크를 설정!!!
+(*https://www.image-map.net)
+
+6.audio / video
+- source src=" "
+- 실무에서는 그렇게까지 많이 사용할 상황이 안따르는 편이다
+
+7.목록태그
+- ul / ol
+> unorder list : 카운팅을 하지 않기 위한 목록 (90%)
+> order list : 순차적으로 카운팅을 하기 위한 목록
+> li 태그 함께해야지만 목록 기능을 적용!!!
+
+*중첩목록!!!!
+
+8.테이블태그
+- table / tr(*행) / td(table data = 열)
+- 열 가운데에서 대표격인 열 => th(table header)
+- html5 문법 > semantic 태그 (*의미없이 사용하는 div 태그 지양)
+- 만약 table > thead / tbody / tfoot
+- colspan => 열을 병합하는 기능!!! (*본인을 포함해서 병합)
+- rowspan => 행을 병합하는 기능!!! (*본인을 포함해서 병합)
+- 프로그래밍 언어 영역 => 짝수 (even) / 홀수 (odd)
+- row(행)을 그룹하는 것은 어렵지 않음 => tr / thead || tfoot
+- column(열)을 그룹하는 것은 1가지 방법
+> colgroup > col : 몇 개의 열을 선택!!! => span
+> thead & tfoot > colgroup : 스타일 우선 적용권을 가지고 있다
+
+9.mark태그 : 텍스트 뒷 배경컬러 (*형광)
+
+10.b태그 : bold의 약자 => 텍스트를 두껍게해주는 태그
+
+11.figure & figcaption : 악어 & 악어새 공생관계
+- 보통 일반적으로 테이블 태그 등을 사용할 때, 해당 요소의 타이틀을 정의하고자 할 때
+
+12.form 태그 :
+- action 속성 & method 속성 갖고 있음
+- action : client(*웹브라우저)로부터 특정 값을 받아서 server로 해당 값을 전송을 해야할 시, 전송할 위치 경로를 정의하는 속성
+- method : 사용자에게 값을 받아서 처리하는 방식을 어떻게 할 것인지 구분하기 위한 속성
+1) get : 사용자가 입력한 값을 서버에게 전달을 한 경우, 해당 값에 매칭되어지는 페이지를 서버가 반환하도록 하는 method 방식
+
+2) post : 단순히 특정 페이지를 그냥 가져와라! 이게 아니라, 사용자가 입력한 값을 반영한 업데이트되어진 페이지를 가져오고 싶을 때 사용하는 method 방식 => 유튜브 페이지 / 댓글
+
+- 입력양식태그 같이 사용해야만 form 제 기능을 할 수 있음
+- input
+

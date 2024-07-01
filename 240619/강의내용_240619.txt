@@ -1,0 +1,32 @@
+1.반응형!!!
+> width(*너비) : 매체 혹은 기기의 가로 사이즈
+> 가장 작은 사이즈 매체를 기준으로 먼저 UI페이지 제작 => 사이즈를 변형!!!
+> 가장 큰 사이즈 매체를 기준으로 먼저 UI페이지 제작 => 사이즈를 변형!!!
+> desktop / tablet / mobile
+> 제품.서비스 제작 기획회의
+> 사용자 target / segment / persona
+
+2.메인 서비스를 하고자 하는 매체의 페이지를 완성 => 사이즈 변형!!!!
+
+3.좋은코드 VS 나쁜코드
+> 일회성의 코드 : 나쁜코드
+> 재사용이 가능한 코드 : 좋은코드
+
+mobile simulator
+
+DOM Tree
+Document Object Model
+문서 객체 모델
+
+BOM
+Browser Object Model
+
+1.vscode : 웹에디터
+html & css 언어들!!!
+
+2.웹 브라우저
+- html & css
+- 작성한 코드 순서대로!!!
+- 동기적 처리방식
+- 비동기적 처리방식
+

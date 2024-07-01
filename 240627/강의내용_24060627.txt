@@ -1,0 +1,215 @@
+<html5>
+
+*html : hyper text markup language
+
+*MDN
+
+*속성 & 속성값
+
+*주석
+
+*single tag VS multi tag : 열고닫는 형식
+- a / img / br / hr 등
+
+1.h(n) 태그 : heading 태그
+- h1~h6 : h1 > h6
+- h1 : 32px
+- 기본 속성이 없는 태그
+- 단락에서 타이틀을 정의
+
+2.p 태그 : paragraph 태그
+- 문장을 입력하고자 할 때
+- dummy 문장을 활용해서 임시로 문자열 입력!!!
+- lorem
+
+3.br 태그 : break 태그
+- 줄바꿈 태그
+
+4.hr 태그 : Horizonatal Ruler 태그
+
+5.a 태그 : anchor 태그
+- 특정 요소를 어딘가로 이동시켜주는 태그
+- 반드시 href와 같은 속성 / 속성값
+- 고유한 스타일 존재 => 초기 reset을 활용해서 제거!!!
+text-decoration: none;
+color: inherit;
+
+- 문서상에서 내부이동!!!
+- 1개의 요소 안에서 복수의 링크를 설정!!!
+(*https://www.image-map.net)
+
+6.audio / video
+- source src=" "
+- 실무에서는 그렇게까지 많이 사용할 상황이 안따르는 편이다
+
+7.목록태그
+- ul / ol
+> unorder list : 카운팅을 하지 않기 위한 목록 (90%)
+> order list : 순차적으로 카운팅을 하기 위한 목록
+> li 태그 함께해야지만 목록 기능을 적용!!!
+
+*중첩목록!!!!
+
+8.테이블태그
+- table / tr(*행) / td(table data = 열)
+- 열 가운데에서 대표격인 열 => th(table header)
+- html5 문법 > semantic 태그 (*의미없이 사용하는 div 태그 지양)
+- 만약 table > thead / tbody / tfoot
+- colspan => 열을 병합하는 기능!!! (*본인을 포함해서 병합)
+- rowspan => 행을 병합하는 기능!!! (*본인을 포함해서 병합)
+- 프로그래밍 언어 영역 => 짝수 (even) / 홀수 (odd)
+- row(행)을 그룹하는 것은 어렵지 않음 => tr / thead || tfoot
+- column(열)을 그룹하는 것은 1가지 방법
+> colgroup > col : 몇 개의 열을 선택!!! => span
+> thead & tfoot > colgroup : 스타일 우선 적용권을 가지고 있다
+
+9.mark태그 : 텍스트 뒷 배경컬러 (*형광)
+
+10.b태그 : bold의 약자 => 텍스트를 두껍게해주는 태그
+
+11.figure & figcaption : 악어 & 악어새 공생관계
+- 보통 일반적으로 테이블 태그 등을 사용할 때, 해당 요소의 타이틀을 정의하고자 할 때
+
+생성형 AI = chat gpt, "스마트"하게 활용!!!
+> code 작성 시, 에러 혹은 문제 봉착 => 최소한 1번 이상의 스스로 고민
+> chat gpt 활용 문제 해결 => 스스로 최소 1번 이상 직접 코드 / 원리 곱씹어야 함
+
+12.form 태그 :
+https://localhost:3000/?userId=짱구&userPw=123456
+- action 속성 & method 속성 갖고 있음
+- action : client(*웹브라우저)로부터 특정 값을 받아서 server로 해당 값을 전송을 해야할 시, 전송할 위치 경로를 정의하는 속성
+- method : 사용자에게 값을 받아서 처리하는 방식을 어떻게 할 것인지 구분하기 위한 속성
+1) get : 사용자가 입력한 값을 서버에게 전달을 한 경우, 해당 값에 매칭되어지는 페이지를 서버가 반환하도록 하는 method 방식
+
+2) post : 단순히 특정 페이지를 그냥 가져와라! 이게 아니라, 사용자가 입력한 값을 반영한 업데이트되어진 페이지를 가져오고 싶을 때 사용하는 method 방식 => 유튜브 페이지 / 댓글
+
+- label : for 속성값 = input id 속성값 일치하는 경우, label 태그로 input 태그를 선택할 수 있도록 할 수 있음
+
+- 입력양식태그 같이 사용해야만 form 제 기능을 할 수 있음
+- input type="text" : 아이디 및 텍스트 값을 받고자 할 때 사용
+- input type="password" : 패스워드 같은 비밀스러운 값을 받고자 할 때
+- input type="radio" : 여러개 후보들 중에 1개를 선택하고자 할 때
+- input type="checkbox" : 여러개 후보들을 동시에 선택하고자 할 때
+- input type="file" : 서버에 어떤 데이터를 업로드 하고자 할 때
+
+- 여러개의 옵션들 중에서 하나를 선택할 수 있도록 해주는 form 입력양식 태그 => select 태그
+- select태그의 경우, 내부적으로 option 태그와 함께 사용해야만 정상적인 기능을 구현할 수 있음
+(*tip, option 태그 중에서 메뉴명으로는 출력이 되나, 실제 사용자가 선택하지 못하도록 설정 => selected disabled 속성)
+- option 요소들을 그룹화 할 수 있음 : optgroup이라는 태그 사용
+
+- form 태그 내부 요소들을 하나로 그룹핑하고, 해당 요소들의 대표타이틀을 생성!!!
+1) fieldset : 해당 form요소가 어떤 성격인지를 구분시키기 위한 목적 사용
+2) legend : fieldset의 타이틀 생성해주는 역할
+
+*HTML5 어려워하는 이유!!!
+> 공간분할태그
+1) block요소 태그 : 
+- 한 줄 (*한 행)을 모두 가져가는 속성
+- div / header / h(n) / p
+- width & height & Margin & Padding 모두 다 적용!!!
+
+2) inline요소 태그 :
+- 본인의 너비 및 높이값만큼만 공간을 차지하는 속성
+- span / label / input
+- w & h => x
+- m & p => 좌.우측 적용가능 / 상.하측 적용가능
+
+3) inline-block요소 속성
+
+4) 만약, 부모요소 display : flex => 자식요소는 block
+
+block VS inline-block
+
+*Semantic Tag : 
+Semantic : 의미를 갖고 있는 / 의미론적인
+
+header : 문서상에 헤더의 역할 => 머릿글 || 인트로역할
+nav : GNB || LNB 와 같은 네비게이션 목록 역할
+aside : 사이드 측면 영역의 배너 혹은 지면 역할
+section : 실제 문서상의 본문 역할
+article : section 태그 안에 소단락(*세부영역) 나누는 역할
+footer : 문서상에 푸터의 역할 => 꼬리말 || 에필로그 역할 
+
+HTML5
+=> Hyper Text Markup Language
+
+CSS3
+=> Cascading Style Sheet
+=> 폭포수
+=> 모든 속성 => 상속 베이스
+
+3가지 방법
+
+1) 인라인 스타일
+
+2) 내부 스타일
+
+3) 외부 스타일 (*실무)
+
+*CSS3 선택자
+1) 전체선택자
+- wildcard 선택자
+- reset css
+- * == all
+
+2) 태그선택자
+- 특정한 태그를 선택해서 스타일 적용
+
+3) 아이디선택자
+- html 태그 중에서 id 속성값을 가지고 있는 태그들에게 스타일을 적용
+- "#"
+- id 속성값은 반드시 html에서 1번만 사용해야!!
+
+4) 클래스선택자
+- html 태그 중에서 class 속성값을 가지고 있는 태그 들에게 스타일을 적용
+- "."
+- class 속성값은 html에서 여러번 횟수제한없이 사용가능!!
+- 반복적으로 공통된 스타일 정의하고 적용!!!
+
+5) 후손선택자
+- 부모 아래에 들어오는 모든 자식요소들
+- 자손선택자도 모두 포함
+- "띄어쓰기"
+
+6) 자손선택자
+- 부모의 직계 자식요소
+- ">" 
+
+7) 속성선택자
+- 동일한 html 태그의 동일한 속성을 가지고 있는 경우, 안에 들어가있는 속성값에 따라서 스타일 상이하게 적용!!!
+
+8) 동위선택자
+- 동 : 같을 "동"
+- 위 : "위"치
+> 같은 위치에 속해있는 요소들 간 스타일을 적용하고 싶을 때 => 반드시 형제 요소!!! 
+> 특정 요소의 바로 뒤에 존재하는 형제 : "+"
+> 특정 요소 뒤에 있는 모든 형제 : "~"
+
+9) 구조선택자
+- 일반구조선택자
+- 속성구조선택자
+
+10) 반응선택자
+- 사용자가 어떤 액션(*이벤트) 실행 => 반응 일으킴!!! (마우스 오버 / 클릭)
+- hover : 마우스 오버
+- active : 마우스 클릭
+
+11) 상태선택자
+- 사용자의 이벤트 액션을 통해서 특정 태그 및 요소들의 상태가 변화되었다는 것을 감지하고 이를 통해서 스타일 적용
+- form : 버튼 / check / radio
+
+12) 링크선택자
+
+13) 문자선택자
+
+14) 부정선택자
+
+css3 :
+position : static / relative / absolute / fixed / sticky
+
+
+
+
+
+
+

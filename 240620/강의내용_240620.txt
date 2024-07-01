@@ -1,0 +1,57 @@
+https://search.naver.com/
+search.naver?
+where=nexearch
+&sm=top_hty
+&fbm=0
+&ie=utf8
+&query=nike
+
+4 / 4 = 1
+3 / 4 = 3
+
+인덱스 값 : 0 / 1 / 2
+파일이름 : 1 / 2 / 3 
+
+(인덱스값 + 1) / 전체 총 이미지 개수 (3)
+
+단락회로평가
+- 기준값을 정의 => true / false
+
+-web-kit
+
+background-image => JS
+background-size
+background-position
+
+=> 축약
+background
+
+컴퓨터 운영체제!!!
+JS 
+
+stack : 설거지 / 엘리베이터
+
+http://localhost:3000/?search=쿠킹클래스
+
+아무리 복잡해보이는 문제 -> 쪼개서 해결 -> 큰 문제 해결!!!
+
+1.기초방법 :
+- 프로그래밍 언어 : 배열!!!
+값을 순서를 매겨서 저장해놓은 데이터 공간
+- Iterable : 본인의 데이터 공간에 들어온 자식요소들을 하나씩 가져와서 반복적으로 무언가를 실행시켜줄 수 있는 자료형태!!
+- 반복문 => 반복!!!
+- Map / Set : 로또!! 6개 숫자 (45까지) / 절대 같은
+
+2.고급방법 :
+무한으로 슬라이드 동작 
+
+시간관련 자바스크립트 단골 3형제 함수
+
+setInterval( ) => 특정 주기로 무언가를 실행!!!
+setClear( ) => 특정 주기로 무언가를 실행하고 있는 함수를 멈춰줘!!
+setTimeout( ) => 특정 시간이 경과한 후에 무언가를 실행!!!
+
+
+
+
+

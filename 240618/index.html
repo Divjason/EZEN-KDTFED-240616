@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Project</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main id="app_container">
+      <header id="navigation_heading">
+        <nav id="navigation">
+          <a id="logo" href="https://www.naver.com" target="_blank"
+            >Chef's Studio</a
+          >
+          <ul class="gnbDesktop">
+            <li><a href="#">쿠킹 클래스</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">로그인</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+          </ul>
+          <ul class="gnbMobile">
+            <li><a href="#">쿠킹 클래스</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">로그인</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+          </ul>
+          <!-- mobile toggle -->
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <section id="slide">
+        <article class="slide_text">
+          <div class="slide_text_inner">
+            <h1 class="slide_title">
+              최고의 요리 전문가와 함께 배우는 쿠킹 클래스를 지금 만나보세요.
+            </h1>
+            <button class="slide_btn">클래스 보러가기</button>
+          </div>
+        </article>
+        <ul class="slide_container">
+          <li><img class="slide_img" src="./img/slide1.png" alt="slide1" /></li>
+        </ul>
+        <article class="slide_container_arrow">
+          <span class="slide_container_btn left">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span class="slide_container_btn right">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </article>
+        <article class="slide_pager">
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+        </article>
+      </section>
+      <section id="main">
+        <article class="main_text">
+          <h3 class="main_info">
+            지금 바로 내 주방에서<br />
+            세계 각지의 요리를 체험해보세요.
+          </h3>
+          <div class="main_desc">
+            <span>세계 각지의 요리 전문가와 함께 배우는 쿠킹 클래스를</span>
+            <span>지금 내 주방에서 영상으로 만나보세요.</span>
+            <span>실시간 질의응답으로 더 완벽한 요리를 만들 수 있어요.</span>
+          </div>
+        </article>
+        <article class="main_slide">
+          <ul>
+            <li>
+              <div class="card_img first"></div>
+              <div class="card_info">
+                <h4 class="card_info_national">덴마크</h4>
+                <p class="card_info_desc">
+                  <span>건강한 유럽식 아침</span>
+                  <span>준비하기!</span>
+                </p>
+                <h2 class="card_info_price">1인 18,000원</h2>
+              </div>
+            </li>
+            <li class="active">
+              <div class="card_img second"></div>
+              <div class="card_info">
+                <h4 class="card_info_national">한국</h4>
+                <p class="card_info_desc">
+                  <span>제주도에서 온 달달한</span>
+                  <span>감귤 디저트</span>
+                </p>
+                <h2 class="card_info_price">1인 23,000원</h2>
+              </div>
+            </li>
+            <li>
+              <div class="card_img third"></div>
+              <div class="card_info">
+                <h4 class="card_info_national">미국</h4>
+                <p class="card_info_desc">
+                  <span>조용한 농가에서 만들어보는</span>
+                  <span>유기농 파스타</span>
+                </p>
+                <h2 class="card_info_price">1인 35,000원</h2>
+              </div>
+            </li>
+          </ul>
+          <div class="main_slide_arrow">
+            <span class="slide_arrow left">
+              <i class="fas fa-angle-left"></i>
+            </span>
+            <span class="slide_arrow right">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </div>
+          <div class="main_slide_pager">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+        </article>
+      </section>
+      <section id="detail">
+        <ul>
+          <li>
+            <article class="detail_img first"></article>
+            <article class="detail_info">
+              <h3 class="detail_info_title">
+                필요한 재료는 당일 배송으로<br />보내드릴 거에요.
+              </h3>
+              <p class="detail_info_desc">
+                <span>더 이상 요리하는데 큰 마음 먹을 필요 없어요.</span>
+                <span
+                  >클래스만 선택하면 필요한 재료는 당일 배송으로
+                  보내드려요.</span
+                >
+                <span>이제는 셰프의 스튜디오와 편리하게 요리해보세요.</span>
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="detail_img second"></article>
+            <article class="detail_info">
+              <h3 class="detail_info_title">
+                궁금한 것은 질문해주세요.<br />실시간으로 답변드려요.
+              </h3>
+              <p class="detail_info_desc">
+                <span>요리하다가 궁금한 것이 생겼나요?</span>
+                <span>그럴 땐 실시간 채팅창에 바로 물어보세요.</span>
+                <span
+                  >셰프의 스튜디오 어시스턴트가 바로 답변해드릴 거에요.</span
+                >
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="detail_img third"></article>
+            <article class="detail_info">
+              <h3 class="detail_info_title">
+                요리책 한 권 가격으로<br />3,000가지 요리를 만나보세요.
+              </h3>
+              <p class="detail_info_desc">
+                <span
+                  >세계 각지의 요리를 매월 요리책 한 권 가격으로
+                  만나보세요.</span
+                >
+                <span>새로운 레시피와 떠오르는 레시피를 한 곳에서!</span>
+                <span>매주 레시피가 업데이트되면 알림으로 알려드려요.</span>
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="membership">
+        <h2 class="membership_heading">
+          요리책 한 권 가격으로<br />
+          세계 각지의 다양한 요리를 한 곳에서!
+        </h2>
+        <div class="membership_menu">
+          <article class="membership_type basic">
+            <div class="membership_img"></div>
+            <div class="membership_info">
+              <div class="membership_title">베이직 멤버스</div>
+              <div class="membership_price">월<span>9,900원</span></div>
+              <div class="membership_desc">
+                <span>재료배송(2~3일 소요)</span>
+                <span>5개 나라 선택 가능</span>
+              </div>
+              <button class="membership_btn">베이직 시작하기</button>
+            </div>
+          </article>
+          <article class="membership_type premium">
+            <div class="membership_img"></div>
+            <div class="membership_info">
+              <div class="membership_title">프리미엄 멤버스</div>
+              <div class="membership_price">월<span>18,900원</span></div>
+              <div class="membership_desc">
+                <span>재료배송(당일배송)</span>
+                <span>무제한 나라 선택 가능</span>
+              </div>
+              <button class="membership_btn">프리미엄 시작하기</button>
+            </div>
+          </article>
+          <!-- mobile -->
+          <article class="membership_type_pager">
+            <span class="active">1</span>
+            <span>2</span>
+          </article>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer_text_inner">
+          <h1 class="footer_title">
+            매주 새로 업데이트되는<br />
+            쿠킹 클래스를 지금 만나보세요.
+          </h1>
+          <button class="footer_btn">클래스 보러가기</button>
+        </div>
+        <div class="footer_container"></div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222;
+        color: #fff;
+      }
+
+      .items {
+        display: flex;
+        gap: 20px;
+        .item {
+          text-align: center;
+          width: 300px;
+          height: 200px;
+          position: relative;
+          .front,
+          .back {
+            position: absolute;
+            top: 0;
+            transition: all 0.5s;
+          }
+          .front {
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: #333;
+            border-radius: 5px 5px 0 0;
+          }
+          .back {
+            background-color: #fff;
+            color: #000;
+            border-radius: 8px;
+            height: 100%;
+            padding: 20px;
+            a {
+              display: inline-block;
+              background-color: yellowgreen;
+              color: #fff;
+              margin-top: 6px;
+              padding: 5px 15px;
+              border-radius: 20px;
+              transition: background-color 0.3s;
+              &:hover {
+                background-color: #000;
+              }
+            }
+          }
+          &:hover .front {
+            top: -50%;
+          }
+          &:hover .back {
+            top: 50%;
+          }
+          &:hover img {
+            animation: ani 1s linear infinite;
+          }
+        }
+      }
+
+      @keyframes ani {
+        0% {
+          transform: scale(0.9);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="item">
+        <div class="front">
+          <img src="./images/space-01.png" alt="space01" />
+          <h2>Mars</h2>
+        </div>
+        <div class="back">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit
+            quidem in optio quasi voluptatem, eveniet voluptate et magni
+            cupiditate earum, labore eligendi facere!
+          </p>
+          <a href="#none">Read More</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="front">
+          <img src="./images/space-02.png" alt="space02" />
+          <h2>Jupiter</h2>
+        </div>
+        <div class="back">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit
+            quidem in optio quasi voluptatem, eveniet voluptate et magni
+            cupiditate earum, labore eligendi facere!
+          </p>
+          <a href="#none">Read More</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="front">
+          <img src="./images/space-03.png" alt="space03" />
+          <h2>Saturns</h2>
+        </div>
+        <div class="back">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit
+            quidem in optio quasi voluptatem, eveniet voluptate et magni
+            cupiditate earum, labore eligendi facere!
+          </p>
+          <a href="#none">Read More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

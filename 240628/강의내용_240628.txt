@@ -1,0 +1,73 @@
+1.git => 형상기억관리 툴 / 버전관리 툴
+
+2.git => F/E || B/E 웹 개발 => 필수!!!
+
+3.git 관련 책 => 방대한 지식 양!!!
+
+4.git
+- working Dir : 현재 작업중인 로컬 컴퓨터 안에 있는 루트 디렉토리 의미
+
+- staging Area : git에 커밋하기전 단계로 커밋을 할 데이터를 보관하는 장소
+
+- git Dir : 실제 버전 관리를 하기 위해서 commit을 한 데이터들이 저장되어있는 장소
+
+- git Hub : 나의 로컬 컴퓨터에 커밋된 데이터를 내가 아닌 협업 개발자들도 같이 공유해서 사용할 수 있도록 만들어진 git의 원격 저장소
+
+5.git을 사용하려면
+
+1) 컴퓨터 git 설치 :
+- 로컬 컴퓨터에 gitBash 프로그램 설치
+- git -v : 로컬 컴퓨터에 설치된 gitBash 버전 확인
+- git config --list : 로컬 컴퓨터에 저장된 git 소유자의 프로필 정보를 확인
+- 구글 : git bash
+
+2) git-hub 계정 생성
+
+3) git-hub 계정
+- 계정 name & 계정 email
+- name : Divjason
+- email : sejinpark@tcocs.com
+
+4) 로컬 컴퓨터에 나의 git 정보를 세팅
+- cmd > 관리자 권한모드 || 일반모드
+- git config --global user.name "Divjason"
+- git config --global user.email "sejinpark@tcocs.com"
+- git config --list
+
+5) 기존 email 혹은 name을 수정하고자 할 때
+- git config --unset --global user.name // 기존 등록 name 삭제
+- git config --unset --global user.email // 기존 등록 email 삭제
+
+6) 로컬 컴퓨터에서 나 말고 다른 사람의 정보
+- 관리자 모드(*전역) : git config --global --unset credential.helper
+- 일반 모드(*로컬) : git config --local --unset credential.helper
+- 시스템 : git config --system --unset credential.helper
+
+7) 로컬 git 저장소 & 원격 git-hub 저장소 연결
+- git-hub 저장소 : repository (*레파지토리 혹은 레포지토리) => 폴더생성
+- 로컬 컴퓨터 신규 폴더 생성 => daily commit(*오늘 날짜 폴더 생성)
+- https://github.com/Divjason/Frontend-Class.git
+
+8) 로컬 컴퓨터, staging area 생성
+- git init
+
+9) .git & repository 연결
+- git remote add origin 레포지토리 URL
+- git remote add origin https://github.com/Divjason/Frontend-Class.git
+- git remote -v (*정상적으로 연결 확인)
+
+10) 나의 data를 staging area로 input 하고자 할 때!!!
+- git add .
+- git status
+
+11) commit을 하기 위한 메세지 기록!!!
+- 내가 언제 어떤 목적으로 commit 인지하기 위한 목적!!!
+- git commit -m "240628"
+
+12) 원격 레포지토리로 data를 commit!!!
+- git push origin master
+
+13) 집에가서 할 일
+- git init
+- git remote add origin https://github.com/Divjason/Frontend-Class.git
+- git pull origin master

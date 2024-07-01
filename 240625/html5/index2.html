@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background: #0f0;
+      }
+
+      tfoot {
+        background: #ff0;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="2" style="background: #f00" />
+        <col style="background: #00f" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Table Header</th>
+          <th>Table Header</th>
+          <th>Table Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Table Data</td>
+          <td colspan="2">Table Data</td>
+        </tr>
+        <tr>
+          <td>Table Data</td>
+          <td>Table Data</td>
+        </tr>
+        <tr>
+          <td>Table Data</td>
+          <td>Table Data</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Table Data</td>
+          <td>Table Data</td>
+          <td>Table Data</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
