@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(180deg, #dce35b, #45b649);
+      }
+
+      .gnb {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding-bottom: 10px;
+        a {
+          display: inline-block;
+          width: 80px;
+          height: 30px;
+          text-align: center;
+          line-height: 28px;
+          position: relative;
+          overflow: hidden;
+          &::before,
+          &::after {
+            content: attr(data-link);
+            position: absolute;
+            width: 100%;
+            transition: all 0.3s;
+          }
+          &::before {
+            top: 0;
+            left: 0;
+          }
+          &::after {
+            top: 100%;
+            left: 0;
+            color: #45b649;
+          }
+          &:hover::before {
+            top: -100%;
+          }
+          &:hover::after {
+            top: 0;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="gnb">
+      <a href="#none" data-link="메일"></a>
+      <a href="#none" data-link="카페"></a>
+      <a href="#none" data-link="블로그"></a>
+      <a href="#none" data-link="지식in"></a>
+      <a href="#none" data-link="쇼핑"></a>
+      <a href="#none" data-link="pay"></a>
+      <a href="#none" data-link="사전"></a>
+      <a href="#none" data-link="뉴스"></a>
+    </main>
+  </body>
+</html>

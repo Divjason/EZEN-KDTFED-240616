@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .sns {
+        background-color: #f8f8f8;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        a {
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          border: 5px solid #fff;
+          border-radius: 100%;
+          text-align: center;
+          line-height: 70px;
+          font-size: 40px;
+          background-color: #fff;
+          margin: 0 10px;
+          position: relative;
+          overflow: hidden;
+          &:nth-child(1)::before {
+            background: linear-gradient(to bottom, #55acee, #dd4b39);
+          }
+          &:nth-child(2)::before {
+            background-color: #55acee;
+          }
+          &:nth-child(3)::before {
+            background-color: #dd4b39;
+          }
+          &:nth-child(4)::before {
+            background-color: #0077b5;
+          }
+          &:nth-child(5)::before {
+            background-color: #e4405f;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0;
+            background-color: #00f;
+            transition: all 0.5s;
+          }
+          &:hover::before {
+            height: 100%;
+          }
+          &:hover .fa-brands {
+            color: #fff;
+          }
+          &:hover .fa-brands {
+            transform: rotateY(360deg);
+          }
+          .fa-brands {
+            position: relative;
+            transition: all 0.5s;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sns">
+      <a href="#none"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#none"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#none"><i class="fa-brands fa-google-plus"></i></a>
+      <a href="#none"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#none"><i class="fa-brands fa-instagram"></i> </a>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      ul {
+        display: flex;
+        li {
+          padding: 20px;
+          &:nth-child(2n) {
+            background-color: #f00;
+          }
+          &:nth-child(2n + 1) {
+            background-color: #00f;
+          }
+          &:first-child {
+            border-radius: 10px 0 0 10px;
+          }
+          &:last-child {
+            border-radius: 0 10px 10px 0;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+    </ul>
+  </body>
+</html>

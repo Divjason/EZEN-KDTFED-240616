@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:visited {
+        color: #f00;
+      }
+      a:link::after {
+        content: " - " attr(href);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <a>Nothing</a>
+    </h1>
+    <h1>
+      <a href="https://www.naver.com">EZEN ACADEMY</a>
+    </h1>
+  </body>
+</html>
