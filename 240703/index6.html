@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+      .container {
+        display: flex;
+        gap: 10px;
+        .box {
+          width: 500px;
+          height: 500px;
+          margin: 10px;
+          padding: 10px;
+          &.item1 {
+            background-color: teal;
+            box-sizing: border-box;
+            /* border-width: 5px;
+            border-style: solid;
+            border-color: crimson; */
+            border: 5px solid crimson;
+            /* border-radius: 20px 0 20px 0; */
+            border-radius: 40%;
+          }
+          &.item2 {
+            background-color: tomato;
+            box-sizing: content-box;
+          }
+        }
+      }
+      h1 {
+        /* font-family: "Nanum Pen Script", cursive;
+        font-size: 4rem;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 5; */
+        font: italic 4rem/5 "Nanum Pen Script", cursive;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="box item1">box1</div>
+      <div class="box item2">box2</div>
+    </main>
+    <hr />
+    <h1>나는 폰트다!</h1>
+  </body>
+</html>

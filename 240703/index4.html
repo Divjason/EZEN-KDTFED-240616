@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wrap {
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        #container {
+          width: 93.75%;
+          height: 492px;
+          margin: 0 auto;
+          display: flex;
+          border: 4px solid #000;
+          div:first-child {
+            width: 30%;
+            height: inherit;
+            background-color: crimson;
+          }
+          div:last-child {
+            width: 70%;
+            height: inherit;
+            background-color: dodgerblue;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="wrap">
+      <section id="container">
+        <div>aside</div>
+        <div>main</div>
+      </section>
+    </main>
+  </body>
+</html>
