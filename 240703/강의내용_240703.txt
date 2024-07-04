@@ -1,0 +1,14 @@
+1.나의 로컬 컴퓨터 브랜치 = 원격 default 브랜치
+- 로컬 git / 원격 저장소 어떤 브랜치!!! 업데이트
+- git remote update
+- git checkout main
+- git pull origin master
+- git add .
+- git commit -m "240703"
+- git push origin main
+
+git remote update
+git checkout main
+git add .
+git commit -m "240703"
+git push origin main
