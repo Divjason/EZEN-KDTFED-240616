@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul,
+      ol,
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .gnb {
+        display: flex;
+        justify-content: space-around;
+        width: 600px;
+        padding: 50px 30px;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        li a {
+          font-size: 18px;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: dodgerblue;
+            transform: translateX(-50%);
+            transition: width 0.3s;
+          }
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="gnb">
+      <li>
+        <a href="#">HOME</a>
+      </li>
+      <li>
+        <a href="#">ABOUT</a>
+      </li>
+      <li>
+        <a href="#">SERVICE</a>
+      </li>
+      <li>
+        <a href="#">PORTPOLIO</a>
+      </li>
+      <li>
+        <a href="#">CONTACT</a>
+      </li>
+    </ul>
+  </body>
+</html>

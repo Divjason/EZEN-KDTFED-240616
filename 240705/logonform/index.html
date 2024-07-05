@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost:3000" method="post">
+      <div class="wrapper">
+        <h3>
+          회원가입을 위해<br />
+          정보를 입력해주세요.
+        </h3>
+        <label for="email">* 이메일</label>
+        <input
+          id="email"
+          class="inputbox"
+          type="text"
+          name="email"
+          placeholder="이메일을 입력해주세요."
+        />
+        <div id="error_email" class="error"></div>
+        <label for="name">* 이름</label>
+        <input
+          id="name"
+          class="inputbox"
+          type="text"
+          name="name"
+          placeholder="이름을 입력해주세요."
+        />
+        <div id="error_writer" class="error"></div>
+        <label for="password1">* 비밀번호</label>
+        <input
+          id="password1"
+          class="inputbox"
+          type="password"
+          name="password1"
+          placeholder="비밀번호를 입력해주세요."
+        />
+        <div id="error_password1" class="error"></div>
+        <label for="password2">* 비밀번호 확인</label>
+        <input
+          id="password2"
+          class="inputbox"
+          type="password"
+          name="password2"
+          placeholder="비밀번호를 다시 입력해주세요."
+        />
+        <div id="error_password2" class="error"></div>
+        <div class="phone_wrapper">
+          <input
+            type="text"
+            name="firstNum"
+            id="phone1"
+            class="phoneNum"
+            onkeyup="onchange()"
+            onchange="changePhone1()"
+          />
+          <input
+            type="text"
+            name="secondNum"
+            id="phone2"
+            class="phoneNum"
+            onkeyup="onchange()"
+            onchange="changePhone2()"
+          />
+          <input
+            type="text"
+            name="lastNum"
+            id="phone3"
+            class="phoneNum"
+            onkeyup="onchange()"
+            onchange="changePhone3()"
+          />
+        </div>
+        <div class="token_wrapper">
+          <div id="token">000000</div>
+          <button id="token_button" disabled>인증번호 전송</button>
+        </div>
+        <div class="token_wrapper">
+          <div id="token_timer">3:00</div>
+          <button id="token_timer_confirmBtn" disabled>인증 완료</button>
+        </div>
+        <div class="location_wrapper">
+          <select name="location" id="location">
+            <option value="none" selected disabled>지역을 선택하세요.</option>
+            <option value="seoul">서울</option>
+            <option value="gyeonggi">경기</option>
+            <option value="incheon">인천</option>
+            <option value="daegu">대구</option>
+            <option value="masan">마산</option>
+            <option value="busan">부산</option>
+          </select>
+        </div>
+        <div id="error_location" class="error"></div>
+        <div class="gender_wrapper">
+          <div class="gender">
+            <label for="gender_woman">
+              <input
+                type="radio"
+                name="gender"
+                id="gender_woman"
+                class="gender_radio"
+              />
+              여성</label
+            >
+          </div>
+          <div class="gender">
+            <label for="gender_man">
+              <input
+                type="radio"
+                name="gender"
+                id="gender_man"
+                class="gender_radio"
+              />
+              남성</label
+            >
+          </div>
+        </div>
+        <div id="error_gender" class="error"></div>
+        <hr />
+        <div class="footer">
+          <button id="signup_button" disabled>가입하기</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

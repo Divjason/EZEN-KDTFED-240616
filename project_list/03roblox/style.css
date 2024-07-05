@@ -1,0 +1,58 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* wrapper */
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.8)),
+    url("./img/bg.jpg") center/cover no-repeat;
+}
+
+/* login */
+#login {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#login input[type="submit"] {
+  font-size: 18px;
+  padding: 8px 45px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background: #000;
+  }
+}
+
+/* logo */
+#logo {
+  width: 300px;
+  height: 54px;
+  background: url("./img/bi_1.png") center/cover no-repeat;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222;
+        .items {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          .item {
+            position: relative;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            .front,
+            .back {
+              position: absolute;
+              top: 0;
+            }
+            .front {
+              background-color: #333;
+              width: 100%;
+              height: 100%;
+              border-radius: 5px 5px 0 0;
+              color: #fff;
+              transition: all 0.5s;
+              z-index: 1;
+            }
+            &:hover .front {
+              top: -50%;
+              img {
+                animation: ani 1s linear infinite;
+              }
+            }
+            .back {
+              background-color: #fff;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              padding: 40px;
+              border-radius: 8px 8px 0 0;
+              transition: all 0.5s;
+              a {
+                background-color: yellowgreen;
+                color: #fff;
+                display: inline-block;
+                margin-top: 20px;
+                padding: 5px 15px;
+                border-radius: 20px;
+              }
+            }
+            &:hover .back {
+              top: 50%;
+            }
+          }
+        }
+      }
+
+      @keyframes ani {
+        0% {
+          transform: scale(0.9);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="item">
+        <div class="front">
+          <img src="./images_2/space-01.png" alt="space01" />
+          <h2>Mars</h2>
+        </div>
+        <div class="back">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#none">Read More</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="front">
+          <img src="./images_2/space-02.png" alt="space02" />
+          <h2>Jupiters</h2>
+        </div>
+        <div class="back">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#none">Read More</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="front">
+          <img src="./images_2/space-03.png" alt="space03" />
+          <h2>Saturns</h2>
+        </div>
+        <div class="back">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#none">Read More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

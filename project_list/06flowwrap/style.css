@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.flow-text {
+  border: 2px solid #9d9993;
+  font-size: 2.5rem;
+  padding: 10px 0;
+  font-weight: bold;
+  display: flex;
+  color: #9d9993;
+  white-space: nowrap;
+  &:hover {
+    color: #000;
+    .flow-wrap {
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+  }
+  .flow-wrap {
+    animation: textLoop 40s linear infinite;
+    span {
+      display: inline-block;
+      font-size: 22px;
+      padding-right: 10px;
+    }
+  }
+}
+
+@keyframes textLoop {
+  0% {
+    transform: translateX(0);
+    padding-right: 10px;
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
