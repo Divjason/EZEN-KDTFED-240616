@@ -1,0 +1,198 @@
+document.querySelectorAll(ul li)
+console.log => NodeList
+> [li, li, li, li, li] => 배열자료의 형식 => 유사배열
+> 배열자료
+> 배열자료 안에 있는 모든 데이터는 각자 고유한 숫자 간직
+> index 번호
+> 0, 1, 2, 3, 4
+
+mouseover & mouseout : 함께 세트
+> 이벤트 버블링 기능 O
+
+mouseenter & mouseleave : 함께 세트
+> 이벤트 버블링 기능 X
+
+1.슬라이드
+- 배열 자료구조
+- 싱글타입 (*이미지 단일)
+- 난이도 "하"
+- 화살표를 클릭, 슬라이드 교체
+
+- 무한슬라이드 (*화살표를 클릭, 마지막 슬라이드 => 첫번째 슬라이드)
+
+- 자동슬라이드 (*굳이 화살표를 클릭x, 알아서 슬라이드 교체)
+
+- 페이저 탑재 슬라이드 (*페이저를 클릭 했을 때, 슬라이드 이미지가 교체 + 슬라이드가 자동으로 페이지 교체 => 페이저도 자동으로 교체, 페이저 역시 무한으로 실행)
+
+- 멀티플타입
+
+라이브러리!!!
+> JS > jQuery
+https://animejs.com/
+https://kenwheeler.github.io/slick/
+https://swiperjs.com/demos
+https://gsap.com/
+https://alvarotrigo.com/fullPage/ko/
+https://noelboss.github.io/featherlight/
+
+CSS3 속성!!!!
+1) 단위 : px / rem / em / % / vw / vh
+CSS : Cascading Style Sheet
+
+1.html 문서 안에 특별한 font-size 지정하지 않은 상황이라면, 기본적인 font-size : 16px / 폰트 사이즈 기본 설정값 가장 큰 속성값 => h1태그 32px
+
+> em : element 약자. 부모요소의 font-size를 기준으로 몇 배수의 크기를 가져가게 할 것인가
+
+> *rem : root element 약자. 현재 작업중인 문서 내 최상위 요소의 태그 혹은 그에 준하는 선택자
+
+실무 :
+우리 작업 제품 (*웹페이지)
+- default : 18px
+- * || body => font-size : 18px
+- 0.5rem
+- 1.5rem
+
+가변그리드!!!
+> grid layout
+
+vw / vh
+viewport width / height
+
+100% => 문서 작성된 컨텐츠 높이만큼 높이 결정!!!
+
+2) display 속성 : none / block / inline / inline-block
+
+3) visibility 속성 : visible / hidden / collapse
+
+4) opacity 속성 : 1 => 100% : 불투명 || 0 => 0% : 투명
+
+5) margin / padding 속성
+- 1개 : 상하좌우 값을 동일
+- 2개 : 상하 / 좌우
+- 3개 : 상 / 좌우 / 하
+- 4개 : 상부터 시계방향
+
+6) box-sizing
+- border-box : border / padding => content item width & height 포함
+- content-box : content item에 적용한 width, height 값을 그대로 유지한채로 border / padding 적용
+(*default 값)
+
+7) border 속성
+- border-width
+- border-style
+- border-color
+border-width: 5px;
+border-style: solid;
+border-color: crimson;
+
+=> border 5px solid crimson
+=> border-radius : 테두리를 둥그렇게 생성
+=> 값 1개 : 상하좌우 모두 값을 동일
+=> 값 4개 : 좌상단 / 우상단 / 우하단 / 좌하단
+
+7) font 속성
+- font-family
+- font-size
+- font-weight
+- font-style
+- font: italic 4rem/5 "Nanum Pen Script", cursive;
+- line-height : 현재 작성된 텍스트의 높이를 제어목적 / 수직 정렬 = 세로 정렬 기능!!! (*단문)
+- 행간!!! => 행과 행사이의 간격
+
+7) background 속성
+- background-image : url( )를 사용해서 특정 이미지를 적용하고 할 때
+(*이미지를 여러장 사용가능!! // 이미지의 확장자가 png => 배경 컬러 투명하게 만들때 사용하는 확장자)
+
+- background-color : 배경 컬러 이미지를 지정하고자 할 때
+
+- background-size
+> cover : 현재 삽입하고자 하는 이미지의 너비를 중심으로 삽입
+> contain : 현재 삽입하고자 하는 이미지의 높이를 중심으로 삽입
+> % : 현재 삽입한 이미지를 출력하고 있는 매체의 너비를 기준으로 %비율을 적용하고자 할 때
+
+- background-position
+> 적용한 background 이미지의 위치를 어디에 둘지 결정하고자 할 때
+
+- background-attachment
+> 스크롤이 이동되더라도 해당 이미지를 특정 위치에 고정시키고 싶을 때
+
+- background-repeat
+> no-repeat
+> 삽입된 이미지는 기본적으로 repeat 속성을 가지고 있지만, 만약 이 속성을 사용하고 싶지 않은 경우!!!
+
+8) position 속성
+- static (*순차적인) : 기본적으로 html 문서를 통해서 tag를 사용하면 기본적으로 postion속성값이 static
+
+- relative (*상대적인) : 순차적으로 입.출력된 아이템 요소들 사이에서 상대적인 위치 좌표값을 가지고 싶을 때
+
+- absolute (*절대적인) : 기존에 작성된 태그들과 다른 차원으로 넘어가기 때문에 위치 좌표값을 절대적으로 사용!!
+(*부모요소들 중에 누군가가 relative 속성을 가지고 있다면, 해당부모를 기준으로 절대위치 좌표값을 적용)
+
+- fixed (*고정된) : 설정한 포지션 위치값에 고정으로 붙어있는 경우
+
+- sticky (*달라붙는) : 스티커 => 특정 좌표값에서 스티커처럼 붙어있도록 하고자 할 때
+
+- z-index : 3차원 공간에 대한 위치 정의!!!
+x, y 축 / x, y, z축 
+> 크면클수록 모니터를 기준으로 앞으로 튀어나오는 위치 좌표
+> 작으면작을 수록 모니터를 기준으로 뒤로 들어가는 위치 좌표
+
+10) float 속성 : 예전에 참 많이 사용하던 속성 / 
+- float : 부유하다
+- 웹 뉴스 기사 컨텐츠 출력
+- 좌 기사 이미지
+- 우 기사 내용
+> 레이아웃 정렬 이슈 => float / 목적
+> 레이아웃 정렬 전문 문법 => flex & grid
+
+11) shadow 속성
+- text-shadow : 텍스트(글자)에 그림자를 부여하는 속성
+- box-shadow : 아이템박스에 그림자를 부여하는 속성
+(*x축으로 / y축으로 / 그림자선명/흐림 / 색상)
+
+12) gradient 속성
+- linear-gradient( ) : 선형
+- radial-gradient( ) : 원형
+
+webgradient.com
+
+modal창 : 
+
+Figma : UI 작업
+Html : 기획
+CSS : 스타일
+JS : 기능
+React.js
+
+*레이아웃 구조!!!
+1) 작은 것부터 어떻게 만들어서 구조화!!!
+
+2) A / B => Contents
+> JS 기능 구현
+> 상태 선택자 + 형태 구조 선택자 + 속성 선택자
+=> input (*사용자)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

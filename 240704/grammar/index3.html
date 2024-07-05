@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body > div {
+        width: 400px;
+        height: 100px;
+        border: 3px solid #000;
+        position: relative;
+        overflow: scroll;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        &.red {
+          background: #f00;
+          left: 10px;
+          top: 10px;
+          z-index: 3;
+        }
+        &.green {
+          background: #0f0;
+          left: 50px;
+          top: 50px;
+          z-index: 2;
+        }
+        &.blue {
+          background: #00f;
+          left: 90px;
+          top: 90px;
+          z-index: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box red">r</div>
+      <div class="box green">g</div>
+      <div class="box blue">b</div>
+    </div>
+  </body>
+</html>
