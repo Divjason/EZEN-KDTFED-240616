@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+      }
+      form fieldset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+        padding: 18px;
+      }
+      label {
+        color: #18a375;
+        display: inline-block;
+        width: 65px;
+        text-align: right;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding-left: 8px;
+        transition: border-bottom 0.3s;
+        &::placeholder {
+          opacity: 1;
+          transition: opacity 0.3s;
+        }
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid #18a375;
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://localhost:3000" method="get">
+      <fieldset>
+        <legend>학사정보 조회서비스</legend>
+        <section>
+          <label for="name"> 입학년도 </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="년도월일 입력"
+          />
+        </section>
+        <section>
+          <label for="name"> 이름 </label>
+          <input type="text" name="name" id="name" placeholder="본명입력" />
+        </section>
+        <section>
+          <label for="number"> 학번 </label>
+          <input
+            type="text"
+            name="number"
+            id="number"
+            placeholder="총8자리 숫자"
+          />
+        </section>
+        <section>
+          <label for="major"> 학과 </label>
+          <input type="text" name="major" id="major" placeholder="예) 의예과" />
+        </section>
+      </fieldset>
+      <input type="submit" value="조회하기" />
+    </form>
+  </body>
+</html>

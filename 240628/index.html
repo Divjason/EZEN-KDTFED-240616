@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="https://localhost:3000" method="get">
+      <label for="userId">아이디 : </label>
+      <input type="text" name="userId" id="userId" /><br />
+      <label for="userPw">패스워드 :</label>
+      <input type="password" name="userPw" id="userPw" /><br />
+      <input type="submit" value="로그인" />
+      <input type="file" />
+      <hr />
+      <h2>당신이 좋아하는 가수를 선택하세요!</h2>
+      <p>복수선택가능합니다. (최소 2명 이상 선택해주세요)</p>
+      <label for="iu"><input type="checkbox" name="iu" id="iu" />아이유</label>
+      <label for="hot"><input type="checkbox" name="hot" id="hot" />HOT</label>
+      <label for="기리보이"
+        ><input type="checkbox" name="기리보이" id="기리보이" />기리보이</label
+      >
+      <label for="스윙스"
+        ><input type="checkbox" name="스윙스" id="스윙스" />스윙스</label
+      >
+      <hr />
+      <h2>당신이 현재 살고 있는 도시이름을 선택하세요!</h2>
+      <p>단, 현재 주민등록등본상의 도시이름 한군데만 선택가능</p>
+      <label for="seoul">
+        <input type="radio" name="city" id="seoul" /> 서울
+      </label>
+      <label for="busan">
+        <input type="radio" name="city" id="busan" /> 부산
+      </label>
+      <label for="jeju">
+        <input type="radio" name="city" id="jeju" /> 제주
+      </label>
+      <label for="daegu">
+        <input type="radio" name="city" id="daegu" /> 대구
+      </label>
+      <hr />
+      <h2>기타 입력양식 태그 모음</h2>
+      <input type="color" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="number" name="" id="" />
+      <input type="range" />
+      <textarea cols="100" rows="5" name="" id=""></textarea>
+    </form>
+  </body>
+</html>

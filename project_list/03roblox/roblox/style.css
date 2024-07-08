@@ -1,0 +1,248 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* wrapper */
+#wrapper {
+  position: relative;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.8)),
+    url("./img/bg.jpg") center/cover no-repeat;
+}
+
+/* login */
+#login {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#login input[type="submit"] {
+  font-size: 18px;
+  padding: 8px 45px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+  }
+}
+
+/* logo */
+#logo {
+  width: 300px;
+  height: 54px;
+  background: url("./img/bi_1.png") center/cover no-repeat;
+  margin: 70px auto 34px;
+  /* position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+
+/* logon */
+#logon {
+  width: 463px;
+  height: 650px;
+  background: radial-gradient(rgba(35, 37, 39, 0.7), rgba(35, 37, 39, 0.9)),
+    url("./img/middle.png") center/cover no-repeat;
+  margin: 0 auto 50px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+}
+
+.inner_contents {
+  color: #fff;
+  font-size: 14px;
+}
+
+.title {
+  width: 423px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#calendar {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 30px;
+}
+
+select {
+  width: 141px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #000;
+  color: #bdbebe;
+  padding-left: 40px;
+  &:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  &:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.username #user {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 30px;
+  padding-left: 12px;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  &:focus {
+    outline: none;
+  }
+}
+
+.userpassword #password {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 30px;
+  padding-left: 12px;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  &:focus {
+    outline: none;
+  }
+}
+
+#gender_btn {
+  margin: 10px 0 30px;
+  display: flex;
+  button {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #bdbebe;
+    border: 1px solid #707070;
+    cursor: pointer;
+    &:first-child {
+      border-radius: 8px 0 0 8px;
+      border-right: transparent;
+    }
+    &:last-child {
+      border-radius: 0 8px 8px 0;
+    }
+    i {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 100%;
+      &.filledA {
+        border: 2px solid #dc143c;
+        background-color: #dc143c;
+        color: #fff;
+      }
+      &.filledB {
+        border: 2px solid #007bff;
+        background-color: #007bff;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.check {
+  margin: 25px 0;
+  input[type="checkbox"] {
+    scale: 2;
+    margin: 10px;
+  }
+}
+
+.btn input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #919293;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s;
+  &:hover {
+    border: 1px solid #919293;
+    background-color: #000;
+    cursor: pointer;
+  }
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: #fff;
+  }
+  #items {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    .inner_item {
+      background-color: #000;
+      color: #fff;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      padding: 10px;
+      transition: all 0.3s;
+      i {
+        font-size: 38px;
+      }
+      .inner_item_title {
+        font-size: 12px;
+      }
+      .inner_item_body {
+        font-size: 22px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+      }
+    }
+  }
+}
