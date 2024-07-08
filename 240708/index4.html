@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 200px;
+        margin: 200px auto;
+        -webkit-perspective: 2000;
+        perspective: 2000;
+        /* 원근감 */
+        /* 깊이감을 보다 자연스럽게 만들어주는 속성 */
+        /* 자식요소에 적용된 3d 공간감에 픽셀을 추가 역할 */
+        section {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          animation: rint 3s linear infinite;
+          transform-style: preserve-3d;
+          div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.3;
+            backface-visibility: hidden;
+            &:nth-child(1) {
+              transform: rotateY(0deg) translate3d(0, 0, 100px);
+              background: red;
+            }
+            &:nth-child(2) {
+              transform: rotateY(90deg) translate3d(0, 0, 100px);
+              background: green;
+            }
+            &:nth-child(3) {
+              transform: rotateY(180deg) translate3d(0, 0, 100px);
+              background: blue;
+            }
+            &:nth-child(4) {
+              transform: rotateY(270deg) translate3d(0, 0, 100px);
+              background: yellow;
+            }
+            &:nth-child(5) {
+              transform: rotateX(90deg) translate3d(0, 0, 100px);
+              background: brown;
+            }
+            &:nth-child(6) {
+              transform: rotateX(270deg) translate3d(0, 0, 100px);
+              background: pink;
+            }
+          }
+        }
+      }
+
+      @keyframes rint {
+        from {
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        to {
+          transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </section>
+  </body>
+</html>

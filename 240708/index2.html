@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        #box {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background: linear-gradient(#cb60b3, #db36a4);
+          text-align: center;
+          /* animation-name: rint;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate; */
+          animation: rint 3s linear infinite alternate;
+          h1 {
+            line-height: 200px;
+            color: #fff;
+          }
+          &:hover {
+            animation-play-state: paused;
+          }
+        }
+      }
+
+      @keyframes rint {
+        from {
+          left: 0;
+          transform: rotate(0deg);
+        }
+        50% {
+          left: 90%;
+        }
+        to {
+          left: 90%;
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h1>Rotation</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+*자바스크립트 기본 개념 단위 : 변수!!!
+변수 => 값을 담는 그릇
+선언 / 생성 => 전역변수 (*global) / 지역변수 (*local)
+
+0~1미만의 실수값(소수점)을 난수 형태로 랜덤 생성
+
+0 ~ 1000000
+
+000019
+
+000019
+
+000365
+
+000019
+
+
+1분 = 60초
+3분 = 180초
+
+밀리초 시간 개념 => 1초 1000인식
+1970년 1월 1일부터~ 현재 시점 
+
+
+보통 일반적으로 main 브랜치 설정 작업
+
+sideprojects => commit main
+
+Figma 
+> autolayout
+> layout grid
+> wireframe
+> component / instance
+> prototype
+
+html5
+> 태그
+> 공간분할태그
+> semantic
+
+css3_v1
+> 선택자 13개
+> 속성 13개
+
+Layout
+> desktop Lofi wireframe
+> desktop Hifi wireframe
+
+css3_v2
+> transition (*전환 / 변형)
+=> css에서 반응선택자를 사용할 때 주로!!!
+=> 반응 전 / 후 => 상태변화 (*즉각 / 시차)
+=> 반응이 발생되기 전단계에서 속성값을 적용!!!
+
+1.transition-duration : 변형이 작동할 수 있는 기간 설정
+2.transition-delay : 반응선택자를 통해서 이벤트 실행 후 얼마 후에 변형 스타일을 적용할 것인지 설정
+3.transition-property : 변형 스타일을 적용할 요소를 무엇으로 설정
+4.transition-timing-function : 가속 혹은 감속에 대한 영향을 줄 수 있는 함수 설정
+> linear : 가속, 감속 x
+> ease : 도입부분(in)은 조금 덜 완만하게 / 완료부분(*out)에서는 조금 더 완만하게 / 중간영역에서 급격하게
+> ease-in : 도입부분(in)에서는 완만하게 시작 / 완료부분(*out)에서는 급격하게 종료
+> ease-out : 도입부분(in)에서는 급격하게 시작 / 완료부분(*out)에서는 완만하게 종료
+> ease-in-out : 도입부분(in)과 완료부분(*out)에서는 완만하게 / 중간영역에서 급격하게
+
+https://cubic-bezier.com/
+
+font : style size/line-height family
+background : color, img, position/size, repeat
+transition : property duration timing-function delay
+
+> animation
+1) animation-duration : 얼마의 기간동안 애니메이션 실행
+2) animation-delay : 이벤트 발생 후 얼마 후 시점부터 애니메이션 실행
+3) animation-timing-function : 애니메이션 실행 시, 가.감속 어떻게 할 것인가
+4) animation-direction : 애니메이션 실행 방향 설정 (*기본 : 좌->우)
+5) animation-name : 해당 애니메이션 만의 고유한 이름 설정
+6) animation-iteration-count : 애니메이션을 얼만큼 반복하게 할 것인가?
+7) animation-play-state : 애니메이션에 일시정지의 기능을 삽입!!!  
+
+> transform (*변환) => transformer (*자동차 => 로봇)
+
+*transition : 어떤 이미지 혹은 아이템 요소가 변환하는데 있어서 변형에 대한 속성값을 제어!!!!
+
+*transform : 어떤 이미지 혹은 아이템 요소의 형태 혹은 위치(*좌표) 등 자체를 변환시키기 위한 속성 / 좌표값 / 각도회전 (*웹 좌표계를 중심) / 중심축 (*x, y, z)으로부터 회전 / 크기
+
+rotate(angle deg) : 회전각도
+scale(x, y, z) : 크기
+scaleX( ) : 크기
+scaleY( ) : 크기
+scaleZ( ) : 크기
+skew(x, y, z) : 특정 중심축을 기준으로 기울기
+skewX( ) : 특정 중심축을 기준으로 기울기
+skewY( ) : 특정 중심축을 기준으로 기울기
+skewZ( ) : 특정 중심축을 기준으로 기울기
+translate(x, y, z) : 특정 크기만큼 이동
+translateX( ) : 특정 크기만큼 이동
+translateY( ) : 특정 크기만큼 이동
+translateZ( ) : 특정 크기만큼 이동
+
+=> 1개의 이미지 혹은 도형 요소에 복수의 transform 효과 적용!!!
+> 적용하는 순서에 따라서 결과값이 완전히 달라질 수 있음
+
+> 3D 공간 개념
+
+loading spinner
+
+Server Side Rendering
+Client Side Rendering => React.js
+
+3차원 = 3D
+=> Z축에 대한 공간감!!!
+
+*원근감
+-webkit-perspective: 2000;
+perspective: 2000;
+
+*자식요소에서의 z축으로부터의 공간감을 적용시켜주기 위해서 부모요소에서 적용!!!
+transform-style: preserve-3d;
+
+
+css3_v3
+> Flexable / responsive (*반응형)
+> flex / grid
+> media-query => device / break-point
+
+scss
+> mix-in / include
+
+
+
+
+
+
+
+
+

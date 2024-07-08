@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        margin: 100px;
+        width: 100px;
+        height: 100px;
+        border: 5px solid #000;
+        div {
+          width: 100px;
+          height: 100px;
+          background: #f00;
+          /* transform: rotate(60deg) scale(1.2) skewY(10deg); */
+          /* transform: translateX(50px) rotate(60deg); */
+          /* transform: rotate(60deg) translateX(50px); */
+          transform-origin: 100% 100%;
+          transform: rotate(60deg);
+          /* transform: rotate(60deg); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>Box</div>
+    </section>
+  </body>
+</html>
