@@ -1,0 +1,16 @@
+1.삭제할 commit 찾기
+- git log
+
+2.최근 commit 삭제하기
+- git reset HEAD^
+
+3.최근 n개 commit 삭제하기
+- git reset HEAD~n
+
+4.git-hub에서 commit 삭제 알리기
+- git push -f origin "branch name"
+
+5.특정 폴더만 add하기
+- git add 240704
+
+6.특정 폴더 및 
