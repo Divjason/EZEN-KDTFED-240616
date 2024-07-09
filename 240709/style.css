@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  #canvas {
+    width: 600px;
+    height: 200px;
+    position: relative;
+    -webkit-perspective: 1500;
+    perspective: 1500;
+    #merry {
+      position: absolute;
+      left: 50%;
+      top: -200px;
+      transform: translateX(-50%);
+      transform-style: preserve-3d;
+      animation: rint 15s infinite linear;
+      .face {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -115px;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        &:nth-child(1) {
+          transform: rotateY(0deg) translateZ(-370px);
+        }
+        &:nth-child(2) {
+          transform: rotateY(36deg) translateZ(-370px);
+        }
+        &:nth-child(3) {
+          transform: rotateY(72deg) translateZ(-370px);
+        }
+        &:nth-child(4) {
+          transform: rotateY(108deg) translateZ(-370px);
+        }
+        &:nth-child(5) {
+          transform: rotateY(144deg) translateZ(-370px);
+        }
+        &:nth-child(6) {
+          transform: rotateY(180deg) translateZ(-370px);
+        }
+        &:nth-child(7) {
+          transform: rotateY(216deg) translateZ(-370px);
+        }
+        &:nth-child(8) {
+          transform: rotateY(252deg) translateZ(-370px);
+        }
+        &:nth-child(9) {
+          transform: rotateY(288deg) translateZ(-370px);
+        }
+        &:nth-child(10) {
+          transform: rotateY(324deg) translateZ(-370px);
+        }
+        .cell {
+          width: 230px;
+          height: 150px;
+          margin-bottom: 5px;
+          background: url("http://placehold.it/260x200");
+          transition: all 0.5s;
+          &:hover {
+            transform: scale(1.2) translateZ(50px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rint {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

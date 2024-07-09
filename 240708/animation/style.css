@@ -10,11 +10,16 @@
 body {
   width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
   background: #b1e1e2;
   h1 {
-    font-family: "Poiret One", sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    font: normal 92px/1 "Poiret One", sans-serif;
+    color: #fff;
   }
   section {
     width: 1000px;
@@ -23,7 +28,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid #f00;
     .sky {
       position: absolute;
       width: 100%;
@@ -46,6 +50,46 @@ body {
         top: 20px;
         left: 0;
         animation: flow 20s linear infinite;
+      }
+    }
+    .town {
+      .circle {
+        position: absolute;
+        bottom: 104px;
+        left: 34%;
+        opacity: 0.7;
+        animation: rotation linear 20s infinite;
+      }
+      .night {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+      }
+      .day {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        animation: day linear 20s infinite;
+      }
+    }
+    .people {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: day linear 20s infinite;
+      .man {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        animation: flow linear 7s infinite;
+      }
+      .family {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        animation: flow linear 20s infinite;
       }
     }
   }
@@ -88,5 +132,32 @@ body {
   100% {
     opacity: 0;
     left: 90%;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes day {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
