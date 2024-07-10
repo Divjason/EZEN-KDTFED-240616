@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 5px solid #0f0;
+        height: 1000px;
+        display: flex;
+        /* flex-direction: row; */
+        /* 중심축 가로 & 교차축 세로 */
+
+        flex-direction: column-reverse;
+        /* 중심축 세로 & 교차축 가로 */
+        div {
+          width: 200px;
+          height: 200px;
+          margin: 10px;
+          background: crimson;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

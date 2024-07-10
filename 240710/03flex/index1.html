@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 5px solid #0f0;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        div {
+          width: 300px;
+          margin: 5px;
+          background: crimson;
+          &.child1 {
+            height: 100px;
+          }
+          &.child3 {
+            height: 200px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        header {
+          background: pink;
+          height: 100px;
+        }
+        section {
+          display: flex;
+          justify-content: space-between;
+          height: calc(100vh - 200px);
+          nav {
+            flex-basis: 250px;
+            background: #eee;
+          }
+          aside {
+            flex-basis: 250px;
+            background: #ccc;
+          }
+        }
+        footer {
+          background: gray;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>Header</header>
+      <section>
+        <nav>Nav</nav>
+        <article>Article</article>
+        <aside>Aside</aside>
+      </section>
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>

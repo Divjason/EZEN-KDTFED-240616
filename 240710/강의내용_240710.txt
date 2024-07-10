@@ -1,0 +1,128 @@
+*자바스크립트 연산자!!!!
+
+증감연산자
+논리연산자
+비교연산자
+
+>
+<
+>=
+<=
+
+JS => 변수 데이터 값
+타입 => 문자열 / 숫자 / 논리형 / 객체 / 함수 / 배열 등
+
+1 != "1" => 같다!!!
+1 !== "1" => 다르다!!!
+
+! => 반대 
+== : 같다.의 의미 (느슨한 비교)
+=== : 같다.의 의미 (엄격한 비교)
+
+*CSS3 => 레벨로 업그레이드!!!
+- animation / transition / transform
+- flex / grid
+> 기존 css로는 float / margin / padding / table => 레이아웃 정렬 / => 불편함
+> 레이아웃 정렬 전용 속성!!!!
+> 크로스브라우징
+
+1) 부모 (컨테이너 박스)
+> display : flex
+> justify-content => 중심축을 기준 정렬 : 수평정렬
+
+*단일 아이템!!!
+- center : 아이템을 전체 너비의 정가운데
+- flex-start : 플렉스가 시작되어지는 지점을 기준으로 정렬
+(*웹 모든 그래픽요소 : 좌 => 우) => 왼쪽정렬
+- flex- end : 우측정렬
+
+*복수 아이템!!!
+- space-between
+- space-around
+- space-evenly
+
+> align-items => 교차축을 기준 정렬 : 수직정렬
+- center
+- flex-start
+- flex- end 
+- stretch : 자식요소의 높이값을 별도로 지정하지 않는경우, 부모요소의 높이를 자동으로 상속받는 기능
+
+> flex-direction => 중심축 / 교차축을 무엇으로 할 것인가?
+(*defalut => row / column)
+> row(왼쪽부터) // row-reverse(오른쪽부터)
+=> 겉으로 얼핏보면 flex-end & row-reverse가 매우 비슷하게 보이나 엄밀히 다른 기능!!!
+
+> column(상단부터) // column-reverse(하단부터)
+=> 겉으로 얼핏보면 flex-end & column-reverse가 매우 비슷하게 보이나 엄밀히 다른 기능!!!
+
+> flex-wrap => default => "no-wrap" => 자식 요소의 너비 보장x 100px
+*flex-wrap & flex-direction 하나로 통합해서 작성!!!
+> flex-flow
+
+> align-contents => 자식요소들이 여러개의 행으로 구분이 되어졌을 때 어느 방향으로 모든 자식요소들의 수직정렬을 결정 / 하나의 컨텐츠로 식별 => 수직 정렬을 주고자 할 때
+- center
+- flex-start
+- flex-end
+- space-between
+- space-around
+- space-evenly
+
+2) 자식 (*플렉스 레이아웃 시스템 문법 적용)
+> flex-grow : 자식요소들의 너비의 비율을 결정!!
+> flex-shrink : 자식요소들의 너비가 줄어들 때의 비율을 결정
+> flex-basis : 자식요소들에게 고정 너비값을 부여!!!
+=> flex : flex-grow  flex-shrink flex-basis
+> flex-grow 필수 값!!! / flex-shrink flex-basis => 옵션!!!
+> flex: 
+> order : 자식요소들의 포지션 위치 순서 결정!!!
+
+3) 중심축 / 교차축
+- 중심축 default => 가로 row
+- 교차축 default => 세로 column
+
+
+
+
+
+
+
+
+
+
+
+
+*특정 아이템 위치를 조정
+> transform > tranlate (*x, y좌표)
+
+*margin / padding
+> 특정 도형 및 요소의 위치를 조정
+> target 하고 있는 도형 및 요소 주변 환경을 활용해서 위치 정렬
+> 상대적인 지형요소 빛
+
+1) 결과값 도출 : 1가지 정답x
+
+2) position : absolute 남발x
+- 항상 매기수
+- 그렇다면 display: flex (*자주 애용 / )
+
+
+1.다음주 목요일까지!!!!
+> 커스터마이징!!!!
+> 2가지 기회제공
+1) HTML, CSS => 작업
+2) HTML, CSS, JS => 작업
+> 팁 / 힌트
+
+2.공부
+> 영화예매 (*4일) / 로그인 (*11일) / 컨텐츠 슬라이드 (*18일)
+
+발표 금
+> 당일 (예민) => 배포
+> 내일 배포실습
+> WBS (*일정) / UI 작업 / 반응형 / 배포
+=> 갑자기 몸이 아프다
+=> 배포 / VScode
+=> 반응형 => 안한겁니다
+=> 100%
+
+

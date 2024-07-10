@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 5px solid #0f0;
+        display: flex;
+        div {
+          width: 200px;
+          height: 200px;
+          margin: 10px;
+
+          &:nth-child(1) {
+            background: crimson;
+            order: 3;
+          }
+          &:nth-child(2) {
+            background: dodgerblue;
+            order: 2;
+          }
+          &:nth-child(3) {
+            background: burlywood;
+            order: 1;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
