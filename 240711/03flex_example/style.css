@@ -1,0 +1,44 @@
+@import url("./reset.css");
+
+header {
+  background: var(--main-bgColor);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      img {
+        filter: invert();
+      }
+    }
+    .gnb {
+      ul {
+        display: flex;
+        gap: 10px;
+        li {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .sns {
+      display: flex;
+      gap: 20px;
+      text-align: center;
+      a {
+        color: #fff;
+      }
+    }
+    .trigger {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+}

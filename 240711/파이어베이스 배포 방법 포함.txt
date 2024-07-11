@@ -1,0 +1,125 @@
+JS >
+라이트 / 다크모드
+
+Flex > 
+1. 웹 상단 네비게이션
+2. 이미지 카드 페이지
+3. index 메인 페이지
+
+Grid >
+1. 문법
+2. 페이지 제작
+
+오후 >
+desktop // mobile
+
+Deploy >
+
+UI를 다뤄야하는 직업군!!!
+> FrontEnd <-> 퍼블리셔
+> 레이아웃 / 디자인 / 컬러 등등
+> 퍼블리셔 직군 
+> API 기술
+
+BOM 구조
+DOM 구조
+
+1.Google Firebase 배포
+
+2.Node.js 설치
+> 구글 > node.js 검색 > https://nodejs.org/en
+> Download > 설치모드 (*"standalone" / portable)
+
+3.설치확인
+> cmd > node -v
+
+4.구글 > firebase 검색 : 로그인
+시작하기 > 회원가입 (*구글 메일계정)
+
+5.파이어베이스 > 프로젝트 추가 버튼
+- 프로젝트 이름
+- 구글 애널리틱스 x > 프로젝트 만들기
+
+6.프로젝트 영역
+> 빌드 > Hosting > 시작하기
+
+7.호스팅 설정
+1) npm install -g firebase-tools
+
+2) 컴퓨터 > cmd > 관리자 권한으로 실행
+> npm 명령어를 인식할 수 없다는 뉘앙스의 문자가 나타났다 => node가 정상적으로 설치!!
+
+> 관리자 권한 모드로 가지 않았다
+
+3) 바탕화면에 배포용 루트 폴더 > 배포하고자 하는 파일 복사 붙여넣기
+
+4) 코드로 열기 > vscode 이동
+
+5) 터미널 > ctrl + ~
+- 명령프롬프트 모드 설정 변경
+- firebase login
+------------------------------------
+- firebase init
+
+Are you ready to proceed? Y 엔터
+ 
+Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys (선택 : 스페이스바)
+
+Use an existing project > 프로젝트 찾기 엔터
+
+vscode & firebase 재인증 : firebase login --reauth
+
+What do you want to use as your public directory? build
+
+ Configure as a single-page app (rewrite all urls to /index.html)? n
+
+Set up automatic builds and deploys with GitHub? (y/N) n
+
+build > 배포하고자 하는 모든 데이터를 담아!!!
+> build
+
+404 / index.html 삭제 (*build폴더)
+
+라이브서버 체크 / 기타 체크
+
+firebase deploy > 터미널 복.붙 엔터
+
+Hosting URL: https://myprofile-nice.web.app
+
+---------------------------------------------------
+
+배포를 한 이후에 뒤늦게 수정사항!!!
+
+1) build 폴더안에 있는 데이터 삭제
+
+2) 원본데이터 수정
+
+3) 원본데이터 복 => build
+
+4) firebase init~ 시작!!!
+
+=> 수정된 데이터 호스팅 > 주소 복.붙여 > 주소
+
+상단 주소 > 쿠키 및 사이트데이터 > 설정 > 개인정보보호및 보안 > 인터넷사용기록삭제 > 
+
+
+23:59:59 => 슬랙
+
+배포 소스코드 > 깃허브 > 주소
+
+OOO 입니다.
+1.깃허브 주소 : 주소~~~
+2.배포 주소 : 주소~~~~
+> 참고해야할 사항 코멘트 
+
+
+
+
+
+
+
+
+
+
+
+
