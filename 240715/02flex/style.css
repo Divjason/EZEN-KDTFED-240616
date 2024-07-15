@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("./reset.css");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  height: 2000px;
+  background: #ddd;
+}
+
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  .banner {
+    background: #000;
+    height: 40px;
+    transition: all 0.5s;
+    .lnb {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: flex-end;
+      a {
+        color: #ddd;
+        margin-right: 10px;
+        em {
+          color: #bbb;
+        }
+      }
+    }
+  }
+  nav {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* border: 1px solid #f00; */
+    .gnb {
+      display: flex;
+      gap: 20px;
+      li {
+        a {
+          color: #fff;
+          &:hover {
+            color: crimson;
+          }
+        }
+      }
+    }
+  }
+  .trigger {
+    display: none;
+  }
+  &.active {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    .gnb li a {
+      color: #000;
+    }
+    .banner {
+      height: 0;
+      overflow: hidden;
+    }
+    nav {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+/* Intro */
+.intro {
+  height: 100vh;
+  background: url("./img/intro.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  .heading {
+    text-align: center;
+    color: #fff;
+    h1 {
+      font-size: 70px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 1.5rem;
+      padding: 0 150px;
+    }
+  }
+}
+
+/* About */
+.about_content {
+  display: flex;
+  padding: 150px 0;
+  div {
+    padding: 30px;
+    &.desc {
+      text-align: center;
+      flex: 3;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.7rem;
+      }
+      a {
+        color: crimson;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &.photo {
+      flex: 2;
+      img {
+        width: 100%;
+        border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+      }
+    }
+  }
+}
