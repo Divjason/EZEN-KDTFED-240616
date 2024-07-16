@@ -1,0 +1,106 @@
+*팀프로젝트 진행 시, git & git-hub 사용방법
+
+- 1인 2역 (*PM / 팀원)
+- 메인 / 장바구니 / 로그인 / 상세페이지
+- 공통된 요소 => header / footer => 누군가가 작업
+- 병합
+
+1.PM의 입장
+- 같이 소통할 수 있는 레포지토리 생성
+(teamproject-ezen)
+https://github.com/Divjason/teamproject-ezen
+
+- 팀원들을 현재 레포지토리 초대
+Add collaborators to this repository
+
+- 팀원들의 git-name
+
+2.팀원의 입장
+- 우측상단, notification 클릭
+- invite 메일 클릭 > accept invitation 클릭
+
+3.PM의 입장
+- 팀 프로젝트를 진행하기 위한 별도의 전용 루트 폴더 생성
+- git init (*깃 초기화)
+- git remote add origin "git-hub 주소"
+- git remote add origin https://github.com/Divjason/teamproject-ezen.git
+- git remote -v
+- git add .
+- git status
+- git commit -m "커밋메세지"
+(나중에 훗날 커밋메세지를 참고해서 그때 당시의 데이터를 찾아올 수 있도록 해주는 일종의 라벨)
+- git push origin master
+
+*실무에서 작업을 할 때 환경!!!!
+1) PM 1명
+2) 중간관리자 1명
+3) 막내급 개발자 2명
+
+-> 막내급 개발자 메인페이지 1차 작업
+
+브랜치 (Branch)
+
+1) CLI 방식으로 브랜치 생성
+- git checkout -b "브랜치명"
+- git checkout -b develop
+
+최종 납품할 제품 데이터 보관 메인 브랜치 : master / main
+각 조원들이 작업한 제품 데이터를 1차 병합 및 보관 서브 브랜치 : develop
+
+git add .
+git commit -m "develop"
+git push origin develop
+
+git push --set-upstream origin develop
+
+-> PM은 조원들에게 앞으로 merge 요청은 master로 하지 마시고, develop으로 요청해주시면 됩니다!!!
+
+-> PM은 반드시 브랜치 protected
+상단 setting > branches > classic rule 
+
+> Require a pull request before merging
+> Lock branch
+> Do not allow bypassing the above settings
+
+-------
+PM & 조원 어떤 방식으로 각자의 브랜치를 만들어서 병합 하는가?
+
+1.PM의 입장
+상단 Projects > Link a project > create new project
+프로젝트명 클릭 > 조원 초대
+각 칸반영역 하단, Add item 버튼 클릭 > 해야할 작업 목록 생성
+
+2.각 조원(*PM포함)
+생성된 백로그 작업리스트명 클릭!!!
+우측, Convert to issue 버튼 클릭!!!!
+(*현재 PM이 생성해놓은 레포지토리를 반드시 선택)
+우측, Development 영역 > Create a branch 파란색 텍스트 클릭!!!
+
+신규로 브랜치 생성
+- 브랜치명 => 직관적 / 현재 작업할 목록
+- 브랜치 소스 => develop으로 꼭 설정
+- 현재, 로컬에서는 원격에서 신규로 브랜치가 생성되었다는 사실 인지x
+
+git fetch origin
+git checkout feature-A
+
+*feature-A를 작업해야하는 팀원 입장
+1) git pull origin master (*나의 로컬컴퓨터에 저장된 데이터도 살리고, 원격 저장소에 커밋된 데이터도 가져와서 병합을 하겠다!!!)
+
+2) git clone "레포지토리 주소"
+원격 저장소에 커밋된 데이터를 그냥 가져와서 시작하겠다
+
+팀원 입장에서!!!!
+상단 pull requests > new pull request
+base : develop / compare : feature-A
+
+PM 입장에서!!!!
+슬랙, 메신저!!!
+Pull request >
+
+계정 2개를 가지고 > 
+
+This branch has conflicts that must be resolved
+
+command line
+
