@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      body {
+        padding-top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+      <div class="container">
+        <a href="#none" class="navbar-brand">Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-content"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-content" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a href="#none" class="nav-link" data-toggle="dropdown">HTML5</a>
+              <div class="dropdown-menu">
+                <a href="#none" class="dropdown-item">API</a>
+                <a href="#none" class="dropdown-item">Geolocation</a>
+                <div class="dropdown-divider"></div>
+                <a href="#none" class="dropdown-item">Motion</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#none" class="nav-link">CSS3</a></li>
+            <li class="nav-item"><a href="#none" class="nav-link">JS</a></li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">Node.js</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">React.js</a>
+            </li>
+          </ul>
+          <form action="http://localhost:3000" method="get" class="form-inline">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              class="form-control"
+              placeholder="Search"
+            />
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a href="#none" class="nav-link">TS</a></li>
+            <li class="nav-item"><a href="#none" class="nav-link">MySQL</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header">Web 5.0</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#none">HTML5</a></li>
+              <li class="list-group-item"><a href="#none">CSS3</a></li>
+              <li class="list-group-item"><a href="#none">Javascript</a></li>
+            </ul>
+          </div>
+          <br />
+          <div class="card bg-info">
+            <div class="card-header">Programming</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#none">React.js</a></li>
+              <li class="list-group-item"><a href="#none">Typescript</a></li>
+            </ul>
+          </div>
+          <br />
+          <div class="card bg-danger">
+            <div class="card-header">Company</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#none">Help</a></li>
+              <li class="list-group-item"><a href="#none">Service</a></li>
+              <li class="list-group-item"><a href="#none">Contact</a></li>
+            </ul>
+          </div>
+          <br />
+        </div>
+        <div class="col-md-9">
+          <div class="jumbotron">
+            <h1>HTML5 + CSS3 Basic</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+              omnis, necessitatibus assumenda placeat ad nobis quo facilis
+              explicabo ut laborum temporibus. Placeat adipisci neque iusto
+              velit non cupiditate ducimus tempora!Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Fugiat omnis, necessitatibus
+              assumenda placeat ad nobis quo facilis explicabo ut laborum
+              temporibus. Placeat adipisci neque iusto velit non cupiditate
+              ducimus tempora!Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Fugiat omnis, necessitatibus assumenda placeat
+              ad nobis quo facilis explicabo ut laborum temporibus. Placeat
+              adipisci neque iusto velit non cupiditate ducimus tempora!
+            </p>
+            <a href="" class="btn btn-primary btn-lg">Learn More</a>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum
+            quidem, laudantium commodi, iste ducimus nam modi laborum at
+            possimus qui perspiciatis molestiae doloremque. Itaque aliquid id
+            cupiditate ullam suscipit! Vitae consectetur veritatis a nesciunt
+            praesentium dolorum optio magnam est aut amet dignissimos impedit
+            voluptas mollitia ullam dolores, eaque eveniet consequatur
+            necessitatibus, modi placeat nisi officiis facere. Doloribus, neque
+            distinctio! Pariatur, enim. Repellendus fuga molestias dolorem
+            deserunt iusto non eligendi quibusdam quaerat aliquam facilis quidem
+            possimus nesciunt, tempora ducimus corporis dolor nemo a ad rerum
+            quas delectus, assumenda inventore. Ullam? Sequi voluptates
+            perspiciatis odio illo. Ipsam veniam est impedit obcaecati veritatis
+            quam temporibus repudiandae sit nulla laudantium, cupiditate placeat
+            repellendus molestiae pariatur eius asperiores eum mollitia magni et
+            consequatur optio.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+            fugit eius mollitia ad eum debitis, consequuntur molestiae. Quo
+            consequatur veritatis quos voluptates, eveniet, nulla sit pariatur
+            dicta officiis voluptate a. Iste ipsum architecto aut? Reiciendis
+            voluptatum est nulla repudiandae itaque obcaecati cum sit
+            doloremque, aliquid accusamus. Obcaecati architecto asperiores quia
+            dolor quos? Quaerat incidunt iure itaque? Eius voluptas quos hic!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+            repellat nulla quaerat non laboriosam sunt amet a, animi
+            exercitationem ipsum earum delectus cum! Optio nesciunt quisquam
+            incidunt? Unde, nemo sequi? Ullam ipsa, sint alias molestiae nisi
+            et, quam maxime labore beatae deleniti harum! Blanditiis, facere
+            consequuntur. Sit officiis, et, nisi dolorum, numquam sint minus
+            corrupti at animi inventore quibusdam blanditiis? Voluptate aperiam
+            molestiae ipsum, odit exercitationem, necessitatibus possimus
+            libero, harum magnam consequuntur repudiandae magni dolor! Assumenda
+            eaque nemo ad asperiores, possimus, atque, alias eius animi ipsa
+            saepe inventore aliquam laudantium. Enim recusandae omnis
+            aspernatur, cupiditate provident eos ex deleniti eaque, architecto
+            quas ullam doloribus odit consectetur obcaecati dignissimos
+            voluptate aperiam suscipit veritatis ab mollitia accusantium magnam.
+            Quis consectetur facilis quod. Incidunt ab tempora qui deserunt,
+            beatae commodi ut a numquam culpa autem, omnis, sed aliquam facere?
+            Quia consectetur, quasi provident sapiente praesentium harum debitis
+            maiores laborum, consequatur reprehenderit, cum iusto?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Architecto, ex esse quod iusto voluptatum perspiciatis soluta beatae
+            sapiente et similique reprehenderit pariatur debitis cumque
+            consequuntur autem aut odit, fuga laboriosam. Recusandae accusamus
+            minus exercitationem rerum, ad doloremque dolorem aspernatur, quasi
+            esse vero aliquam, nisi cum magnam distinctio voluptatem id quas
+            consequatur facere! Magni ipsum laudantium ipsam quisquam aut veniam
+            perferendis. Earum nostrum, debitis perferendis minus eaque labore
+            consectetur, fuga dignissimos quibusdam aut nihil. Aspernatur
+            tempora, corrupti ratione, voluptates repellat vel consequuntur
+            animi tempore sequi sint similique hic asperiores quia. Distinctio.
+            Fugiat ipsa nisi, architecto fugit corporis odit tempora sit.
+            Impedit, facilis! Dicta deleniti temporibus asperiores corporis.
+            Quisquam repudiandae, veritatis asperiores ducimus eum fuga, sint
+            ipsa ipsum magnam quae, commodi dolorum! Ex, totam veritatis
+            aspernatur magni est ipsa quam, unde magnam illo dolorem enim? Velit
+            atque doloribus consectetur sapiente consequuntur vero, nam minima
+            vel sit unde inventore tempora quisquam at. Ipsa. Dolor delectus
+            praesentium doloremque at quaerat quam optio itaque. Exercitationem
+            provident in libero cum incidunt voluptatibus
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

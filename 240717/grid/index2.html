@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 5px solid #000;
+        /* width: 900px; */
+        /* height: 220px; */
+        height: 400px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        justify-content: center;
+        align-content: space-evenly;
+        & div {
+          background: yellowgreen;
+          border: 1px solid #fff;
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>
