@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 5px solid #000;
+        background: khaki;
+        width: 500px;
+        height: 300px;
+        display: grid;
+        div {
+          border: 1px solid #000;
+          &.item1 {
+            background: crimson;
+            grid-area: 1/1 / 2/3;
+          }
+          &.item2 {
+            background: yellowgreen;
+            grid-area: 1/2 / 3/3;
+            z-index: 1;
+          }
+          &.item3 {
+            background: dodgerblue;
+            grid-area: 2/2 / 3/4;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+  </body>
+</html>

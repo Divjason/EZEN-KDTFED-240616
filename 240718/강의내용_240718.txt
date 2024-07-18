@@ -1,0 +1,70 @@
+justify-content
+
+justify-items
+
+> justify : 수평 / 가로 암시 & 의미
+
+> content : 묶여있는 그룹 자체
+
+> item : 개별적인 요소
+
+display : flex
+justify-content : center
+
+> 자식요소는 무조건 반드시 부모요소의 플렉스박스 안에서 영향을 받을 수 밖에없는 하나의 그룹
+
+display : grid
+grid-template-column : repeat(3, 1fr)
+justity-items: center
+justity-content: center
+grid-template-row
+
+CSS : Cascading Style Sheet
+--------------
+SCSS : Sassy Cascading Style Sheet
+--------------
+전지현 => 엽기적인 그녀
+Sassy girl
+
+Nesting / if / for / 함수 / 변수 기타 등등
+
+웹 브라우저 : html, css, js
+
+complier
+
+:root {
+--main-text-color: #000;
+}
+
+var(--main-text-color)
+
+*SCSS
+1) Nesting : 부모 > 자식요소로 중첩되어있는 스타일 시트
+
+2) Variables : 변수를 선언하는 방법 $변수명 : 값 => 해당 변수명 바로 사용가능!
+
+3) Comments : css에서 주석을 처리하는 방식과 동일
+
+4)  @at-root : 부모요소 아래에 있는 특정 요소의 스타일을 전역요소로 사용하고 싶은 경우 : (div > h2 (*스타일) ) + h2
+
+5) @import 경로 : reset.css + style.css => @import url("./) => CSS
+SCSS에서는 외부 SCSS 파일을 가져올 때, @import 만으로도 충분히 찾아온다!!!
+
+6) @mixin : 어떤 반복적으로 사용되는 스타일을 정의해놓는 것!!!!
+=> @include 명령어를 활용해서 @mixin으로 설정해놓은 스타일을 언제든지 가져다 사용할 수 있음!!!
+
+-> mixin 추가 고급기능
+-> scss 문법 마무리
+-> scss 실습예제
+
+=> html, css, js(*아주조금) => 파이널 실습
+
+=> JS
+
+
+
+
+
+
+
+
