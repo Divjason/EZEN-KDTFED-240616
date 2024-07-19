@@ -1,0 +1,19 @@
+.btn {
+  width: 200px;
+  padding: 7px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .buttons {
+    .order {
+      @extend .btn;
+      background: purple;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container {
+  border: 5px solid gold;
+  height: 100vh;
+  padding: 50px;
+}
+body .container .content {
+  background: #eee;
+  height: 100%;
+  text-align: center;
+  padding: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  body .container .content {
+    height: auto;
+    padding: 25px;
+  }
+}

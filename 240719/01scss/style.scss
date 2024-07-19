@@ -1,0 +1,28 @@
+@mixin border-style($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin button-padding($updown, $leftright) {
+  padding: $updown $leftright;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .buttons {
+    button {
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      @include button-padding(20px, 150px);
+      &.approval {
+        @include border-style(2px, solid, blue);
+      }
+      &.refuse {
+        @include border-style(2px, solid, red);
+      }
+    }
+  }
+}

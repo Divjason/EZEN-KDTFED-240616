@@ -1,0 +1,41 @@
+.frame div {
+  border: 3px solid #000;
+  margin: 5px;
+  padding: 5px;
+}
+
+.frame div:nth-child(1) {
+  width: 50px;
+}
+
+.frame div:nth-child(2) {
+  width: 100px;
+}
+
+.frame div:nth-child(3) {
+  width: 150px;
+}
+
+.frame div:nth-child(4) {
+  width: 200px;
+}
+
+.frame div:nth-child(5) {
+  width: 250px;
+}
+
+.frame div:nth-child(6) {
+  width: 300px;
+}
+
+.frame div:nth-child(7) {
+  width: 350px;
+}
+
+.frame div:nth-child(8) {
+  width: 400px;
+}
+
+.frame div:nth-child(9) {
+  width: 450px;
+}

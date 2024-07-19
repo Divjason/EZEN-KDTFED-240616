@@ -1,0 +1,81 @@
+1.SCSS 문법
+
+2.SCSS 예제
+
+3.html, css, js 활용 실습예제
+> 커스터마이징 미션
+> e-commerce 쇼핑몰 팀프로젝트
+(*공통 섹션 => header / footer)
+
+*포트폴리오 작업
+> 포트폴리오 홈페이지 (*UI / 아키텍처)
+> 포트폴리오 작업물
+(*30개 / 20개 / 10개)
+
+@mixin : 공통적 및 반복적으로 사용하고자 하는 어떤 스타일 속성을 미리 정의해놓는 명령어!!!
+
+@include : mixin으로 정의된 스타일 속성을 찾아와서 사용하고자 할 때 사용하는 명령어!!!
+
+@extend : 사전에 정의해놓은 스타일 속성을 사용할 수 있도록 하는 것!!!
+
+=> css 파일로 컴파일링이 된 이후에 결과값!!!
+
+각각의 선택자에 mixin으로 정의해놓았던 스타일 속성에 해당 선택자안에서 작성된 것을 확인!!!!
+
+extend를 활용해서 정의해놓은 스타일 속성에, 각각의 선택자를 불러와서 사용하는 방법!!!
+
+함수 = function => 기능!!!
+
+선언 (*어떤 기능이 필요하기 때문에, 그 기능을 구현 & 실행시켜줄 수 있는 무언가가 필요할 때 해당 기능을 다양한 알고리즘과 자료구조의 조합을 통해 문제해결을 위한 새로운 기능을 만들어내는 것) 
+
+> 매개변수 3개
+
+호출 (*앞에서 선언한 함수를 가져다가 사용하는 것)
+
+> 함수를 선언할 때, 매개변수라는 것을 생성 (O ||  X)
+=> 로또 번호 6개를 생성해주는 함수를 선언!!!
+=> JS 숫자를 랜덤으로 생성해주는 내장객체(*함수)를 가져다가 사용만하면 됨!!!
+
+> 인자값 = 인수 1개
+
+> 군대 => 전역계산기 // 전역하는 날짜
+=> 매개변수
+
+프로그래밍 언어들은 저마다 예약어!!!!
+> react.js => react
+> react
+
+반복문 : 변수선언 / 변수 앞에 $
+> JS 변수선언 시, 대원칙!!!
+> 절대로 특수문자가 앞에 올 수 없음
+> $
+forEach
+for
+for in
+for of
+
+이터러블 객체 : 변수선언 (*1개의 변수명 안에 복수의 값을 설정) => map-get( ) 사용!!!!
+
+조건문 :
+if / else if / else
+switch
+while
+while if
+
+찐고수 => 유일무이 커스터마이징 코드!!
+
+1.scss로 제작
+2.전.후문자 선택자를 활용해라!!!
+3.애니메이션을 사용해라!!!
+
+font-awesome
+google-material-icon
+
+https://fonts.google.com/icons?noto.script=Kore&selected=Material+Symbols+Outlined:power_settings_new:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=power&icon.size=24&icon.color=%235f6368
+
+"https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" 
+
+
+
+
+

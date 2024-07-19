@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="outerbox">
+        <main class="wrapper">
+          <section class="wrapper_left">
+            <div class="wrapper_left_header">
+              <div class="today">
+                <span>TODAY</span>
+                <span class="zero">0</span>
+                <span>| TOTAL</span>
+                <span>1234</span>
+              </div>
+            </div>
+            <div class="wrapper_left_body">
+              <div class="left_body_header">
+                <div class="left_body_header_gray"></div>
+                <div class="left_body_header_line"></div>
+              </div>
+              <div class="left_body_profile">
+                <div class="profile_detail">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>name</span>
+                </div>
+                <div class="profile_detail">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>phone</span>
+                </div>
+                <div class="profile_detail">
+                  <i class="fa-solid fa-at"></i>
+                  <span>email</span>
+                </div>
+                <div class="profile_detail">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>insta</span>
+                </div>
+              </div>
+              <div class="left_body_footer">
+                <div class="wrapper_feel">
+                  <div class="feel_title">오늘의 기분</div>
+                  <form
+                    name="emotionForm"
+                    action="http://localhost:3000"
+                    method="post"
+                  >
+                    <select name="emotion" id="emotion">
+                      <option value="happy">기쁨 😍</option>
+                      <option value="sad">슬픔 😭</option>
+                      <option value="angry">화남 😫</option>
+                      <option value="annoy">분노 😤</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="wrapper_right">
+            <div class="wrapper_right_header">
+              <div class="right_header_title">사이좋은 사람들, 싸이월드</div>
+              <div class="right_header">
+                사생활보호설정<i class="fa-solid fa-caret-right"></i>
+              </div>
+            </div>
+            <div class="wrapper_right_body">
+              <iframe id="contentFrame" src="./home.html"></iframe>
+              <!-- <iframe id="contentFrame" src="./game.html"></iframe>
+              <iframe id="contentFrame" src="./jukebox.html"></iframe> -->
+            </div>
+          </section>
+          <section class="navigation">
+            <div class="navigation_item">홈</div>
+            <div class="navigation_item">게임</div>
+            <div class="navigation_item">쥬크박스</div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

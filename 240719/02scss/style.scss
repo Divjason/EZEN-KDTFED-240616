@@ -1,0 +1,54 @@
+$color: (
+  bg-color: #222,
+  item-color: #ff4757,
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: map-get($color, bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .heart-beat {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: map-get($color, item-color);
+    transform: rotate(45deg);
+    box-shadow: 0 0 100px map-get($color, item-color);
+    animation: heart-beat 0.5s linear infinite;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: map-get($color, item-color);
+    }
+    &::before {
+      top: -50%;
+    }
+    &::after {
+      left: -50%;
+    }
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.95);
+  }
+}

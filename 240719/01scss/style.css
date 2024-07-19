@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .buttons button {
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 20px 150px;
+}
+body .buttons button.approval {
+  border: 2px solid blue;
+}
+body .buttons button.refuse {
+  border: 2px solid red;
+}

@@ -1,0 +1,15 @@
+.frame {
+  div {
+    border: 3px solid #000;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+@for $i from 1 through 9 {
+  .frame {
+    div:nth-child(#{$i}) {
+      width: 50px * $i;
+    }
+  }
+}

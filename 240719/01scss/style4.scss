@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$padding: 50px;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .container {
+    border: 5px solid gold;
+    height: 100vh;
+    padding: $padding;
+    .content {
+      background: #eee;
+      height: 100%;
+      text-align: center;
+      padding: $padding;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body {
+    .container {
+      .content {
+        height: auto;
+        @if ($padding <= 20px) {
+          padding: $padding;
+        } @else {
+          padding: $padding / 2;
+        }
+      }
+    }
+  }
+}
