@@ -3,9 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./game.css" />
+    <script defer src="./game.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <h1>Game</h1>
+    <div class="wrapper">
+      <div class="wrapper_header">
+        <div class="contents_title">
+          <div class="title">잼나는 GAME</div>
+          <div class="subtitle">TODAY CHOICE</div>
+        </div>
+        <div class="divideLine"></div>
+      </div>
+      <div class="game_container">
+        <img src="./contents/word.png" alt="wordgame" />
+        <div class="game_title">끝말잇기</div>
+        <div class="game_subtitle">제시어 : <span id="word">산기슭</span></div>
+        <div class="word_text">
+          <form name="wordgame" action="https://localhost:3000" method="post">
+            <input
+              type="text"
+              name="myword"
+              id="myword"
+              class="textbox"
+              placeholder="단어를 입력하세요"
+            />
+            <input type="submit" value="입력" class="search" />
+          </form>
+        </div>
+        <div id="result" class="word_result">결과!</div>
+      </div>
+      <div class="game_container">
+        <img src="./contents/lotto.png" alt="lottogame" />
+        <div class="game_title">LOTTO</div>
+        <div class="game_subtitle">클릭해주세요~!!</div>
+        <div class="game_lotto_number">
+          <span>3,</span>
+          <span>5,</span>
+          <span>10,</span>
+          <span>24,</span>
+          <span>30,</span>
+          <span>34</span>
+        </div>
+        <button class="wrapper_lotto_btn">클릭!</button>
+      </div>
+    </div>
   </body>
 </html>
