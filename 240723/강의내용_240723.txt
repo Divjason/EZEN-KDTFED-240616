@@ -1,0 +1,46 @@
+1.카카오 Map API 사용하고자 함
+- 개발자도구 
+
+2.웹 브라우저 내장 객체 : navigator 작동
+- 사용자의 현 위치 파악 불가
+
+3.라이브 서버 > 컨피그 (*ip 주소 이상)
+127.0.0.1
+
+4.Use Local Ip 해제
+
+5.카카오 애플리케이션 플랫폼 신청
+https://apis.map.kakao.com/
+플랫폼 신청 => 127.0.0.1:61924
+
+6.월 (*주말반 : Oracle)
+
+카카오맵 API
+
+*네이버(돈) // 카카오 // 구글
+
+*Application Programming Interface
+
+*데이터 통신
+- 일기예보
+- 버스정류장
+- 카카오맵
+
+*apis.map.kakao.com
+
+*카카오 로그인!!!
+
+카카오맵 API : b63d01001e83f4587f40fd1977f54971
+
+1.라이브서버 : 
+- 설정
+- live server config
+- settings: Host
+- 127.0.0.1
+- settings: Use Local Ip (*미선택)
+
+2.https://apis.map.kakao.com/
+
+
+
+
