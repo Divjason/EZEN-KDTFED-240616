@@ -1,0 +1,354 @@
+/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* font */
+/* variable */
+/* Mix-in */
+/* common */
+body {
+  font-family: "Montserrat";
+  color: #222;
+  background: #fff;
+}
+body .cd-section {
+  height: 100vh;
+}
+body .cd-section > div {
+  height: 100%;
+  position: relative;
+}
+body .cd-section > div .content {
+  background: #ddd;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 80px);
+  overflow: hidden;
+}
+
+/* About */
+.about-inner {
+  background: #1db1f0 url("./images/line-drawing.png") right bottom no-repeat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-inner .about-items {
+  width: 45%;
+  margin-left: 150px;
+}
+.about-inner .about-items .item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.about-inner .about-items .item img {
+  height: 100px;
+  filter: invert(1);
+  transition: all 0.5s;
+}
+.about-inner .about-items .item:hover img {
+  filter: invert(0);
+}
+.about-inner .about-items .item span h3 {
+  font-size: 28px;
+}
+.about-inner .about-items .item span p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Plan */
+.plan-inner {
+  background: #222;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-inner .plan-feature {
+  width: 80%;
+}
+.plan-inner .plan-feature > div {
+  color: #ddd;
+  height: 300px;
+}
+.plan-inner .plan-feature > div.plan-info {
+  display: flex;
+  gap: 50px;
+}
+.plan-inner .plan-feature > div.plan-info .plan-heading {
+  flex: 2;
+}
+.plan-inner .plan-feature > div.plan-info .plan-heading h2 {
+  color: #fff;
+}
+.plan-inner .plan-feature > div.plan-info .plan-heading .bar {
+  background: #1db1f0;
+  width: 100px;
+  height: 4px;
+  border: none;
+  display: inline-block;
+  margin: 20px 0;
+}
+.plan-inner .plan-feature > div.plan-info .plan-heading p {
+  font: normal 16px/2.4rem "Montserrat";
+}
+.plan-inner .plan-feature > div.plan-info .plan-photo {
+  flex: 1;
+}
+.plan-inner .plan-feature > div.plan-info .plan-photo img {
+  height: 265px;
+}
+.plan-inner .plan-feature > div.history-info h2 {
+  color: #fff;
+}
+.plan-inner .plan-feature > div.history-info .bar {
+  background: #1db1f0;
+  width: 100px;
+  height: 4px;
+  border: none;
+  display: inline-block;
+  margin: 20px 0;
+}
+.plan-inner .plan-feature > div.history-info .history-slider div h4 {
+  color: #fff;
+  font: normal 20px/2.4rem "Montserrat";
+}
+.plan-inner .plan-feature > div.history-info .history-slider div h4 span {
+  color: #1db1f0;
+}
+.plan-inner .plan-feature > div.history-info .history-slider div p {
+  font: normal 16px/2.4rem "Montserrat";
+}
+.plan-inner .plan-feature > div.history-info .history-slider .slick-arrow {
+  display: none !important;
+}
+.plan-inner .plan-feature > div.history-info .history-slider .slick-dots li button::before {
+  font-size: 40px;
+  color: #fff;
+  top: 20px;
+}
+
+/* Awards */
+.awards-inner {
+  height: 100%;
+  border: 1px solid #ddd;
+  display: flex;
+}
+.awards-inner > div {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+.awards-inner > div.about-awards {
+  background: #1a1f24;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.awards-inner > div.about-awards .about-heading {
+  text-align: center;
+  width: 70%;
+}
+.awards-inner > div.about-awards .about-heading .bar {
+  width: 50px;
+  height: 4px;
+  background: #dc143c;
+  border: none;
+  margin: 30px auto;
+}
+.awards-inner > div.about-awards .about-heading p {
+  color: #999;
+  font: 400 17px/1.5rem "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+.awards-inner > div.about-awards .about-heading .view-awards {
+  color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: all 0.5s;
+}
+.awards-inner > div.about-awards .about-heading .view-awards:hover {
+  color: #fff;
+  background: #31c0ce;
+  border: 1px solid transparent;
+}
+.awards-inner > div.victory-jump {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.awards-inner > div.victory-jump img {
+  width: 80%;
+}
+
+/* Location */
+.location-inner {
+  background: url("./images/background-location.jpg") center/cover no-repeat;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.location-inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.location-inner .feature {
+  position: relative;
+  color: #ddd;
+  display: flex;
+  gap: 100px;
+  width: 70%;
+}
+.location-inner .feature .office {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.location-inner .feature .office b {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.location-inner .feature .office h2 {
+  color: #1db1f0;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.location-inner .feature .office p {
+  font: normal 16px/2.4rem "Montserrat";
+  margin: 10px 0;
+}
+.location-inner .feature .office span {
+  color: #fff;
+}
+.location-inner .feature .service {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.location-inner .feature .service .service-item .fa-solid {
+  color: #1db1f0;
+  font-size: 40px;
+}
+.location-inner .feature .service .service-item h3 {
+  color: #fff;
+  font-size: 22px;
+  margin: 10px 0;
+}
+.location-inner .feature .service .service-item p {
+  font: normal 16px/2.4rem "Montserrat", sans-serif;
+}
+
+/* Contact */
+.contact-inner {
+  background: #fff;
+  height: 100%;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-inner .contact-feature {
+  width: 70%;
+  display: flex;
+  gap: 30px;
+}
+.contact-inner .contact-feature > div {
+  flex: 1;
+}
+.contact-inner .contact-feature > div.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-inner .contact-feature > div.contact-form h3 {
+  font: normal 30px/1rem "Montserrat", sans-serif;
+}
+.contact-inner .contact-feature > div.contact-form .send-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-inner .contact-feature > div.contact-form .send-box label {
+  font: bold 16px/1rem "Montserrat", sans-serif;
+}
+.contact-inner .contact-feature > div.contact-form .send-box label span {
+  color: #dc143c;
+  font-weight: normal;
+}
+.contact-inner .contact-feature > div.contact-form .send-box input[type=email],
+.contact-inner .contact-feature > div.contact-form .send-box input[type=text],
+.contact-inner .contact-feature > div.contact-form .send-box textarea {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.contact-inner .contact-feature > div.contact-form .send-box input[type=email]:focus,
+.contact-inner .contact-feature > div.contact-form .send-box input[type=text]:focus,
+.contact-inner .contact-feature > div.contact-form .send-box textarea:focus {
+  outline: none;
+  border: 1px solid #1db1f0;
+  box-shadow: 0 0 5px #1db1f0;
+}
+.contact-inner .contact-feature > div.contact-form .send-box input[type=submit] {
+  background: #1db1f0;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  transition: all 0.3s;
+  width: 318px;
+  justify-content: flex-start;
+}
+.contact-inner .contact-feature > div.contact-form .send-box input[type=submit]:hover {
+  background: #222;
+}
+.contact-inner .contact-feature > div.contact-info h4 {
+  font: normal 20px/1rem "Montserrat";
+}
+.contact-inner .contact-feature > div.contact-info ul {
+  margin: 20px 0;
+}
+.contact-inner .contact-feature > div.contact-info ul li {
+  line-height: 2.4rem;
+}
+.contact-inner .contact-feature > div.contact-info ul li .fa-regular {
+  display: inline-block;
+  margin-right: 6px;
+}
+.contact-inner .contact-feature > div.contact-info p {
+  margin-top: 20px;
+  line-height: 2.4rem;
+}
