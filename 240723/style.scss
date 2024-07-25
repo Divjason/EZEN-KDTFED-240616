@@ -66,6 +66,7 @@ body {
   .about-items {
     width: 45%;
     margin-left: 150px;
+    color: map-get($color, main-light-bg);
     .item {
       display: flex;
       gap: 20px;
@@ -73,14 +74,18 @@ body {
       img {
         height: 100px;
         filter: invert(1);
-        transition: all 0.5s;
+        transition: all 0.3s;
       }
       &:hover img {
         filter: invert(0);
       }
+      &:hover h3 {
+        filter: invert(1);
+      }
       span {
         h3 {
           font-size: 28px;
+          transition: all 0.3s;
         }
         p {
           font-size: 18px;

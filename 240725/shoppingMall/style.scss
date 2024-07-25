@@ -1,0 +1,105 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .container {
+    form {
+      width: 800px;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      margin-bottom: 30px;
+      .search {
+        position: absolute;
+        top: 44px;
+        right: 0;
+        input[type="text"] {
+          width: 200px;
+          font-size: 20px;
+          border: none;
+          border-bottom: 1px solid #ddd;
+          padding-left: 10px;
+          &::placeholder {
+            opacity: 1;
+            transition: opacity 0.3s;
+          }
+          &:focus {
+            outline: none;
+            &::placeholder {
+              opacity: 0;
+            }
+          }
+        }
+        .fa-magnifying-glass {
+          position: absolute;
+          top: 0;
+          right: 8px;
+          color: #ddd;
+          cursor: pointer;
+        }
+      }
+      .sort-buttons {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        input[type="button"] {
+          width: 100%;
+          padding: 12px;
+        }
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        background: #eee;
+        border: none;
+        outline: none;
+      }
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.5);
+        padding: 20px 0;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

@@ -52,6 +52,7 @@ body .cd-section > div .content {
 .about-inner .about-items {
   width: 45%;
   margin-left: 150px;
+  color: #fff;
 }
 .about-inner .about-items .item {
   display: flex;
@@ -61,13 +62,17 @@ body .cd-section > div .content {
 .about-inner .about-items .item img {
   height: 100px;
   filter: invert(1);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .about-inner .about-items .item:hover img {
   filter: invert(0);
 }
+.about-inner .about-items .item:hover h3 {
+  filter: invert(1);
+}
 .about-inner .about-items .item span h3 {
   font-size: 28px;
+  transition: all 0.3s;
 }
 .about-inner .about-items .item span p {
   font-size: 18px;
