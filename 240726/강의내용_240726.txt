@@ -1,0 +1,72 @@
+1.JS & json => data // import
+
+2.JS > Array > sort( )
+
+3.JS > Array > map( )
+
+4.JS > Array > filter( )
+
+5.JS > Array > find( )
+
+5.select + option > value (*event handler : change)
+
+6.input > value (*event handler : input)
+
+-----------------------------------------------------------------
+
+1.채널설정 > 버튼 설치 및 설정 > 기본 자바스크립트
+
+2.채널설정 > 채널 프로필
+
+3.개인설정 > 매니저 설정
+
+4.채널설정 > 상담
+
+5.채널설정 > AI에이전트
+
+-----------------------------------------------------------------
+
+서버!!! => Fake Server (*data 구조를 설정 // in & out)
+
+git-hub : db.json 파일 생성 후 신규 레포지토리 생성 // commit!!!
+
+https://my-json-server.typicode.com/Divjason/oliveyoung-fake
+
+-----------------------------------------------------------------
+
+BOM에서 window 객체 > 다른 기타 페이지로 이동할 수 있도록 해주는 속성!!!!
+location //window.location.href
+
+-----------------------------------------------------------------
+
+URL 주소 어떻게 구성되어있는가?
+
+https://www.naver.com:8080/product/skincare/toner?category=skintoner&productname="dokdotoner"
+
+https://product-detail.html:5503?category=it&name=mouse
+
+https://my-json-server.typicode.com/Divjason/oliveyoung-fake/db
+
+인코딩 : 사람이 이해할 수 있는 언어를 컴퓨터가 이해할 수 있도록 바꿔주는 작업
+
+디코딩 : 컴퓨터의 언어를 사람이 이해할 수 있도록 바꿔주는 작업
+
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%82%98%EC%9D%B4%ED%82%A4
+
+json => 이전 페이지에서 받아온 2개의 query 값!!!
+category / name => json
+
+life > 곰돌이인형
+
+JS 값을 담기 => 변수!!!!
+
+CPU => 변수를 담을 메모리 공간 생성!!!
+
+전역변수 => 브라우저 // JS => parsing 
+
+
+
+
+
+
+

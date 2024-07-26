@@ -79,6 +79,143 @@ body .cd-section > div .content {
   margin-top: 5px;
 }
 
+/* Project */
+.project-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ddd;
+  position: relative;
+}
+.project-inner input[name=tabmenu] {
+  display: none;
+}
+.project-inner input[id=tab1]:checked ~ .tabs {
+  margin-left: 0;
+}
+.project-inner input[id=tab2]:checked ~ .tabs {
+  margin-left: -100%;
+}
+.project-inner input[id=tab3]:checked ~ .tabs {
+  margin-left: -200%;
+}
+.project-inner .tabs {
+  width: 300%;
+  height: 100%;
+  display: flex;
+  transition: all 0.5s;
+}
+.project-inner .tabs .tab {
+  width: 33.3333%;
+  height: 100%;
+  display: flex;
+}
+.project-inner .tabs .tab > div {
+  height: 100%;
+}
+.project-inner .tabs .tab > div.project-info {
+  width: 25%;
+  padding: 50px;
+  position: relative;
+}
+.project-inner .tabs .tab > div.project-info::before {
+  content: attr(data-text);
+  font-size: 130px;
+  color: #eee;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+.project-inner .tabs .tab > div.project-info h3 {
+  font-size: 20px;
+  position: relative;
+}
+.project-inner .tabs .tab > div.project-info p {
+  font: normal 16px/2.4rem "Montserrat";
+  margin: 20px 0;
+  position: relative;
+}
+.project-inner .tabs .tab > div.project-info ul {
+  line-height: 4rem;
+}
+.project-inner .tabs .tab > div.project-info ul li::before {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.project-inner .tabs .tab > div.project-info .detail {
+  margin: 20px 0 50px;
+  display: flex;
+  justify-content: center;
+  color: #999;
+}
+.project-inner .tabs .tab > div.project-info .detail div {
+  text-align: center;
+  flex: 1;
+}
+.project-inner .tabs .tab > div.project-info .detail div span {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+.project-inner .tabs .tab > div.project-info .view-project {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.project-inner .tabs .tab > div.project-info .view-project:hover {
+  background: #ddd;
+  color: #222;
+}
+.project-inner .tabs .tab > div.project-photo {
+  width: 75%;
+}
+.project-inner .tabs .tab > div.project-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-inner .btn {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 25%;
+  text-align: center;
+}
+.project-inner .btn label {
+  width: 5px;
+  height: 5px;
+  background: #222;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 8px;
+  position: relative;
+}
+.project-inner .btn label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.project-inner .btn label:hover::before {
+  border: 1px solid #ddd;
+}
+
 /* Plan */
 .plan-inner {
   background: #222;
@@ -356,4 +493,47 @@ body .cd-section > div .content {
 .contact-inner .contact-feature > div.contact-info p {
   margin-top: 20px;
   line-height: 2.4rem;
+}
+
+/* Modal */
+.modal {
+  font-family: "Source Code Pro";
+}
+.modal .header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+.modal .header .header-inner {
+  width: 95%;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+.modal .header .header-inner .modal-display {
+  font-size: 18px;
+}
+.modal .hiring-main {
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.modal .hiring-main.project-main1 {
+  background: url("./images/project-main-01-01.jpg") center/cover no-repeat;
+  height: 100vh;
+}
+.modal .hiring-main .hiring-heading {
+  color: #fff;
+}
+.modal .hiring-main .hiring-heading span {
+  font-size: 20px;
+}
+.modal .hiring-main .hiring-heading h1 {
+  font-size: 60px;
+  font-weight: 200;
 }

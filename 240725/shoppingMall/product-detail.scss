@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  #product-detail {
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .product-category {
+      font-size: 14px;
+      align-self: flex-end;
+    }
+    .product-img {
+      margin: 50px 0;
+    }
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 50px;
+    }
+    button {
+      padding: 14px 40px;
+    }
+  }
+}

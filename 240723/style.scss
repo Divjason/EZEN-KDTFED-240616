@@ -96,6 +96,142 @@ body {
   }
 }
 
+/* Project */
+.project-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: map-get($color, main-light-bg);
+  border: 1px solid map-get($color, main-item-border);
+  position: relative;
+  input[name="tabmenu"] {
+    display: none;
+  }
+  input[id="tab1"]:checked ~ .tabs {
+    margin-left: 0;
+  }
+  input[id="tab2"]:checked ~ .tabs {
+    margin-left: -100%;
+  }
+  input[id="tab3"]:checked ~ .tabs {
+    margin-left: -200%;
+  }
+  .tabs {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s;
+    .tab {
+      width: 33.3333%;
+      height: 100%;
+      display: flex;
+      & > div {
+        height: 100%;
+        &.project-info {
+          width: 25%;
+          padding: 50px;
+          position: relative;
+          &::before {
+            content: attr(data-text);
+            font-size: 130px;
+            color: #eee;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+          }
+          h3 {
+            font-size: 20px;
+            position: relative;
+          }
+          p {
+            font: normal 16px/2.4rem map-get($family, montserrat);
+            margin: 20px 0;
+            position: relative;
+          }
+          ul {
+            line-height: 4rem;
+            li::before {
+              content: "\f105";
+              font-family: fontawesome;
+              margin-right: 10px;
+            }
+          }
+          .detail {
+            margin: 20px 0 50px;
+            display: flex;
+            justify-content: center;
+            color: #999;
+            div {
+              text-align: center;
+              flex: 1;
+              span {
+                display: block;
+                font-size: 36px;
+                font-weight: bold;
+                color: map-get($color, main-font-color);
+                margin-bottom: 10px;
+              }
+            }
+          }
+          .view-project {
+            background: map-get($color, main-font-color);
+            color: map-get($color, main-light-bg);
+            padding: 10px;
+            display: inline-block;
+            width: 220px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            &:hover {
+              background: map-get($color, main-item-border);
+              color: map-get($color, main-font-color);
+            }
+          }
+        }
+        &.project-photo {
+          width: 75%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 25%;
+    text-align: center;
+    label {
+      width: 5px;
+      height: 5px;
+      background: map-get($color, main-font-color);
+      display: inline-block;
+      border-radius: 50%;
+      margin: 8px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: 17px;
+        height: 17px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        display: inline-block;
+        transition: all 0.3s;
+      }
+      &:hover::before {
+        border: 1px solid map-get($color, main-item-border);
+      }
+    }
+  }
+}
+
 /* Plan */
 .plan-inner {
   background: map-get($color, main-font-color);
@@ -370,6 +506,49 @@ body {
           margin-top: 20px;
           line-height: 2.4rem;
         }
+      }
+    }
+  }
+}
+
+/* Modal */
+.modal {
+  font-family: map-get($family, sourcecode);
+  .header {
+    position: fixed;
+    width: 100%;
+    background: map-get($color, main-light-bg);
+    z-index: 100;
+    .header-inner {
+      width: 95%;
+      height: 90px;
+      line-height: 90px;
+      margin: 0 auto;
+      border-bottom: 1px solid map-get($color, main-item-border);
+      .modal-display {
+        font-size: 18px;
+      }
+    }
+  }
+  .hiring-main {
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &.project-main1 {
+      background: url("./images/project-main-01-01.jpg") center/cover no-repeat;
+      height: 100vh;
+    }
+    .hiring-heading {
+      color: map-get($color, main-light-bg);
+      span {
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 60px;
+        font-weight: 200;
       }
     }
   }
