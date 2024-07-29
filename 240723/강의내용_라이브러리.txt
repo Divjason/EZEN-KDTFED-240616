@@ -1,0 +1,12 @@
+*라이브러리 // jQuery
+1.Page Scroll Effects
+- 마우스 스크롤 변경 시, 페이지 애니메이션 효과
+
+2.ScrollTo
+- 동일 페이지 내 특정 요소로 이동할 때, 부드럽게
+
+3.Slick Slider
+- 슬라이더 기능을 가볍게 구현
+
+4.Feather Light
+- 모달창

@@ -56,6 +56,154 @@ body {
   }
 }
 
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .gnb-inner {
+    width: calc(100% - 40px);
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      img {
+        padding-top: 22px;
+      }
+    }
+    .gnb {
+      .slogan {
+        font-size: 16px;
+        font-style: italic;
+      }
+      .menu {
+        display: none;
+      }
+    }
+    .trigger {
+      display: none;
+    }
+  }
+}
+
+/* Home */
+.home-inner {
+  background: map-get($color, main-light-bg);
+  height: 100%;
+  &::before {
+    content: "";
+    background: map-get($color, main-font-color);
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: overlay 1s 2s ease-in-out both;
+  }
+  .welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    animation: slideup 2s linear both;
+    span {
+      font-size: 26px;
+      display: block;
+      .fa-heart {
+        color: map-get($color, main-red-color);
+      }
+    }
+  }
+  .opacity-image {
+    background: url("./images/section-bg-01.jpg") center/cover no-repeat;
+    height: 100%;
+    opacity: 0;
+    animation: opacity-image 1s 2.5s ease-in both;
+  }
+  .home-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    span {
+      display: block;
+      font-size: 115px;
+      font-weight: 600;
+      width: 0;
+      overflow: hidden;
+      color: map-get($color, main-light-bg);
+      animation: reveal 1s 3s ease-in-out both;
+      &:nth-child(1) {
+        animation-delay: 3s;
+      }
+      &:nth-child(2) {
+        animation-delay: 3.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 3.4s;
+      }
+    }
+  }
+}
+
+@keyframes overlay {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  20% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 /* About */
 .about-inner {
   background: map-get($color, main-blue-color) url("./images/line-drawing.png")
@@ -550,6 +698,310 @@ body {
         font-size: 60px;
         font-weight: 200;
       }
+    }
+  }
+  .hiring-info {
+    margin-bottom: 30px;
+    display: flex;
+    & > div {
+      flex: 1;
+      height: 600px;
+      &.center-parent {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .center-child {
+          width: 70%;
+          h2 {
+            font: normal 36px/3.2rem map-get($family, sourcecode);
+          }
+          p {
+            font: 300 22px/2rem map-get($family, sourcecode);
+          }
+        }
+      }
+      &.photo {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        &.project-info {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+          // margin-left: 100px;
+        }
+      }
+    }
+  }
+  .hiring-slogan {
+    padding: 100px 0;
+    p {
+      width: 70%;
+      text-align: center;
+      font-size: 32px;
+      margin: 0 auto;
+      position: relative;
+      &::before {
+        content: ",,";
+        font-family: map-get($family, overpass);
+        position: absolute;
+        top: -100px;
+        left: -120px;
+        font-size: 200px;
+        color: #ddd;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+/* featherlight */
+.featherlight {
+  .featherlight-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-height: 100%;
+    margin-left: 0;
+    .featherlight-close-icon {
+      position: absolute;
+      top: 30px;
+      right: 70px;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 38px;
+      font-size: 40px;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  /* common */
+  body {
+    .cd-section {
+      height: auto;
+      & > div {
+        height: auto;
+        .content {
+          width: 100%;
+          height: 100%;
+          position: static;
+        }
+      }
+    }
+  }
+
+  /* Header */
+  header {
+    transition: all 0.3s;
+    .gnb-inner {
+      .gnb {
+        .slogan {
+          display: none;
+        }
+        .menu {
+          display: block;
+          background: map-get($color, main-light-bg);
+          position: absolute;
+          top: 0;
+          right: -160px;
+          height: 100vh;
+          padding: 20px;
+          padding-top: 20px;
+          // margin-top: 350px;
+          // height: 100vh;
+          transition: all 0.3s;
+        }
+        &.active .menu {
+          right: 0;
+        }
+      }
+      .trigger {
+        display: block;
+        width: 24px;
+        height: 14px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        // border: 1px solid #f00;
+        span {
+          display: inline-block;
+          width: 100%;
+          height: 1px;
+          background: map-get($color, main-font-color);
+          position: absolute;
+          left: 0;
+          &:nth-child(1) {
+            top: 0;
+          }
+          &:nth-child(2) {
+            top: 50%;
+          }
+          &:nth-child(3) {
+            top: 100%;
+          }
+        }
+        &.active span {
+          &:nth-child(1) {
+            top: 50%;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            top: 50%;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    &.active {
+      background: map-get($color, main-light-bg);
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  /* Home */
+  .home-inner {
+    height: 100vh;
+    .welcome-text {
+      width: 100%;
+    }
+    .home-heading {
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+
+  /* about */
+  .about-inner {
+    height: auto;
+    padding: 40px;
+    .about-items {
+      width: 100%;
+      position: static;
+      margin-left: 0;
+      text-align: center;
+      .item {
+        flex-direction: column;
+        align-items: center;
+        img {
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  /* Project */
+  .project-inner {
+    width: 100%;
+    height: auto;
+    .tabs {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      .tab {
+        width: 100%;
+        flex-direction: column;
+        & > div {
+          width: 100%;
+          &.project-info {
+            width: 100%;
+            padding: 20px;
+            p {
+              width: 100%;
+            }
+            .detail {
+              width: 100%;
+              margin: 30px;
+              margin-left: 10px;
+            }
+          }
+          &.project-photo {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .btn {
+      display: none;
+    }
+  }
+
+  /* Plan */
+  .plan-inner {
+    height: auto;
+    padding: 50px 20px;
+    .plan-feature {
+      width: 100%;
+      position: static;
+      & > div {
+        height: auto;
+        &.plan-info {
+          flex-direction: column;
+          margin-bottom: 40px;
+          .plan-photo {
+            width: 100%;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Awards */
+  .awards-inner {
+    height: auto;
+    flex-direction: column;
+    & > div {
+      width: 100%;
+      &.about-awards {
+        height: auto;
+        padding: 40px 20px;
+      }
+      &.victory-jump {
+        height: auto;
+        padding: 40px 20px;
+      }
+    }
+  }
+
+  /* Location */
+  .location-inner {
+    height: auto;
+    .feature {
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      & > div {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+
+  /* Contact */
+  .contact-inner {
+    height: auto;
+    .contact-feature {
+      width: 100%;
+      flex-direction: column;
+      padding: 50px 20px;
     }
   }
 }
