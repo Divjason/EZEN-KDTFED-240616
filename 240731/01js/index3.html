@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script3.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="topMenu">
+        <div class="saleImg">
+          <img
+            src="https://as2.ftcdn.net/v2/jpg/03/39/83/47/1000_F_339834746_Giafn0lDzGNVlTiGlT13tTY5KH0zEyRL.jpg"
+            alt="saleImg"
+          />
+        </div>
+        <div class="formArea">
+          <form name="priceCalc" action="http://127.0.0.1:5501" method="get">
+            <ul>
+              <li>
+                <label for="price">원래가격</label>
+                <input type="text" name="price" id="price" /> 원
+              </li>
+              <li>
+                <label for="rate">할인률</label>
+                <input type="text" name="rate" id="rate" /> %
+              </li>
+            </ul>
+            <input type="button" value="할인가격 계산하기" />
+          </form>
+        </div>
+      </section>
+      <section class="bottomInfo">
+        <p></p>
+      </section>
+    </main>
+  </body>
+</html>

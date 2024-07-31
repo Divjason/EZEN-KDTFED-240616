@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  main {
+    width: 600px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .topMenu {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .saleImg {
+        width: 200px;
+        height: 200px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .formArea {
+        height: 200px;
+        form {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li {
+              label {
+                display: inline-block;
+                width: 80px;
+                font-size: 18px;
+              }
+              input[type="text"] {
+                display: inline-block;
+                width: 140px;
+                padding: 4px;
+                padding-left: 6px;
+                font-size: 18px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+          }
+          input[type="button"] {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+            &:hover {
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .bottomInfo {
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
