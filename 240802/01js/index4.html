@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style4.css" />
+    <script defer src="./script4.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <form name="order" action="http://127.0.0.1:5501" method="get">
+        <fieldset>
+          <legend>상품정보</legend>
+          <ul>
+            <li>
+              <label class="field" for="product">상품 : </label>
+              <input class="inputBox" type="text" name="product" id="product" />
+            </li>
+            <li>
+              <label class="field" for="productNum">갯수 : </label>
+              <input
+                class="inputBox"
+                type="number"
+                name="productNum"
+                id="productNum"
+                value="2"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>여름과일 프로모션</legend>
+          <ul>
+            <li>
+              <label class="field" for="fruits">과일명 : </label>
+              <select class="inputBox" name="fruits" id="fruits">
+                <option selected disabled>여름과일선택</option>
+                <option value="apple">사과</option>
+                <option value="tomato">토마토</option>
+                <option value="grape">포도</option>
+                <option value="peach">복숭아</option>
+                <option value="watermelon">수박</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>주문정보</legend>
+          <ul>
+            <li>
+              <label class="field" for="orderName">이름 : </label>
+              <input
+                class="inputBox"
+                type="text"
+                name="orderName"
+                id="orderName"
+              />
+            </li>
+            <li>
+              <label class="field" for="orderTel">연락처 : </label>
+              <input
+                class="inputBox"
+                type="text"
+                name="orderTel"
+                id="orderTel"
+              />
+            </li>
+            <li>
+              <label class="field" for="orderAddr">주소 : </label>
+              <input
+                class="inputBox"
+                type="text"
+                name="orderAddr"
+                id="orderAddr"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>회원가입</legend>
+          <ul>
+            <li>
+              <label class="field" for="userId">아이디 : </label>
+              <input
+                class="inputBox"
+                type="text"
+                name="userId"
+                id="userId"
+                placeholder="아이디 입력"
+              />
+            </li>
+            <li>
+              <label class="field" for="userPw">비밀번호 : </label>
+              <input
+                class="inputBox"
+                type="text"
+                name="userPw"
+                id="userPw"
+                placeholder="비밀번호 입력"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>기타회원정보</legend>
+          <ul>
+            <li>
+              <label class="field">연령대 : </label>
+              <input type="radio" name="userAge" id="first" value="two" />
+              <label class="userAge" for="first"> 20대 </label>
+              <input type="radio" name="userAge" id="second" value="three" />
+              <label class="userAge" for="second">30대</label>
+              <input type="radio" name="userAge" id="third" value="four" />
+              <label class="userAge" for="third">40대</label>
+            </li>
+            <li>
+              <label class="field" for="userPw">구독신청 :</label>
+              <label class="userAlarm"
+                ><input type="checkbox" name="alarm" value="food" />식품 및
+                간식류</label
+              >
+              <label class="userAlarm"
+                ><input type="checkbox" name="alarm" value="life" />생활잡화
+                주방용품</label
+              >
+              <label class="userAlarm"
+                ><input type="checkbox" name="alarm" value="kids" />어린이
+                유아용품</label
+              >
+              <label class="userAlarm"
+                ><input
+                  type="checkbox"
+                  name="alarm"
+                  value="sports"
+                />스포츠</label
+              >
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="주문하기" />
+      </form>
+    </div>
+  </body>
+</html>

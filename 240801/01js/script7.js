@@ -4,8 +4,14 @@
 // 복수의 숫자를 동시에 나눌 수 있는 수 중에서 가장 큰 수!!!
 // 예를 들어 4와 12의 최대공약수는 4입니다!!
 
-const num01 = Number(prompt("첫번째 숫자 입력!"));
-const num02 = Number(prompt("두번째 숫자 입력!"));
+const numbers = [];
+
+for (let i = 0; i < 2; i++) {
+  numbers.push(Number(prompt(`${i + 1}번째 숫자 입력!`)));
+}
+
+const num01 = numbers[0];
+const num02 = numbers[1];
 
 function getGCD() {
   const max = num01 > num02 ? num01 : num02;

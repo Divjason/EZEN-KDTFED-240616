@@ -1,0 +1,40 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  main {
+    #title {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    #profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      #desc {
+        .blind {
+          display: none;
+        }
+        p {
+          margin: 4px 0;
+          font-size: 14px;
+          &.active {
+            color: crimson;
+            background-color: yellow;
+          }
+        }
+      }
+    }
+  }
+}

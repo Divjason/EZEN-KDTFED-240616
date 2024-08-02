@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 14px;
+}
+body #container form {
+  width: 600px;
+  height: auto;
+  padding: 10px;
+}
+body #container form fieldset {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-bottom: 35px;
+}
+body #container form fieldset legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+body #container form fieldset .field {
+  display: inline-block;
+  width: 70px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+body #container form fieldset .inputBox {
+  display: inline-block;
+  width: 430px;
+  height: 35px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px;
+}
+body #container form fieldset .userAge {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+body #container form fieldset .userAge > input[type=radio] {
+  display: inline-block;
+}
+body #container form fieldset .userAlarm {
+  margin-right: 5px;
+}
+body #container form input[type=submit] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #aaa;
+  background: #eee;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
