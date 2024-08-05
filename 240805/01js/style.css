@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "youtube";
+  src: url("./fonts/AnyConv.com__KFOmCnqEu92Fr1Mu4mxPKTU1Kg.otf");
+}
+/* mix-in */
+/* common */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2000px;
+  font-family: "youtube";
+}
+body #container {
+  width: 390px;
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+
+/* header */
+header {
+  width: 390px;
+  position: fixed;
+  z-index: 10;
+}
+header #header_contents {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 0 20px;
+}
+header #header_contents img {
+  height: 22px;
+}
+header #header_contents #header_right {
+  width: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+header #header_contents #header_right .fa-solid {
+  color: #fff;
+}
+
+/* figure */
+figure {
+  position: fixed;
+  top: 50px;
+  z-index: 10;
+  width: 390px;
+  height: 220px;
+}
+figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* main */
+main {
+  position: absolute;
+  top: 275px;
+  background: #fff;
+}
+main .title {
+  margin-top: 10px;
+  padding: 20px 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  height: 310px;
+}
+main .title .heading h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+main .title .heading .add {
+  display: flex;
+  gap: 8px;
+}
+main .title .heading .add span {
+  font: normal 14px/1 "youtube";
+  color: #9f9f9f;
+}
+main .title .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .title .middle .profile {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .title .middle .profile img {
+  width: 35px;
+  border-radius: 50%;
+}
+main .title .middle .profile span {
+  color: #9f9f9f;
+  font-size: 13px;
+  font-weight: normal;
+}
+main .title .middle .middle_btn span {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 14px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+main .title .middle .middle_btn span:hover {
+  background: crimson;
+  color: #fff;
+}
+main .title .subinfo {
+  display: flex;
+  justify-content: space-between;
+}
+main .title .subinfo span {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 14px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  transition: all 0.3s;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+main .title .subinfo span:hover {
+  background: crimson;
+  color: #fff;
+}
+main .title .review {
+  background: #f0f0f0;
+  margin-bottom: 14px;
+  padding: 12px;
+  border-radius: 10px;
+}
+main .title .review .review_title {
+  margin-bottom: 10px;
+}
+main .title .review .review_title span:last-child {
+  color: #9f9f9f;
+  font-size: 14px;
+}
+main .title .review .review_content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+main .title .review .review_content img {
+  width: 30px;
+  border-radius: 50%;
+}
+main .title .review .review_content p {
+  font-size: 11px;
+}
+main .hashlist {
+  position: sticky;
+  top: 268px;
+  width: 390px;
+  background: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+main .hashlist.active {
+  opacity: 1;
+}
+main .hashlist .hashcontent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  width: 586px;
+  padding: 0 14px;
+  transform: translate(0, 0);
+}
+main .hashlist .hashcontent li {
+  padding-top: 5px;
+}
+main .hashlist .hashcontent li a {
+  display: inline-block;
+  background: #f0f0f0;
+  width: auto;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+main .hashlist .hashcontent li:first-child a {
+  background: #000;
+  color: #fff;
+}
+main .ad01 {
+  margin-top: -60px;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+main .ad01 .adimg {
+  width: 100%;
+  height: 379px;
+  background: url(./imgs/ad01.jpg);
+}
+main .ad01 .adtitle {
+  width: 100%;
+  padding: 14px 10px;
+  background: #f1f8ff;
+  display: flex;
+  justify-content: space-between;
+  color: #1a76f5;
+}
+main .ad01 .adinfo {
+  display: flex;
+  gap: 16px;
+  padding: 14px 10px;
+}
+main .ad01 .adinfo .fa-facebook {
+  font-size: 40px;
+  color: #1a76f5;
+}
+main .ad01 .adinfo .addesc {
+  width: 100%;
+}
+main .ad01 .adinfo .addesc span {
+  display: block;
+}
+main .ad01 .adinfo .addesc span:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .ad01 .adinfo .addesc span:nth-child(2) {
+  margin: 6px 0;
+  color: #9f9f9f;
+}
+main .ad01 .adinfo .addesc span:last-child {
+  font-size: 14px;
+  color: #9f9f9f;
+}
+main .ad01 .adinfo .addesc span:last-child b {
+  color: #000;
+}
+main .contents {
+  background: #fff;
+}
+main .contents .content {
+  width: 100%;
+  background: #fff;
+}
+main .contents .content img {
+  margin: 0 auto;
+}

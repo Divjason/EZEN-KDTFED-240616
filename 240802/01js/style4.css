@@ -46,16 +46,34 @@ body #container form fieldset .inputBox {
   margin: 10px 0;
   padding: 5px;
 }
-body #container form fieldset .userAge {
-  display: inline-block;
-  margin-right: 20px;
+body #container form fieldset .userAlarm {
+  margin-right: 4px;
+}
+body #container form fieldset .userInfo li {
+  display: flex;
+  gap: 4px;
+}
+body #container form fieldset .listEx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
   margin-bottom: 20px;
 }
-body #container form fieldset .userAge > input[type=radio] {
-  display: inline-block;
+body #container form fieldset .listEx label {
+  margin-right: 20px;
+  padding-bottom: 3px;
 }
-body #container form fieldset .userAlarm {
-  margin-right: 5px;
+body #container form fieldset .listEx2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+body #container form fieldset .listEx2 label {
+  margin-right: 20px;
+  padding-bottom: 2px;
 }
 body #container form input[type=submit] {
   width: 100%;

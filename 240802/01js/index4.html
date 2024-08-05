@@ -104,37 +104,46 @@
         </fieldset>
         <fieldset>
           <legend>기타회원정보</legend>
-          <ul>
+          <ul class="userInfo">
             <li>
               <label class="field">연령대 : </label>
-              <input type="radio" name="userAge" id="first" value="two" />
-              <label class="userAge" for="first"> 20대 </label>
-              <input type="radio" name="userAge" id="second" value="three" />
-              <label class="userAge" for="second">30대</label>
-              <input type="radio" name="userAge" id="third" value="four" />
-              <label class="userAge" for="third">40대</label>
+              <span class="listEx">
+                <input type="radio" name="userAge" id="first" value="20" />
+                <label class="userAge" for="first"> 20대 </label>
+              </span>
+              <span class="listEx">
+                <input type="radio" name="userAge" id="second" value="30" />
+                <label class="userAge" for="second">30대</label>
+              </span>
+              <span class="listEx">
+                <input type="radio" name="userAge" id="third" value="40" />
+                <label class="userAge" for="third">40대</label>
+              </span>
             </li>
             <li>
               <label class="field" for="userPw">구독신청 :</label>
-              <label class="userAlarm"
-                ><input type="checkbox" name="alarm" value="food" />식품 및
-                간식류</label
-              >
-              <label class="userAlarm"
-                ><input type="checkbox" name="alarm" value="life" />생활잡화
-                주방용품</label
-              >
-              <label class="userAlarm"
-                ><input type="checkbox" name="alarm" value="kids" />어린이
-                유아용품</label
-              >
-              <label class="userAlarm"
-                ><input
+              <span class="listEx2">
+                <input type="checkbox" name="alarm" value="식품" id="food" />
+                <label class="userAlarm" for="food">식품 및 간식류</label>
+              </span>
+              <span class="listEx2">
+                <input
                   type="checkbox"
                   name="alarm"
-                  value="sports"
-                />스포츠</label
-              >
+                  value="생활잡화"
+                  id="life"
+                />
+                <label class="userAlarm" for="life">생활잡화 주방용품</label>
+              </span>
+              <span class="listEx2">
+                <input
+                  type="checkbox"
+                  name="alarm"
+                  value="어린이용품"
+                  id="kids"
+                />
+                <label class="userAlarm" for="kids">어린이 유아용품</label>
+              </span>
             </li>
           </ul>
         </fieldset>
