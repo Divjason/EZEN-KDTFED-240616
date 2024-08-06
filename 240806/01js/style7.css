@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+body h2 {
+  font-size: 2rem;
+}
+body #container {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+body #container .arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  padding: 10px;
+  font-size: 2rem;
+  opacity: 0.2;
+  z-index: 100;
+  transition: opacity 0.3s;
+}
+body #container .arrow:hover {
+  opacity: 1;
+}
+body #container .arrow#left {
+  left: 0;
+}
+body #container .arrow#right {
+  right: 0;
+}

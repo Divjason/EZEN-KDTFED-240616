@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script5.js"></script>
+    <title>Document</title>
+    <style>
+      ul,
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 22px;
+        & > button {
+          display: block;
+          &.btnActive {
+            display: none;
+          }
+        }
+        #modal-box {
+          display: none;
+          #profile {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px 40px;
+            position: relative;
+            button {
+              position: absolute;
+              top: 20px;
+              right: 20px;
+            }
+            img {
+              width: 200px;
+            }
+            #desc > ul {
+              li {
+                margin: 40px 0;
+              }
+              /* display: flex;
+              flex-direction: column; */
+              /* gap: 10px; */
+              /* justify-content: space-between;
+              height: 160px; */
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 모달창이 나오기 전 UI -->
+    <button id="open">프로필 보기</button>
+
+    <!-- 모달창이 나온 후 UI -->
+    <div id="modal-box">
+      <div id="profile">
+        <button>닫기</button>
+        <img
+          src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202306/04/138bdfca-3e86-4c09-9632-d22df52a0484.jpg"
+          alt="iu"
+        />
+        <div id="desc">
+          <ul>
+            <li><a href="#">이름 : 아이유</a></li>
+            <li><a href="#">직업 : 가수</a></li>
+            <li><a href="#">취미 : 노래</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

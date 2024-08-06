@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .container {
+    display: flex;
+    gap: 20px;
+    height: 230px;
+    border: 2px solid #000;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    div.out {
+      background: #d6edfc;
+      width: 230px;
+      height: 230px;
+    }
+    div.in {
+      width: 60%;
+      height: 50%;
+      background: #fc0;
+      margin: 10px;
+    }
+  }
+}
