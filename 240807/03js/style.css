@@ -1,0 +1,55 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+body .navi a {
+  z-index: 100;
+  font-size: 4rem;
+  color: #fff;
+  position: relative;
+}
+body .navi a::before {
+  content: attr(data-text);
+  color: yellowgreen;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+body .navi a:hover::before {
+  width: 100%;
+}
+body .photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./img/portrait-initial.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+}

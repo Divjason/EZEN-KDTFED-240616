@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .star-rating {
+    display: flex;
+    gap: 10px;
+    background: #333;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    justify-content: center;
+    .stars .fa-star {
+      cursor: pointer;
+      &.active {
+        color: yellow;
+      }
+    }
+    .print {
+      color: #fff;
+    }
+  }
+}
