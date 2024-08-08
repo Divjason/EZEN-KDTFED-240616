@@ -1,0 +1,89 @@
+/* reset */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* common */
+html {
+  font-size: 14px;
+}
+
+/* variable */
+$main-border: #ccc;
+$main-shadow: #333;
+$main-title: #666;
+$main-light: #fff;
+$main-accent: crimson;
+
+/* content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid $main-border;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px $main-shadow;
+    .top {
+      text-align: center;
+      h3 {
+        font-size: 1.4rem;
+        color: $main-title;
+        margin-bottom: 10px;
+      }
+      p {
+        font: bold italic 2.4rem/1 "arial";
+      }
+    }
+    .bar {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      margin: 20px 0;
+      margin-bottom: 30px;
+      padding-left: 16px;
+      background: $main-title;
+      color: $main-light;
+      border-radius: 8px;
+    }
+    .bottom {
+      height: 260px;
+      ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        li {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px dashed $main-border;
+          padding-bottom: 20px;
+          .item-title {
+            width: 160px;
+            font: bold 1.8rem/1 "arial";
+            color: $main-accent;
+          }
+          .item-date {
+            font: normal 1.3rem/1 "arial";
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,21 +6,25 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  console.log(title.value);
 
-  const liItem = document.createElement("li");
+  if (title.value === "" && author.value === "") alert("정보를 입력해주세요!");
+  else {
+    const liItem = document.createElement("li");
 
-  liItem.innerHTML = `${title.value} - ${author.value} <span>삭제</span>`;
+    liItem.innerHTML = `${title.value} - ${author.value} <span>삭제</span>`;
 
-  bookList.appendChild(liItem);
+    bookList.appendChild(liItem);
 
-  title.value = "";
-  author.value = "";
+    title.value = "";
+    author.value = "";
 
-  const delButtons = document.querySelectorAll("span");
+    const delButtons = document.querySelectorAll("span");
 
-  delButtons.forEach((delButton) => {
-    delButton.addEventListener("click", function () {
-      this.parentNode.parentNode.removeChild(this.parentNode);
+    delButtons.forEach((delButton) => {
+      delButton.addEventListener("click", function () {
+        this.parentNode.parentNode.removeChild(this.parentNode);
+      });
     });
-  });
+  }
 });

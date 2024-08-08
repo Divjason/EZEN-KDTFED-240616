@@ -1,0 +1,83 @@
+/* reset */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* common */
+html {
+  font-size: 14px;
+}
+
+/* variable */
+/* content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #333;
+}
+body .container .top {
+  text-align: center;
+}
+body .container .top h3 {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+body .container .top p {
+  font: bold italic 2.4rem/1 "arial";
+}
+body .container .bar {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 20px 0;
+  margin-bottom: 30px;
+  padding-left: 16px;
+  background: #666;
+  color: #fff;
+  border-radius: 8px;
+}
+body .container .bottom {
+  height: 260px;
+}
+body .container .bottom ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .container .bottom ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 20px;
+}
+body .container .bottom ul li .item-title {
+  width: 160px;
+  font: bold 1.8rem/1 "arial";
+  color: crimson;
+}
+body .container .bottom ul li .item-date {
+  font: normal 1.3rem/1 "arial";
+}

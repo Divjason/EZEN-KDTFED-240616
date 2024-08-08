@@ -1,0 +1,109 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* common */
+html {
+  font-size: 16px;
+}
+
+/* variable */
+/* mixin */
+/* content */
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+body #container {
+  width: 500px;
+}
+body #container h1 {
+  text-align: center;
+}
+body #container form {
+  margin: 30px 0;
+  width: 100%;
+}
+body #container form li {
+  margin-bottom: 10px;
+}
+body #container form li label {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+body #container form li input[type=text] {
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding-left: 10px;
+}
+body #container form li input[type=text]#name::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body #container form li input[type=text]#name::placeholder {
+  opacity: 1;
+  transition: all 0.3s;
+}
+body #container form li input[type=text]#name:focus {
+  outline: none;
+}
+body #container form li input[type=text]#name:focus::-moz-placeholder {
+  opacity: 0;
+}
+body #container form li input[type=text]#name:focus::placeholder {
+  opacity: 0;
+}
+body #container form li input[type=text]#major::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body #container form li input[type=text]#major::placeholder {
+  opacity: 1;
+  transition: all 0.3s;
+}
+body #container form li input[type=text]#major:focus {
+  outline: none;
+}
+body #container form li input[type=text]#major:focus::-moz-placeholder {
+  opacity: 0;
+}
+body #container form li input[type=text]#major:focus::placeholder {
+  opacity: 0;
+}
+body #container form input[type=submit] {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 25%;
+  padding: 12px;
+}
+body #container table {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+body #container table th,
+body #container table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+body #container table th:nth-child(1) {
+  width: 200px;
+}
+body #container table th:nth-child(2) {
+  width: 300px;
+}

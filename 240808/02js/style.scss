@@ -1,0 +1,99 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* common */
+html {
+  font-size: 16px;
+}
+
+/* variable */
+$border-color: #ddd;
+
+/* mixin */
+@mixin borderStyle {
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid $border-color;
+  padding-left: 10px;
+}
+
+/* content */
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  #container {
+    width: 500px;
+    h1 {
+      text-align: center;
+    }
+    form {
+      margin: 30px 0;
+      width: 100%;
+      li {
+        margin-bottom: 10px;
+        label {
+          display: inline-block;
+          width: 80px;
+          text-align: center;
+          font-weight: bold;
+        }
+        input[type="text"] {
+          @include borderStyle;
+          &#name::placeholder {
+            opacity: 1;
+            transition: all 0.3s;
+          }
+          &#name:focus {
+            outline: none;
+            &::placeholder {
+              opacity: 0;
+            }
+          }
+          &#major::placeholder {
+            opacity: 1;
+            transition: all 0.3s;
+          }
+          &#major:focus {
+            outline: none;
+            &::placeholder {
+              opacity: 0;
+            }
+          }
+        }
+      }
+      input[type="submit"] {
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 25%;
+        padding: 12px;
+      }
+    }
+    table {
+      border: 1px solid $border-color;
+      border-collapse: collapse;
+      th,
+      td {
+        border: 1px solid $border-color;
+        text-align: center;
+        padding: 10px;
+      }
+      th:nth-child(1) {
+        width: 200px;
+      }
+      th:nth-child(2) {
+        width: 300px;
+      }
+    }
+  }
+}
