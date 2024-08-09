@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  #container {
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    #today {
+      font-size: 1.4rem;
+    }
+    #clock {
+      font-size: 1.2rem;
+    }
+  }
+}

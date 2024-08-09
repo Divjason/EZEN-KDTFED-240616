@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .character {
+    width: 100px;
+    height: 100px;
+    background: url("./img/character.png") center/90% no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
