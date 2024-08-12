@@ -1,0 +1,226 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variable */
+/* common */
+html {
+  font-size: 14px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+  position: relative;
+}
+
+/* header */
+header {
+  width: 20%;
+  height: 100%;
+  padding: 10vh 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+header h1 {
+  text-align: center;
+  font-size: 0;
+  color: #fff;
+}
+header h1 i {
+  font-size: 5vw;
+  margin-bottom: 15px;
+}
+header h1 span {
+  font: normal 0.8vw/1 "arial";
+}
+header address {
+  text-align: center;
+  font: normal 11px/1.2 "arial";
+  color: #888;
+}
+
+/* nav */
+nav {
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  z-index: 3;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav ul a {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+/* section */
+section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  padding-top: 140px;
+  position: relative;
+  z-index: 1;
+}
+section article {
+  position: relative;
+  flex: 1;
+  padding: 70px 40px 100px;
+  opacity: 0.6;
+  transition: all 1s;
+  z-index: 1;
+  cursor: pointer;
+}
+section article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px;
+  background: #888;
+  width: 80%;
+  height: 95%;
+  opacity: 0;
+  transition: all 1s;
+}
+section article:hover {
+  flex: 1.5;
+  opacity: 1;
+  z-index: 2;
+}
+section article:hover::before {
+  left: 0;
+  opacity: 1;
+}
+section article:hover .inner > .txt {
+  width: 75%;
+}
+section article:hover .inner > .txt h2 {
+  font-size: 5vw;
+}
+section article:hover .inner > .txt h2::after {
+  width: 120px;
+  background: orange;
+  margin-top: 50px;
+}
+section article:hover .inner > figure {
+  filter: saturate(120%);
+  height: 25vh;
+}
+section article .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  position: relative;
+}
+section article .inner .txt {
+  width: 100%;
+  transition: all 0.5s;
+}
+section article .inner .txt h2 {
+  color: #fff;
+  font: normal 2vw/1 "arial";
+  margin-bottom: 40px;
+  padding-top: 70px;
+  transition: all 1s;
+  position: relative;
+}
+section article .inner .txt h2::after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  width: 40px;
+  height: 2px;
+  background: #777;
+  transition: all 1s;
+}
+section article .inner .txt p {
+  color: #fff;
+  font: normal 14px/1.4 "arial";
+}
+section article .inner figure {
+  border: 1px solid #f00;
+  width: 100%;
+  height: 15vh;
+  background: #888;
+  transform-origin: left center;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  filter: saturate(10%);
+  transition: all 1s;
+}
+section article .inner figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.1);
+}
+
+/* aside */
+aside {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20vh 7vw 14vh 20vw;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+  z-index: 2;
+}
+aside.on {
+  opacity: 1;
+  left: 0;
+}
+aside .txt {
+  width: 25%;
+  height: 100%;
+}
+aside .txt h1 {
+  color: #888;
+  font: normal 2.5rem/1 "arial";
+}
+aside .txt p {
+  color: #fff;
+  margin: 20px 0 60px;
+}
+aside .txt span {
+  cursor: pointer;
+  color: orange;
+}
+aside figure {
+  width: 72%;
+  height: 100%;
+}
+aside figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

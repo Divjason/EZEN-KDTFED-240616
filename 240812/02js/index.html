@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 14px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        h1 {
+          font-size: 2.4rem;
+          text-align: center;
+        }
+        form {
+          label {
+            margin-right: 20px;
+            input[type="text"] {
+              width: 60px;
+              height: 30px;
+              border: none;
+              border-bottom: 1px solid #ccc;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+          }
+        }
+        #result {
+          width: 360px;
+          height: 116px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          margin-top: 50px;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="container">
+      <h1>내가 살아온 시간</h1>
+      <form action="http://127.0.0.1:5500" method="get">
+        <label for="year"> <input type="text" id="year" />년</label>
+        <label for="month"> <input type="text" id="month" />월</label>
+        <label for="date"> <input type="text" id="date" />일</label>
+        <input type="submit" value="계산하기" />
+      </form>
+      <div id="result">
+        <p id="current"></p>
+        <p id="days" class="accent"></p>
+        <p id="hours" class="accent"></p>
+      </div>
+    </main>
+  </body>
+</html>

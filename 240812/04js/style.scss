@@ -1,0 +1,233 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variable */
+$main-bg-color: #333;
+$main-light-color: #fff;
+$sub-text-color: #888;
+
+/* common */
+html {
+  font-size: 14px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: $main-bg-color;
+  display: flex;
+  position: relative;
+}
+
+/* header */
+header {
+  width: 20%;
+  height: 100%;
+  padding: 10vh 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  position: relative;
+  z-index: 3;
+  // border: 10px solid pink;
+  h1 {
+    text-align: center;
+    font-size: 0;
+    color: $main-light-color;
+    i {
+      font-size: 5vw;
+      margin-bottom: 15px;
+    }
+    span {
+      font: normal 0.8vw/1 "arial";
+    }
+  }
+  address {
+    text-align: center;
+    font: normal 11px/1.2 "arial";
+    color: $sub-text-color;
+  }
+}
+
+/* nav */
+nav {
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  z-index: 3;
+  // border: 10px solid aqua;
+  ul {
+    display: flex;
+    gap: 30px;
+    a {
+      font-size: 1.4rem;
+      color: $sub-text-color;
+    }
+  }
+}
+
+/* section */
+section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  padding-top: 140px;
+  position: relative;
+  z-index: 1;
+  article {
+    position: relative;
+    flex: 1;
+    padding: 70px 40px 100px;
+    opacity: 0.6;
+    transition: all 1s;
+    z-index: 1;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -200px;
+      background: $sub-text-color;
+      width: 80%;
+      height: 95%;
+      opacity: 0;
+      transition: all 1s;
+    }
+    &:hover {
+      flex: 1.5;
+      opacity: 1;
+      z-index: 2;
+      &::before {
+        left: 0;
+        opacity: 1;
+      }
+      & .inner > .txt {
+        width: 75%;
+        h2 {
+          font-size: 5vw;
+          &::after {
+            width: 120px;
+            background: orange;
+            margin-top: 50px;
+          }
+        }
+      }
+      & .inner > figure {
+        filter: saturate(120%);
+        height: 25vh;
+      }
+    }
+    .inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      position: relative;
+      .txt {
+        width: 100%;
+        transition: all 0.5s;
+        h2 {
+          color: $main-light-color;
+          font: normal 2vw/1 "arial";
+          margin-bottom: 40px;
+          padding-top: 70px;
+          transition: all 1s;
+          position: relative;
+          &::after {
+            content: "";
+            // position: absolute;
+            // top: 120px;
+            // left: 0;
+            display: block;
+            margin-top: 20px;
+            width: 40px;
+            height: 2px;
+            background: #777;
+            transition: all 1s;
+          }
+        }
+        p {
+          color: $main-light-color;
+          font: normal 14px/1.4 "arial";
+        }
+      }
+      figure {
+        border: 1px solid #f00;
+        width: 100%;
+        height: 15vh;
+        background: $sub-text-color;
+        transform-origin: left center;
+        box-shadow: 5px 5px 30px rgba($color: #000000, $alpha: 0.3);
+        filter: saturate(10%);
+        transition: all 1s;
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+/* aside */
+aside {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20vh 7vw 14vh 20vw;
+  background: $main-bg-color;
+  display: flex;
+  justify-content: space-between;
+  transition: all 1s;
+  z-index: 2;
+  &.on {
+    opacity: 1;
+    left: 0;
+  }
+  .txt {
+    width: 25%;
+    height: 100%;
+    h1 {
+      color: $sub-text-color;
+      font: normal 2.5rem/1 "arial";
+    }
+    p {
+      color: $main-light-color;
+      margin: 20px 0 60px;
+    }
+    span {
+      cursor: pointer;
+      color: orange;
+    }
+  }
+  figure {
+    width: 72%;
+    height: 100%;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
