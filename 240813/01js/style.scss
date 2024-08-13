@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  .container {
+    h2 {
+      text-align: center;
+      color: dodgerblue;
+    }
+    form {
+      margin: 20px 0;
+      input[type="text"] {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 8px;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        border: none;
+        border-radius: 8px;
+        padding: 8px 12px;
+        transition: all 0.3s;
+        &:hover {
+          background: dodgerblue;
+          color: #fff;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 18px;
+        button {
+          border: 1px solid transparent;
+          border-radius: 8px;
+          padding: 6px;
+          background: dodgerblue;
+          color: #fff;
+          transition: all 0.3s;
+          &:hover {
+            color: crimson;
+            background: #fff;
+            border: 1px solid dodgerblue;
+          }
+        }
+      }
+    }
+  }
+}

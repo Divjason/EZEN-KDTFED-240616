@@ -1,0 +1,236 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variable */
+/* common */
+html {
+  font-size: 16px;
+}
+
+/* video */
+.video-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-135deg, crimson, transparent);
+  width: 100%;
+  height: 100%;
+}
+.video-frame video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* logo */
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+/* heading */
+.heading {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  width: 700px;
+  animation: showing1 2s 1s linear both;
+}
+.heading h1 {
+  font-size: 4rem;
+}
+.heading h1 span {
+  display: block;
+  color: crimson;
+}
+.heading p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.heading .buttons a {
+  display: inline-block;
+  background: #fff;
+  color: #222;
+  width: 150px;
+  margin-top: 14px;
+  margin-right: 8px;
+  text-align: center;
+  padding: 7px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.heading .buttons a.btn-learn {
+  background: transparent;
+  color: #fff;
+}
+.heading .buttons a.btn-learn:hover {
+  background: #fff;
+  color: #000;
+}
+.heading .buttons a.btn-book:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+/* anniversary */
+.anniversary {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  text-align: center;
+  animation: showing2 2s 1s linear both;
+}
+.anniversary em {
+  display: block;
+  font-size: 2.2rem;
+  font-style: normal;
+  letter-spacing: 5px;
+  margin-bottom: -10px;
+}
+.anniversary span {
+  font-family: "Monoton", sans-serif;
+  font-size: 10rem;
+}
+
+/* trigger */
+.trigger {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+.trigger span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transition: all 0.3s;
+}
+.trigger span:nth-child(1) {
+  top: 0;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+  width: 80%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+.trigger.active span {
+  background: #fff;
+}
+.trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+/* modal */
+.modal-gnb {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-gnb .gnb {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-gnb .gnb a {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s;
+  animation: gnb 0.5s linear both;
+}
+.modal-gnb .gnb a:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.modal-gnb .gnb a:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.modal-gnb .gnb a:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.modal-gnb .gnb a:nth-child(4) {
+  animation-delay: 1.1s;
+}
+.modal-gnb .gnb a:nth-child(5) {
+  animation-delay: 1.3s;
+}
+.modal-gnb .gnb a:hover {
+  color: crimson;
+}
+.modal-gnb.active {
+  display: flex;
+}
+
+/* animation */
+@keyframes showing1 {
+  0% {
+    opacity: 0;
+    margin-left: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes showing2 {
+  0% {
+    opacity: 0;
+    margin-right: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+@keyframes gnb {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

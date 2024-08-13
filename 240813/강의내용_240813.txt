@@ -1,0 +1,36 @@
+1.변수
+2.자료형
+3.연산자
+4.조건문
+5.반복문
+6.함수
+7.DOM
+8.EVENT
+9.DOM 활용
+10.객체
+- 객체지향 프로그래밍 언어
+- window : 브라우저 객체모델
+- JS : Math // Date( ) => 내장객체
+- 객체의 형태!!!
+- { key : value } => property
+- CSS attribute
+
+width & height : 너비, 높이의 값을 하나의 고정된 값으로 가겠다!!!
+
+min- : 최소한
+
+만약, html 작성한 문서 flex, grid 반응형 최적화할 수 있는 레이아웃 박스를 사용한 상태
+
+
+max- : 최대한
+body
+container : 100%
+
+max- : media-query
+@meadiquery screen and (max-width: 770px) {
+
+
+}
+
+
+
