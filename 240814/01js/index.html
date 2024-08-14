@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .loading {
+          span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: gray;
+            border-radius: 50%;
+            animation: loading 1s linear infinite;
+            &:nth-child(1) {
+              background: crimson;
+              animation-delay: 0s;
+            }
+            &:nth-child(2) {
+              background: dodgerblue;
+              animation-delay: 0.2s;
+            }
+            &:nth-child(3) {
+              background: yellowgreen;
+              animation-delay: 0.4s;
+            }
+          }
+        }
+      }
+
+      @keyframes loading {
+        0% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script>
+      const name = prompt("PM의 이름은?");
+      const loading = document.querySelector(".loading");
+      setTimeout(() => {
+        loading.remove();
+        document.write(name);
+      }, 5000);
+    </script>
+  </body>
+</html>

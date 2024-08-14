@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script1.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .container {
+          display: flex;
+          gap: 10px;
+          #userInput {
+            /* width: 240px;
+            height: 150px; */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            li {
+              margin: 15px;
+              label {
+                display: inline-block;
+                width: 50px;
+                text-align: center;
+                padding: 5px;
+              }
+              input[type="text"] {
+                width: 140px;
+                padding: 5px;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                &:focus {
+                  outline: none;
+                }
+              }
+              input[type="submit"] {
+                width: 190px;
+                padding: 5px;
+                border: none;
+                border-radius: 8px;
+              }
+            }
+          }
+          #result {
+            width: 300px;
+            height: 180px;
+            background: #eee;
+            border-radius: 10px;
+            padding: 20px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div id="userInput">
+        <form action="http://127.0.0.1:5502" method="get">
+          <ul>
+            <li>
+              <label for="diameter">지름</label>
+              <input type="text" name="diameter" id="diameter" />
+            </li>
+            <li>
+              <label for="height">높이</label>
+              <input type="text" name="height" id="height" />
+            </li>
+            <li>
+              <input type="submit" value="계산하기" />
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="result"></div>
+    </main>
+  </body>
+</html>
