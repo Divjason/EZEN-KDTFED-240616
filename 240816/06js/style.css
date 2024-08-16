@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://i0.wp.com/prunnnn.com/wp-content/uploads/2024/04/%ED%8A%B8%EC%9C%84%ED%84%B0.webp?fit=1200%2C675") center/cover no-repeat;
+}
+body main {
+  width: 960px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+body main h1 {
+  background: #05cbe4;
+  color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+}
+body main #tweetTextArea {
+  width: 100%;
+  height: 80%;
+  resize: none;
+  border: 3px solid #eee;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  padding-left: 10px;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.4);
+}
+body main #tweetTextArea:focus {
+  outline: none;
+}
+body main #tweetButton {
+  font-size: 22px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: #05cbe4;
+  transition: background 0.3s, color 0.3s;
+}
+body main #tweetButton:hover {
+  background: #05cbe4;
+  color: #fff;
+}

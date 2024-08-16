@@ -1,0 +1,49 @@
+1.변수
+2.자료형
+3.연산자
+4.조건문
+5.반복문
+6.함수
+7.DOM
+8.EVENT
+9.DOM & EVENT
+10.객체
+11.Class
+- 생성자함수
+- Class
+- 상속
+12.문자열
+*charAt( )
+*indexOf( )
+startsWith( ) 
+endsWith( ) 
+*includes( ) => 쓰리탑
+*trim( )
+trimStart( )
+trimEnd( )
+*toUpperCase( )
+*toLowerCase( )
+*substring( )
+*slice( ) => 원탑
+*split( ) => 투탑
+
+> 인코딩 // 디코딩
+*인코딩 : 인간이 사용하는 언어를 컴퓨터가 이해할 수 있는 언어로 컴파일링 해주는 작업
+
+*디코딩 : 컴퓨터 친화적인 언어를 인간이 이해할 수 있는 언어로 컴파일링 해주는 작업
+
+> 정규식
+
+13.배열
+join( ) 
+concat( )
+reverse( )
+sort( )
+pop( )
+*push( ) => 원탑
+shift( )
+unshift( )
+*splice( ) => 투탑
+*slice( ) => 쓰리탑
+
+14.정규표현식
