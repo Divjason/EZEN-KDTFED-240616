@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+      }
+
+      td {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+      }
+
+      #result td:last-child {
+        background: #222;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>주어진 배열 : [2, 4, 6, 8, 10]</h1>
+    <hr />
+    <h1>원래 배열</h1>
+    <div id="origin"></div>
+
+    <h1>모든 값을 더한 배열</h1>
+    <div id="result"></div>
+  </body>
+</html>
