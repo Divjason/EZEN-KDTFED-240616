@@ -1,0 +1,123 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+body .player {
+  width: 80%;
+  max-width: 550px;
+  position: relative;
+  overflow: hidden;
+}
+body .player video {
+  width: 100%;
+}
+body .player .controls {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateY(100%) translateY(-6px);
+  transition: transform 0.5s;
+}
+body .player .controls .progress {
+  width: 100%;
+  height: 6px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .player .controls .progress .bar {
+  height: 100%;
+  background: #dc143c;
+  position: relative;
+}
+body .player .controls .progress .bar .circle {
+  width: 16px;
+  height: 16px;
+  background: #dc143c;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body .player .controls .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+body .player .controls .buttons .menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .player .controls .buttons .menu button {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  line-height: 3px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #dc143c;
+  color: #fff;
+  padding-left: 3px;
+  cursor: pointer;
+}
+body .player .controls .buttons .menu span {
+  font-size: 90%;
+  cursor: pointer;
+}
+body .player .controls .buttons .menu:nth-child(2) {
+  display: flex;
+}
+body .player .controls .buttons .menu:nth-child(2) input[type=range] {
+  width: 100px;
+  height: 6px;
+  background: #fff;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+body .player .controls .buttons .menu:nth-child(2) input[type=range]::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  appearance: none;
+  -webkit-appearance: none;
+}
+body .player .controls .buttons .menu:nth-child(2) .time {
+  display: flex;
+  gap: 8px;
+  font-size: 90%;
+}
+body .player:hover .controls {
+  transform: translateY(0);
+}
+body .player:hover .controls .progress .bar .circle {
+  opacity: 1;
+}

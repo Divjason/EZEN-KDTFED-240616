@@ -1,0 +1,131 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+$main-dark-color: #000;
+$main-light-color: #fff;
+$main-progress-color: #dc143c;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: $main-dark-color;
+  color: $main-light-color;
+  .player {
+    width: 80%;
+    max-width: 550px;
+    position: relative;
+    overflow: hidden;
+    // border: 1px solid #f00;
+    video {
+      width: 100%;
+    }
+    .controls {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      // padding-top: 4px;
+      background: rgba($color: #000000, $alpha: 0.6);
+      transform: translateY(100%) translateY(-6px);
+      transition: transform 0.5s;
+      // border: 1px solid #f00;
+      .progress {
+        width: 100%;
+        height: 6px;
+        background: $main-dark-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // border: 1px solid #00f;
+        .bar {
+          // width: 80%;
+          height: 100%;
+          background: $main-progress-color;
+          position: relative;
+          .circle {
+            width: 16px;
+            height: 16px;
+            background: $main-progress-color;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.5s;
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        .menu {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          button {
+            width: 40px;
+            height: 30px;
+            text-align: center;
+            line-height: 3px;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            background: $main-progress-color;
+            color: $main-light-color;
+            padding-left: 3px;
+            cursor: pointer;
+          }
+          span {
+            font-size: 90%;
+            cursor: pointer;
+          }
+          &:nth-child(2) {
+            display: flex;
+            input[type="range"] {
+              width: 100px;
+              height: 6px;
+              background: $main-light-color;
+              appearance: none;
+              -webkit-appearance: none;
+              border-radius: 8px;
+              cursor: pointer;
+              &::-webkit-slider-thumb {
+                width: 15px;
+                height: 15px;
+                background: $main-light-color;
+                border-radius: 50%;
+                appearance: none;
+                -webkit-appearance: none;
+              }
+            }
+            .time {
+              display: flex;
+              gap: 8px;
+              font-size: 90%;
+            }
+          }
+        }
+      }
+    }
+    &:hover .controls {
+      transform: translateY(0);
+    }
+    &:hover .controls .progress .bar .circle {
+      opacity: 1;
+    }
+  }
+}

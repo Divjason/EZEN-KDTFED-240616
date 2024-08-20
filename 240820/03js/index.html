@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url("./background.jpg") center/cover no-repeat;
+        color: #fff;
+        main {
+          width: 900px;
+          height: 480px;
+          background: rgba(0, 0, 0, 0.5);
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          border-radius: 10px;
+          .button-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            button {
+              padding: 10px 20px;
+              background: rgba(0, 0, 0, 0.1);
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+          .user_list {
+            width: 500px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            border-radius: 10px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="button-wrapper">
+        <button class="button" data-age="20">20세 이상</button>
+        <button class="button" data-age="30">30세 이상</button>
+        <button class="button" data-age="40">40세 이상</button>
+      </div>
+      <ul class="user_list"></ul>
+    </main>
+  </body>
+</html>
