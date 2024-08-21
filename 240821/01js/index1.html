@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script1.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <form action="http:127.0.0.1:5500" method="get">
+        <h1>입력폼</h1>
+        <h2>전화번호를 입력해주세요.</h2>
+        <input type="text" placeholder="010-1234-5678 또는 010-123-4567" />
+        <p id="warningMessage"></p>
+        <div class="button-wrapper">
+          <button class="cancel">취소</button>
+          <button class="submit">전송</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

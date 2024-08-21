@@ -115,6 +115,10 @@ body .player .controls .buttons .menu:nth-child(2) .time {
   gap: 8px;
   font-size: 90%;
 }
+body .player .controls .buttons .menu #fullscreenBtn {
+  font-size: 0.8rem;
+  padding-left: 0;
+}
 body .player:hover .controls {
   transform: translateY(0);
 }
