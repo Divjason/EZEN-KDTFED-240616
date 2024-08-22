@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script4.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        #container {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          form {
+            input[type="text"] {
+              border: none;
+              border-bottom: 1px solid #ccc;
+              padding: 10px;
+              &:focus {
+                outline: none;
+              }
+            }
+            input[type="submit"] {
+              border: none;
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="container">
+      <form action="http://127.0.0.1:5500" method="get">
+        <input type="text" name="userNumber" id="userNumber" />
+        <input type="submit" value="입력" />
+      </form>
+      <div id="result"></div>
+    </main>
+  </body>
+</html>

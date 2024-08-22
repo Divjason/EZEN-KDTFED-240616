@@ -132,7 +132,171 @@ main section article .inner .pic .dot {
   z-index: 3;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
+main section article .inner .pic.on::after {
+  animation: ani 4s linear infinite;
+}
+main section article .inner .pic.on::before {
+  animation: ani2 4s linear infinite;
+}
+main section article .inner .txt {
+  text-align: center;
+  position: relative;
+}
+main section article .inner .txt h2 {
+  font-size: 20px;
+  color: #222;
+}
+main section article .inner .txt p {
+  font-size: 12px;
+  margin: 2vh 0 3vh;
+}
+main section article .inner .txt ul {
+  display: flex;
+  justify-content: space-around;
+}
+main section article .inner .txt ul li {
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+main section article .inner .txt ul li:hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+main section article .inner .txt ul li:nth-child(2) {
+  opacity: 0.8;
+  transform: scale(1.5);
+}
+main section article .inner .txt ul li:nth-child(2):hover {
+  opacity: 1;
+  transform: scale(2);
+}
 main section article.on .inner {
   opacity: 1;
   transform: scale(1.1);
+}
+main .btnPrev {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20vw, -50%);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
+main .btnPrev span {
+  color: #fff;
+  font-size: 11px;
+  line-height: 1;
+  opacity: 1;
+  transform: translateX(30%);
+  transition: opacity 0.3s, transform 0.3s;
+}
+main .btnPrev::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(-180deg);
+  transition: transform 0.3s;
+}
+main .btnPrev::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+main .btnPrev:hover span {
+  opacity: 0;
+  transform: translateX(100%);
+}
+main .btnPrev:hover::before {
+  transform: rotate(-30deg);
+}
+main .btnPrev:hover::after {
+  transform: rotate(30deg);
+}
+main .btnNext {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(20vw, -50%);
+  display: flex;
+  align-items: center;
+  text-align: right;
+  cursor: pointer;
+}
+main .btnNext span {
+  color: #fff;
+  font-size: 11px;
+  line-height: 1;
+  opacity: 1;
+  transform: translateX(-30%);
+  transition: opacity 0.3s, transform 0.3s;
+}
+main .btnNext::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: right center;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+main .btnNext::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  transform-origin: right center;
+  transform: rotate(-180deg);
+  transition: transform 0.3s;
+}
+main .btnNext:hover span {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+main .btnNext:hover::before {
+  transform: rotate(30deg);
+}
+main .btnNext:hover::after {
+  transform: rotate(-30deg);
+}
+
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ani2 {
+  0% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10%) rotate(360deg);
+  }
 }
