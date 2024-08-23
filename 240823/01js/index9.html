@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script9.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #295500;
+        #result {
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 8px;
+          padding: 20px;
+          .quote {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+          }
+          .author {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-left: 1rem;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="result">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </main>
+  </body>
+</html>

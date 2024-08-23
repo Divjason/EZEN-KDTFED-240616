@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Jullien",
+    "major": "영문학과",
+    "grade": 2
+  },
+  {
+    "name": "Judy",
+    "major": "무용학과",
+    "grade": 1
+  },
+  {
+    "name": "David",
+    "major": "컴퓨터공학과",
+    "grade": 4
+  }
+]
