@@ -1,0 +1,32 @@
+1.변수
+2.자료형
+3.연산자
+4.조건문
+5.반복문
+6.함수
+7.DOM
+8.EVENT
+9.DOM응용
+10.객체
+11.Class
+12.문자열
+13.배열
+14.정규표현식
+15.데이터통신
+16.API (1) Localstorage
+17.API (2) Geolocation
+18.API (3) Canvas
+
+카카오 API + 공공데이터 포털!
+
+카카오 API
+https://apis.map.kakao.com/
+
+2차원밖에 그리지 못함!!!!
+
+베지에!!!!
+> html, css => font
+> 2차 베지에 TTF => 좌표값2 => 조절점 1개
+> 3차 베지에 OTF => 좌표값2 => 조절점 2개
+
+
