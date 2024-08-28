@@ -1,0 +1,41 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+/* contents */
+body {
+  overflow: hidden;
+}
+body #container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: top;
+}
+body #container #toolbar {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+body #container #toolbar > div * {
+  margin-right: 5px;
+}
+body #container #toolbar label {
+  font-size: 0.8rem;
+}
+body #container #toolbar button {
+  background: #cecece;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
