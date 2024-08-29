@@ -1,0 +1,49 @@
+*자바스크립트
+1.변수 : 원시타입 // 참조타입
+2.자료형 : 형변환
+3.연산자 : 산술 // 복합대입 / 증감 등
+4.조건문 : if // else if // else // 삼항조건
+5.반복문 : for // for of // for in // forEach // while // do while
+6.함수 : 화살표함수 // 콜백함수 // this
+7.DOM : queryselector // queryselectorAll // 유사배열
+8.EVENT : 이벤트핸들러 // 이벤트버블링
+9.DOM 응용 : form && event
+10.객체 : 온점 // 대괄호 // 중첩객체
+11.Class : 생성자함수 // 상속 // 프로토타입 // 인스턴스
+12.문자열 : 메서드함수
+13.배열 : 인덱스, length, 메서드, 전개연산자
+*ES6문법 => 전개연산자, 구조분해할당, 심볼
+14.정규표현식 : 패턴 // 플래그
+15.데이터통신 : 서버 // 클라이언트 // 비동기 & 동기 // json
+16.Localstorage : session 간단한 개념 => todolist
+17.Geolocation : 카카오맵 // 공공데이터포털
+18.Canvas : 동적인 요소
+
++ 영화검색 + JS동적인 애니메이션
+
+1.canvas API
+
+2.tmdb 검색
+
+3.JS 이벤트 애니메이션
+
+
+source/destination-over : canvas에서 그래픽 요소들의 위치 정렬 기본값! 먼저 입력된 요소는 뒤로, 나중에 입력된 요소는 앞
+
+source/destination-in : 나중에 그려진 요소를 중심으로 먼저 그려진 도형과 교차되는 부분은 살리고, 그렇지 않은 영역은 투명하게 처리
+
+source/destination-out : 나중에 그려진 요소와 먼저 그려진 요소의 교차되는 영역은 투명하게 처리, 교차가 되지 않은 source영역은 살리는 방법
+
+source/destination-atop : 교차지점 살리고, 교차가 되지 못한 destination 영역은 불투명하게 처리
+
+lighter : source, destination 영역의 색상값이 합쳐져서 출력
+
+darken : source, destination 영역의 색상값의 차이만큼 출력
+
+copy : 나중에 그린 source 요소만 출력
+
+xor : source/destination 모두 출력, 교차되는 영역, 투명하게 처리
+
+
+객체형태 1개 => 원 1개 생성
+객체형태 20개 => 원 20개

@@ -1,5 +1,7 @@
 import api from "./env.js";
 
+const form = document.querySelector("form");
+
 const url = `https://api.themoviedb.org/3/movie/popular?api_key=${api.API_KEY}&language=ko&page=1`;
 
 const movieDetail = (e) => {
@@ -52,3 +54,32 @@ fetch(url)
       createBlock(movie);
     });
   });
+
+const removeAll = () => {
+  const movies = document.querySelectorAll(".movie");
+  movies.forEach((movie) => {
+    movie.remove();
+  });
+};
+
+const searchMovie = (e) => {
+  e.preventDefault();
+
+  const input = document.querySelector("input");
+  const { value: keyword } = input;
+  const searchURL = `https://api.themoviedb.org/3/search/movie?api_key=${api.API_KEY}&query=${keyword}&include_adult=false&language=ko&page=1`;
+
+  if (keyword) {
+    removeAll();
+
+    fetch(searchURL)
+      .then((response) => response.json())
+      .then(({ results }) =>
+        results.forEach((movie) => {
+          createBlock(movie);
+        })
+      );
+  }
+};
+
+form.addEventListener("submit", searchMovie);

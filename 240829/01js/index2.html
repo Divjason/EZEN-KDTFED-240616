@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script2.js"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 100vh;
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 8px;
+        }
+        canvas {
+          background: #fff;
+          /* width: 400px;
+          height: 400px; */
+          border: 1px solid #ccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button>회전시키기</button>
+    <canvas width="400" height="400"></canvas>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #3c7364;
+  overflow: hidden;
+}
+body .cursorItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .cursorItem .circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: yellowgreen;
+  border-radius: 50%;
+  margin: 7px 7px;
+  opacity: 0.5;
+  transition: transform 0.3s;
+}
+body .gateBox {
+  color: #fff;
+  font-size: 20px;
+  width: 400px;
+}
+body .gateBox .top {
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 20px 30px;
+}
+body .gateBox .bottom {
+  border: 2px solid #fff;
+  border-top: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .gateBox .bottom a {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  transition: color 0.3s, background 0.3s;
+}
+body .gateBox .bottom a:hover {
+  background: #fff;
+  color: #000;
+}
+body .gateBox .bottom .line {
+  border: 1px solid #fff;
+}
