@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("./img/bg-pc.webp") center/cover no-repeat;
+  overflow: hidden;
+}
+body .title {
+  text-align: center;
+}
+body .title img {
+  width: 150px;
+}
+body .contWrap {
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+body .contWrap div {
+  position: absolute;
+}
+body .contWrap div.shadow {
+  width: 700px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .contWrap div.shadow img {
+  width: 100%;
+}
+body .contWrap div.human {
+  width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .contWrap div.human img {
+  width: 100%;
+}
+body .contWrap div.date {
+  width: 400px;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-20%);
+}
+body .contWrap div.date img {
+  width: 100%;
+}
+body .contWrap div.textImg {
+  width: 400px;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-10%);
+}
+body .contWrap div.textImg img {
+  width: 100%;
+}
+body .subTitle {
+  position: fixed;
+  top: 10%;
+  left: 20px;
+}
+body .subTitle img {
+  width: 70px;
+}

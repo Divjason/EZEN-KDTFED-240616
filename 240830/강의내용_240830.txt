@@ -1,0 +1,13 @@
+현재 우리 눈에 보여지고 있는 문서의 높이 자체 : innerHeight
+스크롤이 가능한 영역까지 포함한 문서의 높이 자체 : scrollHeight
+
+documentHeight = scrollHeight - innerHeight = 순수하게 스크롤이 되었을 때 볼 수 있는 영역
+
+
+ window.scrollY / documentHeight * 100
+
+2px / 스크롤이 가능한 full영역 * 100
+
+1.css > backgroundPosition => 수평 // 수직 정렬값 
+
+2.패럴렉스 개념
