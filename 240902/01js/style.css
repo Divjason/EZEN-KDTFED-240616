@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #4b0220, #691c46);
+}
+body main section {
+  position: relative;
+  width: 100%;
+}
+body main section.mainPage {
+  position: fixed;
+  top: 0;
+}
+body main section.mainPage .imageWrap {
+  height: 100vh;
+  perspective: 400px;
+}
+body main section.mainPage .imageWrap .parallaxImage {
+  position: fixed;
+  width: 100%;
+  height: inherit;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body main section.mainPage .imageWrap .parallaxImage:nth-child(1) {
+  background-image: url("./img/main_0.png");
+}
+body main section.mainPage .imageWrap .parallaxImage:nth-child(2) {
+  background-image: url("./img/main_1.png");
+}
+body main section.mainPage .imageWrap .parallaxImage:nth-child(3) {
+  background-image: url("./img/main_2.png");
+}
+body main section.mainPage .imageWrap .parallaxImage:nth-child(4) {
+  background-image: url("./img/main_3.png");
+}
+body main section.mainPage .imageWrap .parallaxImage:nth-child(5) {
+  background-image: url("./img/main_4.png");
+}
+body main section.mainPage .imageWrap .parallaxImage:nth-child(6) {
+  background-image: url("./img/main_5.png");
+}
+body main section.mainPage .imageWrap .parallaxImage:nth-child(7) {
+  background-image: url("./img/main_6.png");
+}
+body main section.subPage {
+  padding-top: 100vh;
+  height: 60vh;
+}
+body main section.subPage .innerWrap {
+  position: relative;
+}
+body main section.subPage .innerWrap .contWrap {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.6);
+}
+body main section.subPage .innerWrap .contWrap p {
+  font-size: 20px;
+  line-height: 36px;
+  color: #f3f3f3;
+}

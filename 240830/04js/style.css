@@ -52,7 +52,7 @@ body .coverWrap {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #000 url("./img/bg.jpg") center top/cover no-repeat;
+  background: #000 url("./img/bg.jpg") center -500px/cover no-repeat;
 }
 body .coverWrap .overlay {
   position: absolute;

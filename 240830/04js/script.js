@@ -24,8 +24,8 @@ window.addEventListener("scroll", () => {
   if (scrollNum >= coverHeight) header.classList.add("fixed");
   else {
     header.classList.remove("fixed");
-    coverTitle.style.top = `${-scrollNum / 5}px`;
-    coverWrap.style.backgroundPosition = `center ${-scrollNum / 15}px`;
+    // coverTitle.style.top = `${-scrollNum / 5}px`;
+    coverWrap.style.backgroundPosition = `center ${-scrollNum / 2}px`;
     overlay.style.background = `rgba(0, 0, 0, ${0.4 + scrollNum / 1000})`;
   }
 });
