@@ -1,0 +1,99 @@
+1) React는 무엇인가?
+
+1.React.js는 자바스크립트 기반의 라이브러리
+2.라이브러리 VS 프레임워크 비교
+> 라이브러리 : 기존 프로그래밍언어 문법 체계를 존중!! => 해당 문법 위에서 본인들이 만들어놓은 명령시스템을 얹혀서 구동될 수 있도록 만든 시스템
+> 프레임워크 : 본인들만의 문법 체계 & 기존 프로그래밍언어를 조합해서 사용할 수 있도록 만들어놓은 시스템
+3. Facebook // Meta
+4. JS : 웹 브라우저
+5. Node 기반 
+6. 구글 웹 브라우저 => 크롬
+> V8 검색엔진 // 자바스크립트
+7.자바스크립트를 웹브라우저가 아닌 곳에서도 사용할 수 있는 실행환경을 만들어보자!!! => Node
+8.Node 위에서 작업되는 모든 작업물 > 프로젝트
+Node Package Manager
+9.npm i ....
+10.npx create-react-app .
+
+2) React를 왜 사용해야하는가?
+
+1.각각 개별적인 페이지 + 헤더 & 푸터
+> iframe : 불편 // 사이즈 등등
+> 컴포넌트 단위 쪼개서 작업 후 재결합!!!
+> 최근 UI/UX 디자인 영역 핫 키워드
+> PM : 헤더 컴포넌트 // 푸터 컴포넌트
+> 조원 : 헤더 컴포넌트 + 메인페이지 // 헤더 컴포넌트 + 상세페이지 // 장바구니
+> 프로젝트 : 파일 1개당 용량 // 디버깅 효율
+
+2.CSR 방식
+> 기존 : 팀프로젝트 작업 => SSR 방식 (Server Side Rendering)
+> CSR : Client Side Rendering => 서버 
+> 속도가 매우 빠름
+
+3.웹 브라우저가 아닌 곳에서 사용!!!
+> 기업 => 웹 페이지 리뉴얼 & 앱 개발
+> React-Native
+
+3) React 설치 후 삭제해야하는 reset 요소
+
+1. src > App.test
+2. src > logo.svg
+3. src > reportWebVitals
+4. src > setupTest
+
+> App.js > logo
+> index.js > reportWebVitals
+
+npm i
+
+240822
+240823
+240824
+
+4) React 작동되어지는 원리!!!!
+
+1. 모든 요소들이 Component 기반으로 운영
+2. Component => JS
+
+과거!!!! => 2018년 이전!!!
+> React.js의 모든 컴포넌트들이 Class
+>  React.js의 모든 컴포넌트들이 함수형 컴포넌트
+
+5) React의 기본문법 => JSX
+> JavaScript & Xml
+
+1.출력부의 공간에는 반드시 숫자, 문자형태의 자료형 가능 절대 객체 그자체는 가져올 수 없음!!!
+함수형 컴포넌트의 return 출력부!!! => UI 화면 출력!!! => 절대로 객체 형태로는 직접 절대 x
+
+2.산술 및 문자표현식!!!
+- 숫자 및 문자 연산 가능!!!
+
+3.논리표현식!!! => boolean
+
+4.닫힘표현식!!! => 싱글태그인것처럼 표현!!!!
+
+5.무조건, 최상위 부모!!! 가 반드시 존재!!!
+- Fragment Element!!!
+
+6.html => class // className
+
+7.React 전용 스타일 컴포넌트=> styled-component // scss
+
+8.React 출력부는 "문" 사용불가!!! "식"
+
+9.React & CSS 스타일시트 역시 외부 스타일시트 & 인라인
+
+6) React > Props => Propertys 약어.
+> Component기반 => 각각의 컴포넌트간에 props 전달하고 받을 수 있음
+> props는 반드시 부모에서 자식으로 일방통행!!!
+> 유틸리티!!! => Redux // Saga // Thunk => 미들웨어
+> React Query 등등
+> 속성 => 객체!!!!
+> 구조분해할당
+> defaultProps 속성 => 만약에라도 누락된 데이터가 있다면 대체가능!!!
+> props를 통해서 컴포넌트도 보낼 수 있음
+
+Props Drilling
+
+
+
