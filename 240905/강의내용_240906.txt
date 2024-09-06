@@ -1,0 +1,25 @@
+1.Refactoring
+
+2.Component & Props = Object
+
+3.Module
+
+4.Hooks
+- useState( )
+- useRef( )
+- useEffect( )
+
+5.State & Virtual DOM
+
+6.Component Life Cycle
+- Mount => Rendering => Unmount
+
+7.Vanilla Javascript Grammar
+
+=> 많은 예제를 같이 해본다!!!
+=> 반복적으로 사용되는 패턴!!!
+
+
+
+
+
