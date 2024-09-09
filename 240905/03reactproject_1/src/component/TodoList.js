@@ -1,8 +1,10 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useContext } from "react";
+import { TodoContext } from "../App";
 import "./TodoList.css";
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todo, onUpdate, onDelete }) => {
+const TodoList = () => {
+  const { todo = [] } = useContext(TodoContext);
   const [search, setSearch] = useState("");
   const onChangeSearch = (e) => {
     setSearch(e.target.value);
@@ -28,14 +30,13 @@ const TodoList = ({ todo, onUpdate, onDelete }) => {
   }, [todo]);
 
   const { totalCount, doneCount, notDoneCount } = analyzeTodo;
-
   return (
     <div className="TodoList">
       <h4>Todo List 🎈</h4>
       <div>
         <div>총 개수 : {totalCount}</div>
         <div>완료된 할 일 : {doneCount}</div>
-        <div>아직 완료하지 못한 일 : {notDoneCount}</div>
+        <div>아직 완료하지 못한 할 일 : {notDoneCount}</div>
       </div>
       <input
         value={search}
@@ -45,16 +46,15 @@ const TodoList = ({ todo, onUpdate, onDelete }) => {
       />
       <div className="list_wrapper">
         {getSearchResult().map((it) => (
-          <TodoItem
-            key={it.id}
-            {...it}
-            onUpdate={onUpdate}
-            onDelete={onDelete}
-          />
+          <TodoItem key={it.id} {...it} />
         ))}
       </div>
     </div>
   );
 };
+
+// TodoList.defaultProps = {
+//   todo: [],
+// };
 
 export default TodoList;

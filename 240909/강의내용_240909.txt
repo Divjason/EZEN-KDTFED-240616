@@ -1,0 +1,91 @@
+C : Create
+R : Read
+U : Update
+D : Delete
+
+Props Drilling
+
+App > TodoList > TodoItem
+
+filter => 배열 아이템 => 필터링 => 
+
+React Hooks
+- useState( )
+- useRef( )
+- useEffect( )
+- useReducer( )
+- useMemo( )
+- useCallback( )
+
+> 최적화!!!
+1. 최적화는 반드시 웹앱 제작 및 기능구현이 마무리되는 단계에서 해야함!!!!
+
+2.모든 기능 최적화할 필요는 없음!!!
+
+3.최적화 => 컴포넌트 구조 > 정상 // 잘짜여져있는지!!!
+
+*Context => 책 "목록"  => 맥락
+
+> 
+
+pull > 
+
+1.Root Folder : package.json
+
+2.npm i
+
+3.npm run start
+
+1) 수업시간 
+- 기본문법 40% + 예제 60%
+
+- 어떤 부분에서 답답
+
+- 병행 (수업 + 자바스크립트)
+
+- 예제 10~20%
+
+- React => 
+
+1) Hooks
+2) state update & props
+
+*useState( )
+*useRef( )
+*useEffect( ) 
+*useReducer( )
+*useMemo( )
+
+
+useMemo(callback, [의존성배열])
+
+
+
+웹&앱페이지
+
+최적화!!!!
+> 컴포넌트 
+> 마운트 // 렌더링 // 언마운트
+> 메모이제이션
+> Memoizaion 기법
+> useMemo( )
+> React.memo 속성!!!
+> 고차 컴포넌트 // Higher Component
+> 기준 => state에 따라서 렌더링 여부
+> 횡단 관심사 = Cross Cutting Concerns
+
+특정컴포넌트를 고차컴포넌트로 업그레이드 시킴으로 인해서 부모컴포넌트 아래에 있는 모든 자식요소의 컴포넌트들이 고차컴포넌트화 되어있는 해당 요소의 상태변화에 따라 같이 렌더링되지 않도록 조치를 취한 형태 => 횡단 관심사로부터 벗어나게 했다!!! 표현
+
+*editor 컴포넌트 => 값이 신규 입력!!!
+> App 컴포넌트 업데이트
+> 함수 역시 > 리렌더링!!!
+
+
+
+
+
+
+
+
+
+
