@@ -1,8 +1,10 @@
 import "./App.css";
-import { useRef, useReducer, useCallback } from "react";
+import React, { useRef, useReducer, useCallback } from "react";
 import Header from "./component/Header";
 import TodoEditor from "./component/TodoEditor";
 import TodoList from "./component/TodoList";
+
+export const TodoContext = React.createContext();
 
 const mockTodo = [
   {
@@ -47,19 +49,6 @@ function App() {
   const [todo, dispatch] = useReducer(reducer, mockTodo);
   const idRef = useRef(3);
 
-  // const onCreate = useCallback((content) => {
-  //   dispatch({
-  //     type: "CREATE",
-  //     newItem: {
-  //       id: idRef.current,
-  //       isDone: false,
-  //       content,
-  //       createdDate: new Date().getTime(),
-  //     },
-  //   });
-  //   idRef.current += 1;
-  // }, []);
-
   const onCreate = useCallback((content) => {
     dispatch({
       type: "CREATE",
@@ -90,8 +79,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TodoEditor onCreate={onCreate} />
-      <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} />
+      <TodoContext.Provider value={{ todo, onCreate, onUpdate, onDelete }}>
+        <TodoEditor />
+        <TodoList />
+      </TodoContext.Provider>
     </div>
   );
 }

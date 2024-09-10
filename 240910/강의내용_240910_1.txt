@@ -1,0 +1,50 @@
+최적화
+
+props처리 비효율적으로 진행
+
+하드웨어
+
+미들웨어
+
+소프트웨어
+
+자바스크립트는 태생적으로 싱글 스레드
+> 비동기x // 
+
+콜백함수 => 비동기처리!!!
+>콜백 의미!!!
+> 함수 제어 > "함수" 호출 타이밍 
+
+서울 강남 => 스마트폰
+전주 내 친척!!!
+
+라우터!!!! > 수.송 중계기!!!
+페이지 라우터!!!! => 페이지 분기
+구글 => 리액트 라우터 돔 // react-router-dom
+
+and 단락회로평가 :
+좌항값 && 우항값
+
+or 단락회로평가 :
+좌항값 || 우항값
+
+메인페이지 : http://localhost:3000/
+글작성페이지 : http://localhost:3000/post-write
+글확인페이지 : 
+http://localhost:3000/post/1
+http://localhost:3000/post/2
+http://localhost:3000/post/3
+http://localhost:3000/post/4
+
+REST API
+-> 클라이언트 <-> 서버 통신 방법
+-> get // post 등등
+-> 제품 (*페이지)을 제작한다고 할 때, 해당 페이지 안에 포함될 페이지들의 규칙성을 생성하고 제어.관리할 수 있도록 만들어놓은 시스템
+
+useState
+useRef
+useEffect
+useReducer
+useMemo
+useContext
+useNavigate

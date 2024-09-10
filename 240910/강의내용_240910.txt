@@ -1,0 +1,22 @@
+1.React.js는 왜 사용하는가?
+- Component 기반 프로젝트 웹.앱 제작 // Module
+- Virtual DOM 효율적인 업데이트 // DOM
+
+2.JSX = Javascript XML 문법
+- props = property 약어. => 객체 (key + value)
+(컴포넌트 간 데이터 자료를 주고받을 때, 함수의 인자 & 매개변수)
+- 함수형 컴포넌트
+- props Drilling > context > useContext
+
+- state = 상태 // 변수
+
+- setState( ) => state // 비동기적으로작동
+
+JS // React.js
+
+TodoList => 입력값 처리 함수(콜백함수, 인자)
+콜백함수 => 출력실행
+
+> 컴포넌트로 쪼개서 작업
+
+// 빈화면, 1~마지막 : 구현
