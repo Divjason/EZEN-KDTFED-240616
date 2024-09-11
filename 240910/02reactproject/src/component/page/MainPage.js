@@ -7,7 +7,6 @@ import data from "../../data.json";
 
 const Wrapper = styled.div`
   width: calc(100% - 32px);
-  border: 1px solid #ccc;
   margin: 0 auto;
   padding: 16px;
   display: flex;

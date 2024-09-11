@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Back to Black";
+  src: url("./font/Back_to_Black_Demo.otf"),
+    url("./font/Back_to_Black_Demo.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -151,7 +157,7 @@ nav {
     transition: all 0.3s;
     .inner {
       h1 {
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-50px);
         img {
           width: 400px;
@@ -163,7 +169,7 @@ nav {
         height: 35vw;
         max-height: 550px;
         margin-left: 50px;
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-50px);
         .sec2_slider {
           position: relative;
@@ -239,9 +245,47 @@ nav {
   }
   &#sec3 {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    h1 {
+      font-family: "Back to Black";
+      font-size: 100px;
+      color: #fff;
+      letter-spacing: -3px;
+      transform: translateX(-100px);
+      position: relative;
+      z-index: 2;
+      span {
+        opacity: 0;
+      }
+    }
+    .sec3_svg {
+      fill: #667eea;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
   }
   &#sec4 {
     background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    img {
+      width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    .img_wrap {
+      width: 500px;
+      height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      // border: 1px solid #fff;
+      .tail {
+        background: #009efd;
+        width: calc(100% / 20);
+        height: calc(100% / 20);
+      }
+    }
   }
   .inner {
     width: 1200px;

@@ -24,7 +24,9 @@
         "id": 15,
         "content": "오늘도 좋은 글 감사합니다!👍"
       }
-    ]
+    ],
+    "thumbnailUrl": "/videos/img.PNG",
+    "videoUrl": "/videos/vid.mp4"
   },
   {
     "id": 2,
@@ -51,7 +53,9 @@
         "id": 25,
         "content": "바로 코드에 적용해보겠습니다!!"
       }
-    ]
+    ],
+    "thumbnailUrl": "/videos/img.PNG",
+    "videoUrl": "/videos/vid.mp4"
   },
   {
     "id": 3,
@@ -78,7 +82,9 @@
         "id": 35,
         "content": "이름부터 너무 어려운 훅...🥲"
       }
-    ]
+    ],
+    "thumbnailUrl": "/videos/img.PNG",
+    "videoUrl": "/videos/vid.mp4"
   },
   {
     "id": 4,
@@ -105,7 +111,9 @@
         "id": 45,
         "content": "리액트 최고!!👍"
       }
-    ]
+    ],
+    "thumbnailUrl": "/videos/img.PNG",
+    "videoUrl": "/videos/vid.mp4"
   },
   {
     "id": 5,
@@ -132,7 +140,9 @@
         "id": 55,
         "content": "오 이런 강의가 있었군요~"
       }
-    ]
+    ],
+    "thumbnailUrl": "/videos/img.PNG",
+    "videoUrl": "/videos/vid.mp4"
   },
   {
     "id": 6,
@@ -159,6 +169,8 @@
         "id": 65,
         "content": "꾸준히 블로그 활동 해주세요!!😀"
       }
-    ]
+    ],
+    "thumbnailUrl": "/videos/img.PNG",
+    "videoUrl": "/videos/vid.mp4"
   }
 ]
