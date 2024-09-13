@@ -1,0 +1,55 @@
+1.TodoList
+
+2.MiniBlog
+
+3.Emotion Diary
+
+*수강생분들이 최소 50%
+*주중 // 주말
+*스케쥴
+
+*Emotion Diary
+
+- Page Routing
+npm i react-router-dom
+
+- styled components
+npm i styled-components
+
+1) 구조
+- Home 페이지 (*사용자 최초 방문)
+- New 페이지 (*일기를 작성할 수 있는 페이지)
+- Diary 페이지 (*특정 날짜에 입력한 일기를 상세하게 조회해볼 수 있는 페이지)
+- Edit 페이지 (*일기 조회 후 해당 일기를 수정해야할 때, 접속가능한 페이지) > 수정 && 삭제
+
+2) 폰트
+- 구글 폰트 > 폰트 가져와서 설치!!!
+
+3) 이미지
+- 멀티미디어(*동영상 // 이미지) 소스 public
+- 동영상 => 무조건 public
+- 이미지 => src && public
+
+4) 컴포넌트 기반
+- 중복 및 반복해서 사용될 요소들은 컴포넌트 만들어놓고 상황에 따라서 가져다가 사용할 수 있는 장점!!!
+
+5) React.js > JS의 문법을 사용 > Module
+- 특정 기능을하는 함수를 1개 만들어놓고, 필요할 때마다 해당 함수를 가져다가 사용할 수 있다는 의미!!!
+
+6) Page Routing 기능
+- 페이지
+
+7) Link VS useNavigate
+- Link => a태그
+
+*동적페이지 => 인터랙티브한 페이지 구현
+(*JS) // => 사용자 이벤트 => 
+
+useState
+useRef
+useEffect
+useReducer
+useMemo
+useContext
+useNavigate
+useParams
