@@ -1,0 +1,32 @@
+http://localhost:3001/diary/catergory?sort=latest
+동적경로 값 = URL 파라미터 (Parameter)
+쿼리스트링 = QueryString
+127.0.0.1 => IP주소
+- 직관적 : DNS
+
+http://localhost:3001/?sort=latest
+
+최초에 일기를 작성할 때, 작성할 컴포넌트 페이지
+이미 작성된 일기를 수정하고자 할 때, 작성(*편집)
+
+<button class="button button_positive"> </button>
+
+<button class="button button_negative"> </button>
+
+감정아이콘 정의
+어떤 감정 // 텍스트 // 이미지
+id: 1
+name: "완전좋음"
+img: getEmotionImgById(1)
+
+App 최상위 부모컴포넌트 state // setState
+
+Editor 컴포넌트가 사용될 상황!!!
+
+1) 신규 일기를 작성하고자 하는 경우
+> 초기
+
+2) 이미 일기가 작성된 상태에서 수정.편집하려고 하는 경우
+> 이미 작성된 일기값
+
+
