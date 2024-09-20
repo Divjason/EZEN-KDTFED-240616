@@ -1,0 +1,23 @@
+.editor_wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  input {
+    flex: 1;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 15px;
+    &:focus {
+      outline: none;
+      border: 1px solid #1f93ff;
+    }
+  }
+  button {
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background: #1f93ff;
+    color: #fff;
+    cursor: pointer;
+  }
+}

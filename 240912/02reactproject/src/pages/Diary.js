@@ -29,7 +29,7 @@ const Diary = () => {
           title={title}
           rightChild={<Button text={"수정하기"} onClick={goEdit} />}
         />
-        <Viewer />
+        <Viewer content={content} emotionId={emotionId} />
       </div>
     );
   }
