@@ -3,12 +3,16 @@ import { DiaryStateContext } from "../App";
 import Header from "../component/Header";
 import Button from "../component/Button";
 import DiaryList from "../component/DiaryList";
-import { getMonthRangeByDate } from "../util";
+import { getMonthRangeByDate, setPageTitle } from "../util";
 
 const Home = () => {
   const data = useContext(DiaryStateContext);
   const [pivotDate, setPivotDate] = useState(new Date());
   const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    setPageTitle("Welcome Daivd Diary");
+  }, []);
 
   useEffect(() => {
     if (data.length >= 1) {

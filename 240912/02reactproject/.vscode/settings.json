@@ -1,0 +1,6 @@
+{
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "html-to-css-autocompletion.folderNamesToBeIncluded": [""]
+}

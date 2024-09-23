@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./Header";
@@ -20,7 +20,7 @@ const Textarea = styled.textarea`
   padding: 20px;
   font-size: 20px;
   font-family: "Nanum Pen Script", cursive;
-  width: 93%;
+  width: 100%;
   min-height: 200px;
   resize: none;
 `;
@@ -85,12 +85,12 @@ const Editor = ({ initData, onSubmit }) => {
     navigate(-1);
   };
 
-  const handleChangeEmotion = (emotionId) => {
-    setState({
+  const handleChangeEmotion = useCallback((emotionId) => {
+    setState((state) => ({
       ...state,
       emotionId,
-    });
-  };
+    }));
+  }, []);
 
   return (
     <div>
