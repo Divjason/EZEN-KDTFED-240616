@@ -1,0 +1,36 @@
+HTML5 // CSS3 // SCSS
+> mixin // React.js
+
+// SCSS < Styled-components
+// Tailweend
+
+// React.js > Bootstrap
+
+Styled-components
+Tailweend
+SCSS
+css // Bootstrap
+
+// jQuery
+// Virtual Dom > SEO 취약
+// Next.js
+
+SCSS > @mixin 기능
+
+1.컴포넌트 공통요소로 사용될 스타일 사전 정의 (*변수)
+
+2.styled-components에서 css 요소를 찾아와서 해당 요소를 활용해서 컴포넌트 내부에 props를 전달받아서 스타일을 적용!!!
+
+3.사전 스타일 정의 + css요소 같이 사용!!!
+
+4.Theme = 테마 // 
+
+github.com/settings/developers
+
+github.com/logos
+
+
+
+
+
+

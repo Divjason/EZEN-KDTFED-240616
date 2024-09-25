@@ -9,11 +9,16 @@ import Profile from "./routes/Profile";
 import Login from "./routes/Login";
 import CreateAccount from "./routes/CreateAccount";
 import LoadingScreen from "./components/LoadingScreen";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <ProtectedRoute>
+        <Layout />
+      </ProtectedRoute>
+    ),
     children: [
       {
         path: "",
@@ -54,7 +59,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const init = async () => {
     await auth.authStateReady();
-    await setIsLoading(false);
+    setIsLoading(false);
   };
   useEffect(() => {
     init();
