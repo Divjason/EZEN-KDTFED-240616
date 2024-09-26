@@ -1,0 +1,111 @@
+npx create-react-app .
+
+npm create vite@latest
+
+project name : themeselect
+framework : React
+variant : Javascript + swc
+
+code themeselect
+
+npm i
+
+npm i styled-components
+
+npm run dev
+
+http://localhost:5173/
+
+src > assets 삭제
+src > App.css & index.css 삭제
+
+다크모드 & 라이트모드 구현!!!
+> 프로그래밍 언어 구현
+> 1가지의 언어를 명확하게 구현
+> 다른 프로그래밍 언어를 구현 & 학습 => 속도 빠를 수 밖에 없음!!!
+> 저마다의 특징 // 컴퓨터와 소통하기 위한 언어 큰 프레임 // 
+> 알고리즘 & 문제해결 프로세스
+
+어떻게 구현?
+자바스크립트 > 코드 x
+1.버튼
+2.버튼 이벤트
+3.기능 > 함수 > 콜백함수
+4.DOM // ......
+
+라이트모드 : 배경 // 폰트 => 흰색 타겟 요소
+다크모드 : 배경 // 폰트 => 검정색 타겟 요소
+
+> 배경 // 폰트(메인) // 폰트(서브) => 패키지가 어딘가에 저장 & 세팅
+
+> 하나의 패키지로 위 속성값을 세팅
+- 객체
+
+>
+background : #fff
+mainFontcolor : #000
+subFontcolor : #f00
+
+모듈 export > import 
+
+버튼 // 이벤트 // useState
+> state // setState
+
+어떤 특정 컴포넌트 페이지에만 적용?
+
+1.Firebase > login
+
+2.Project 만들기 > sns-flatform01
+- google Analytics 사용설정 x
+
+3.Project 생성 > 좌측 메뉴 > Build > Authentication > 시작하기
+- 사용자의 이메일/비밀번호 세팅
+
+4.로그인 방법 탭 > 새 공급업체 추가 > GitHub
+
+5.github 개발자 페이지
+> github.com/settings/developers
+> OAuth Apps > New OAuth App 버튼 클릭
+> name : sns-flatform01
+> Callback URL 활용 > Register Application
+> SID 코드를 발급 > Firebase 등록
+
+*Firebase > 
+- User Info 생성
+- Authentication 인증
+- 외부 계정 인증
+- DB 물리적 공간 생성
+- 각각의 창고 = storage
+
+A DB = 집
+
+a 컨텐츠 : storage
+b 컨텐츠 : storage
+c 컨텐츠 : storage
+
+Firebase > Firestore Database 공간 생성
+
+이름 = 컬렉션 // ID = sns (겉으로 보여지는 이름) = 식별하기 위한 목적의 ID
+
+각각의 독립적인 필드로 구성!!!
+ex) 
+A필드(*사용자가 작성한 컨텐츠 내용)
+B필드(*해당 컨텐츠를 작성한 사용자의 정보)
+C필드(*해당 컨텐츠 포스팅 후 받은 좋아요 수)
+
+html, css를 기반으로 외부 아이콘을 가져다가 사용 : fontawesome : 다양한 아이콘 // 유료 // script설치
+
+React :  
+- fontawesome
+
+1) npm install 설치
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+
+2) index.html
+
+- heroicons.dev
+
+
+

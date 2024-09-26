@@ -1,4 +1,3 @@
-import React from "react";
 import { GithubAuthProvider, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
@@ -31,7 +30,7 @@ const GithubBtn = () => {
       await signInWithPopup(auth, provider);
       navigate("/");
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   };
   return (
