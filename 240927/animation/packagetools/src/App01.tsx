@@ -68,8 +68,8 @@ const boxVariants = {
       type: "spring",
       bounce: 0.5,
       delay: 0.5,
-      staggerChildren: 0.2,
       delayChildren: 0.5,
+      staggerChildren: 0.2,
     },
   },
 };

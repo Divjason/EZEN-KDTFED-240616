@@ -1,0 +1,44 @@
+firebase v9
+
+함수명 바뀐 부분 존재
+인수, 인자값 필수 & 옵션
+이벤트 처리 방법 살짝 변경!!!
+
+updateDoc( ) : 컨텐츠를 업데이트 시켜주는 함수
+
+getDownloadURL( ) : storage 경로에 있는 파일의 URL을 추출해주는 함수
+
+StorageError : 만약 Firebase Storage 안에서 에러가 발생했을 때, 에러 전체에 대한 정보값을 가지고 있는 객체!!
+
+StorageErrorCode : Firebase Storage 안에서 에러가 발생했을 때, 특정 에러상황에 맞는 코드를 확인하고자 할 때 사용!!!
+
+uploadBytes : 파일을 수정 후 업로드했을 때, 즉시 반영될 수 있도록해주는 함수
+
+uploadBytesResumable : Firebase Storage에 업로드할 컨텐츠의 bytes 정보를 받아올 수 있도록 해주는 함수
+
+Package :
+- 안정적이지 못하다 => 버그 발생
+
+바닐라 자바스크립트 기반으로 + vite 빌드도구를 사용하지 않았을 때에 배포!!!
+
+npm run build : 지금까지 작업했던 결과물들을 배포용 파일 압축 및 정리하는 작업
+
+> 기본적으로 build 폴더 생성
+> firebase init => dist // distribute
+> deploy
+> folder > dist 폴더 생성 
+(*firebase 안내문구 index.html)
+
+> 현 데이터 빌드모드 : npm run build
+> 최종적으로 배포 : firebase deploy
+
+npm run deploy
+
+React.js
+> Node.js
+> npm 
+> slider // etc
+> slider 기능 npm 
+
+https://heroicons.dev/
+

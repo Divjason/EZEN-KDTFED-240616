@@ -80,7 +80,7 @@ const PostForm = () => {
   const [post, setPost] = useState("");
   const [file, setFile] = useState<File | null>(null);
 
-  const maxFileSize = 5 * 1024 * 1024;
+  const maxFileSize = 7 * 1024 * 1024;
 
   const onChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setPost(e.target.value);
