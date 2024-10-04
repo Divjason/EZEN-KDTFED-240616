@@ -3,6 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "react-bootstrap";
 import { ResultData } from "../assets/resultData";
+import KakaoShareButton from "../components/KakaoShareButton";
 
 const Wrapper = styled.div`
   display: flex;
@@ -42,8 +43,16 @@ const LogoImg = styled.div`
 
 const Desc = styled.div`
   margin: 10px 0;
+  padding: 8px 14px;
   font-size: 20px;
   text-align: center;
+  background: crimson;
+  border-radius: 8px;
+`;
+
+const ButtonGoup = styled.div`
+  display: flex;
+  gap: 10px;
 `;
 
 const Result = () => {
@@ -71,7 +80,10 @@ const Result = () => {
           😜예비집사님과 찰떡궁합인 😻고양이는
           <br /> {resultData.best}형 {resultData.name} 입니다.
         </Desc>
-        <Button onClick={handleClickButton}>테스트 다시시작하기</Button>
+        <ButtonGoup>
+          <Button onClick={handleClickButton}>테스트 다시시작하기</Button>
+          <KakaoShareButton data={resultData} />
+        </ButtonGoup>
       </Contents>
     </Wrapper>
   );
