@@ -49,19 +49,21 @@ const ButtonGroup = styled.div`
 
   @media screen and (max-width: 780px) {
     flex-direction: column;
+    padding: 10px;
     & > button {
-      width: 300px;
-      height: 150px;
-      font-size: 16px;
+      width: 100%;
+      height: 100%;
+      font-size: 18px;
     }
   }
 
   @media screen and (max-width: 360px) {
     flex-direction: column;
+    padding: 10px;
     & > button {
-      width: 200px;
-      height: 100px;
-      font-size: 16px;
+      width: 100%;
+      height: 100%;
+      font-size: 18px;
     }
   }
 `;

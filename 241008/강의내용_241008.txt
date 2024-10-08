@@ -1,0 +1,147 @@
+*Chat GPT : 디자인 소스 제작.활용 방법 쉬워졌기 때문에
+> F/E + Coding
+
+1.웹 디자이너의 일자리가 많이 감소!!
+1) 2D그래픽 툴 + 영상편집 업무 (70%)
+2) 웹 디자이너 + coding (30%)
+
+2.F/E
+- UI/UX 기본개념 : 채용시장 매우 고전
+1) UI/UX 개념 탑재한 F/E (60%)
+2) 준 FullStack (40%)
+
+3.B/E
+- AI & 인공지능
+- AI 엔지니어 (*B/E + AI 언어이해 + 알고리즘)
+
+React.js > Basic
+React.js > middleware
+TS > 문법
+React + TS
+GraphQL API
+Next.js
+Node.js
+
+---------
+
+GSAP // Three.js
+
+---------
+
+오늘부터 포트폴리오 & 진로방향
+
+---------
+
+KDT : 과정별 평가x (*html // css // js..)
+팀프로젝트 2개 (*커머스 // SNS)
+외부 강사 강의 (*언제 // 누가 // 커리큘럼) > 학원
+금요일 오후 3시
+
+---------
+
+드래그이벤트
+페이지 포인트
+댓글
+채팅 
+
+=> 
+
+컴퓨터 VS 나 => 가위.바위.보 게임!!!
+
+컴퓨터 선택 (랜덤함수)
+나 선택 (자의 선택 =>가위.바위.보 선택버튼)
+> 이벤트 // 콜백함수 => state
+
+출력공간
+
+배열 > 0, 1, 2
+> random( ) => 0, 1, 2 
+
+chat gpt
+> 간단한 슬라이드 // 기능구현
+
+페이지 구현 기능 조합
+페이지 구현 요소x
+with chatgpt
+
+초기 // 중기 // 말기
+> 초기 : 사람이 chatgpt
+
+> 중기 : chatgpt
+
+> 말기 : prompt // feedback
+
+AI 엔지니어 : 
+- 내가 AI가 생성해놓은 컨텐츠 가공할 수 있는 능력!!
+
+AI 자격증
+
+api
+- firebase
+- weather
+- the movie data base
+- coin
+- 공공데이터 포털사이트 > api
+
+Application : 웹/앱 (*제품)
+Programming : 프로그래밍
+Interface : 상호작용하는 방식
+
+> 집에가서 TV && 넷플릭스
+
+TV & 리모콘
+
+REST API
+- form
+- method : get // post // put // delete
+
+graphql API & Apollo
+
+W3C School
+=> 컨소시엄 비영리기관
+
+MDN (*업데이트 // 최신 트랜드 문서)
+=> 모질라 기업 웹 표준 문서 사이트
+=> 삼성, 구글, 애플 대기업 자사 기업에서 연구하는 웹 관련 표준 문서 
+
+1.바닐라 자바스크립트를 활용해서 환경변수를 설정. env.js => 모듈의 형태로 import // export
+
+2.무조건 root폴더 => .env
+
+3.npx create-react-app .
+REACT_APP
+VITE
+
+process.env.REACT_APP_API_KEY
+import.meta.env.VITE_API_KEY
+
+4.환경변수 설정 > 반드시 서버 껐다가 켜준다!!!
+
+react spinner
+
+https://unsplash.com/developers
+
+1.우측 상단 "회원가입"
+
+2.굳이 1개의 key로 그냥 사용하면 되는데? 
+- 거의 대부분의 api-key : limit
+- 2개의 프로젝트 > A 50번 // B 200번
+
+1개의 API 서버에서 복수의 API 데이터를 가져와야하는 경우!!!
+
+> useEffect 
+
+> state의 초기값이 null
+
+> 전체적으로 데이터를 찾아오지 못하는 경우!!!
+> 단락회로 평가!!!
+
+> API 2개 날씨 & 언스플래시
+(*환경변수 활용 > 키 나눠서 관리)
+(*vite의 경우)
+
+> react bootstrap
+
+> npm > roading spinner
+
+
