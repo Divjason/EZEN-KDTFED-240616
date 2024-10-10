@@ -1,0 +1,78 @@
+npm i styled-reset
+npm i styled-components
+npm i react-router-dom
+
+간단한 쇼핑몰 레이아웃 생성
+- 로그인 페이지 (*Protected Router Page)
+- json server 사용!!!
+
+Home
+About
+
+페이지 속성
+ProductAll
+Login
+ProductDetail
+
+컴포넌트 속성
+Navbar
+ProductCard
+
+
+Redux
+
+1.전역요소 설치!!!
+npm install json-server -g
+
+2.터미널 사용 // cmd실행
+command prompt o
+json-server --watch db.json
+
+npx json-server db.json
+
+최초 : 로그아웃 => false // true
+로그인 // 로그아웃
+로그인페이지 : 로그인 여부 boolean
+
+
+
+powershell x
+command prompt o
+json-server --watch db.json
+
+npm uninstall json-server -g
+npm uninstall json-server
+
+npm i json-server@0.17.0 -g
+npm i json-server@0.17.0
+
+https://my-json-server.typicode.com/
+
+
+
+
+https://my-json-server.typicode.com/Divjason/musinsamall
+
+https://my-json-server.typicode.com/Divjason/musinsamall/products
+
+Redux!!!
+react 버전 > 넷플릭스
+
+GraphQL!!!
+영화앱 서비스 예제
+
+Next.js
+
+TS
+- 기본문법
+
+TS + React.js
+
+Node.js
+
+Nest.js
+
+TS + Nest.js + React.js + Node.js
+
+
+
