@@ -1,0 +1,146 @@
+React.js
+- state
+- props
+- jsx
+- hooks
+- redux (*가장 어려워했던 개념)
+- useContext // useReducer
+
+Redux (*React.js 직접 제공 hook x)
+- 연락처
+- Musinsa Mall > Pivot
+- Netflix : TMDB
+
+GraphQL API & Apollo Server & Client
+
+Next.js
+
+TS
+
+TS & React.js
+
+Nest.js
+
+자료구조 & 알고리즘
+
+Node.js
+
+JS + Node.js => Final
+
+1.5명 상담
+> 다른반
+> 쉬는시간 & 점심시간
+> 마지막 시간
+
+*너무 사랑한다!!!
+그런데 마음이 너무 아프다!!!
+
+> 지난주 금요일
+> 성인 // 선택 // 생각
+> 목요일 저녁 9시 // 토론!!!
+> 초빙 // 학원 & 강사 // 외부강사
+
+시점 // 
+> 수요일 // 가급적 나와서
+
+Redux : JS 앱 // 제품을 개발 => state를 관리해주는 라이브러리
+
+> React.js에서만 사용할 수 있는게 아니다!!!
+
+> 실질적인 이유!!!
+
+> React.js Props 일방통행 
+> 무조건 부모 -> 자식
+> App
+
+*state 상태관리 라이브러리
+
+- Vite
+npm create vite@latest
+
+- Redux
+npm i @reduxjs/toolkit
+npm i redux
+
+- React-Redux
+npm i react-redux
+
+- styled-components
+npm i styled-components
+
+- react-bootstrap
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+npm i @reduxjs/toolkit redux styled-components
+
+> useDispatch( ) :
+사용자가 UI를 보고 어떤 이벤트를 실행하면 실행했다라는 action값으로 정의할 수 있도록 도와주는 React.js Hooks(*함수)
+
+> useSelector( ) :
+사용자의 action으로 인해 발생한 state변경값이 reducer함수를 거쳐서 store에 저장되었을 때, store안에 있는 해당 state의 값을 찾아오고자 할 때 사용할 수 있는 React.js Hooks(*함수)
+
+
+Redux (*동기처리 방식)
+> 1번 action
+> 2번 action
+
+Redux를 비동기적인 방식으로 처리할 수 있도록 toolkit
+=> middleware
+
+> Redux-saga (*바닐라자바스크립트)
+- 제너레이터 기반 Redux 상태관리 라이브러리 toolkit
+- 학습량이 조금 많음
+- 대기업
+
+> Redux-thunk (*우리가 배울것)
+- action // reducer // middleware (*비동기처리) // store
+- 영화정보 (*api) // 장르 (*api)
+
+React-Redux
+
+
+React-Query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Redux-thunk : 비동기처리 
+일반적인 복수의 reducer의 처리값을 받아서 비동기적으로 처리하는 그 행위!!!
+
+1) 상품정보를 가져오는 reducer
+2) 로그인정보를 가져오는 reducer
+
+> root-reducer (*비동기처리)
+
+UI 화면을 구성하는 곳에서 EVENT
+사용자 처리 EVENT
+외부 REST API 방식으로 Json 찾아오는 EVENT
+
+productAction.js => 액션 객체를 반환 함수
+
+Redux : 과도한 props drilling을 제어하고, 효율적인 state 관리를 위한 라이브러리!!!
+
+> 동기적으로 처리 단점!!!
+
+> 비동적기적으로 처리할 수 있게끔 기존 Redux에 MiddleWare를 추가!!!
+
+SofrWare // HardWare
+
+1) Redux-saga
+2) Redux-thunk
+
+npm install @reduxjs/toolkit
+npm install redux
+npm install react-redux
+npm install redux-thunk
