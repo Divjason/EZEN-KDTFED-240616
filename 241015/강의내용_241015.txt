@@ -1,0 +1,84 @@
+팀프로젝트 : 부담 // 인원 2배 // 페이지 1/2
+
+개인포트폴리오
+- 포트폴리오 아이템
+
+매일매일 새로운 수업내용 (난이도)
+- 인강 // 수업
+
+2시간 + 과외 시간 할애
+
+1.5개월
+
+UI (Event) => Action객체 => Reducer => store
+
+useDispatch( )
+useSelector( )
+
+MiddleWare 개념
+
+Redux-thunk
+- 비동기적으로 복수의 reducer 관리.제어
+
+확장프로그램!!!
+
+npm install --save redux-devtools-extension --force
+
+Redux 세번째 프로젝트
+- tmdb 사이트 : 넷플릭스 사이트
+- Redux-thunk
+
+npm create vite@latest
+
+netflixAppv1
+
+npm i
+
+npm i styled-components
+npm i styled-reset
+npm i react-bootstrap bootstrap
+npm i react-router-dom
+npm i redux
+npm i react-redux
+npm i redux-thunk --force
+npm i --save redux-devtools-extension --force
+npm i axios
+
+상태관리
+useState
+useContext
+useReducer
+Redux
+Redux-thunk
+React-Query
+Recoil
+Axios
+
+어떤 기준으로 컴포넌트를 나누는가?
+1.기능적인 요소 => CRUD
+2.최적화 => 컴포넌트 (*Rerendering)
+
+현 시점 : Node.js => fetch( )
+
+F/E : Node.js에서 자유롭게 외부 API 데이터를 찾아와서 사용할 수 있는 API 호출 라이브러리?
+
+API의 데이터값이 복수일 때, 디버깅을 보다 효율적으로 해줄 수 있는 라이브러리?
+
+React.js로 작업하는 F/E 진영 API 호출 도구 Axios
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
