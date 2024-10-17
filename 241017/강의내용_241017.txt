@@ -1,0 +1,25 @@
+영화 썸네일 클릭
+- MovieDetail 컴포넌트 활용 > 영화 세부정보 출력!!
+
+우측상단, Navigation 컴포넌트 > 검색바 결과
+- 1) 별도의 검색결과 페이지로 이동
+- 2) 현재 보여지고 있는 Home 검색결과 영화 출력
+
+로그인 페이지, ID, PW 입력 > MovieDetail 볼 수 있도록!!
+
+React.js 예제
+
+GraphQL API
+
+Next.js
+
+TS
+
+Nest.js
+
+TS + React
+
+Node.js
+
+
+

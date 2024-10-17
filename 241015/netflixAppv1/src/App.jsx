@@ -27,6 +27,9 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: #000;
+    color: #fff;
+    width: 100%;
+    overflow-x: hidden
   }
 `;
 

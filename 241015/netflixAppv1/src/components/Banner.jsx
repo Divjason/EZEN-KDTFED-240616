@@ -26,7 +26,7 @@ const Img = styled.img`
 const BannerInfo = styled.div`
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 40px;
   transform: translateY(-50%);
 `;
 
@@ -43,7 +43,6 @@ const MovieOverView = styled.p`
 `;
 
 const Banner = ({ movie }) => {
-  console.log(movie);
   return (
     <BgImg>
       <Img
