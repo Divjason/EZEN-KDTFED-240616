@@ -1,0 +1,75 @@
+API :
+Application
+Programming
+Interface : 상호작용하는 방식
+
+tmdb 사이트 > 넷플릭스 제품
+tmdb API 주소 
+
+"REST API" 방식으로 앱
+https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1
+
+https://api.themoviedb.org/3/movie/hero/name
+
+개념적인 용어!!!
+URL을 통해서 앱 & 앱 소통
+
+Method
+- GET
+- POST
+- DELETE
+- PUT
+
+불편한점 => 새로운 것
+1.모든 요청을 URL // 무한하게 동적경로 생성 무리
+2.항상 메서드 정의를 꼭 챙겨야함
+3.필요한 데이터 이상으로 너무 과도하게 데이터를 받아온다 (Over-fetching)
+4.꼭 필요한 데이터가 누락되어있는 경우 (Under-fetching)
+
+https://graphql.org/
+
+github graphql
+
+https://developer.x.com/en
+
+우리만의 간단한 서버를 구현 > graphQL > 영화소개 페이지!!!
+목업데이터!!!
+
+https://graphql.org/swapi-graphql
+> 스타워즈
+
+GET - https://graphql.org/allfilms/totalcount
+
+REST API
+
+GraphQL
+
+로우데이터를 제공해주는 Server REST API
+
+Apollo Server // REST API 소스를  GraphQL 형식으로 변환시켜줄 수 있도록 도와주는 서버
+
+구현하는 서버에서는 GraphQL
+
+apollographql
+
+npm i graphql
+npm i apollo-server
+
+npm i graphql apollo-server
+
+node.js를 기반으로 프로그래밍을 하겠다!!!
+npm init : node package manager 초기화!!
+npm init -y
+
+npm i nodemon -D
+
+nodemon server.js
+
+JS : CJS // ESM
+
+"/"
+
+path: "/create"
+ele
+
+
