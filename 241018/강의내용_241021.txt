@@ -1,0 +1,84 @@
+*Server & Client 소통방식
+
+- REST API 방식 :
+ex) tmdb // openWeather
+OverFetching & UnderFetching
+
+- GraphQL 방식 :
+직접 선언형 방식으로 내가 원하는 data를 찾아올 수 있도록 설계하는 방법
+
+- ApolloServer : 
+기존의 Server가 REST API 방식으로 데이터를 제공해주고 있는 상태에서 GraphQL 방식으로 데이터를 받아서 재사용하고자 할 때, 유용한 서버!!!
+
+- graphql
+
+- nodemon 
+
+> IDE VS Web Editor
+
+
+ID : 내장타입 (*미리 정의가 되어있는 타입)
+> scalar 타입
+
+resolver 함수
+
+
+REST API GET /snsplatform/allTweets
+100개의 Tweet 데이터
+
+REST API GET /snsplatform/tweet/2
+2번째 Tweet 데이터
+
+/:id
+
+GET // POST
+
+X맨
+
+Mutation 타입!!!
+
+*GraphQL 50% : client 값을 전달하기 위한 사전 세팅 => 타입을 지정!!!
+
+*GraphQL 타입을 지정, 만약 값이 존재 => null (*error는 아님!!)
+
+non-nullable 타입
+
+
+*실행 => 값 반환 함수
+
+...../tweets/2
+
+GraphQL
+
+1) typeDefs
+- Query
+- tweet(id: ID!)
+
+2) resolvers
+
+서로 다른 Type 연결하는 방법
+
+REST API => GQL
+> 페이지!!!
+
+altairgraphql
+
+Rest API : B/E
+GraphQL : F/E
+
+1) // 2)
+- 공공데이터 포털 데이터
+- 정부기관 : FM
+- https VS http
+
+
+
+allow pasting
+
+http://localhost:4000/
+
+apolloClient
+
+react
+
+https://yts.mx/api/v2/list_movies.json
