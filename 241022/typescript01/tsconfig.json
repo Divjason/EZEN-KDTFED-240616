@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // 컴파일링 될 파일들의 js버전을 정의
+    "target": "ESNext",
+    // 컴파일링 될 파일들의 모듈시스템을 정의
+    "module": "ESNext",
+    // 컴파일링 하고자 하는 파일의 타입을 엄격하게 검사 여부
+    "strict": false,
+    // 타입지정 시, null 타입 사용에 대한 여부
+    "strictNullChecks": false,
+    // 타입스크립트 각 파일을 독립적인 모듈로 인식
+    "moduleDetection": "force",
+    // 외부라이브러리를 설치할 때, 타입지정 검사 생략하고자 할 때
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}

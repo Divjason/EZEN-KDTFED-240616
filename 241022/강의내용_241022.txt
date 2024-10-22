@@ -1,0 +1,43 @@
+*디자인 전공x
+
+*10년간 웹 업무
+- UX/UI
+- 웹 파트장
+- 13년차 웹디자이너 팀원
+- 10명 넘는 디자인 전공 프로젝트
+
+*좋은 디자인
+- 매우 어려운 일
+- 주관적 // 누군가는 예쁘다 VS 별론데...
+- 개성적 & 대중 접점
+
+*포트폴리오 (나의 포트폴리오)
+- structure 완성
+- theme & concept 완성
+- 나만의 story & profile 빠르고 쉽게 완성!!!
+- Art // 창작 x => 시간 & 완성 만들어내기가 여간 x
+- AE : 박웅현 // SKT 20초 6개월
+- 좋은 기획 // 컨셉 => 완성 x
+
+GraphQL : 작동원리 // studio // debugging 등등
+
+npm create vite@latest
+
+project name : movieql-client
+
+npm install @apollo/client graphql
+npm install react-router-dom
+npm i styled-components
+npm i styled-reset
+
+UI 화면을 출력하기 위한 서버 주소
+http://localhost:5173/
+
+Apollo Server를 통해서 Data를 전달받을 서버 주소
+http://localhost:4000/
+
+@client : local only field data
+
+
+
+
