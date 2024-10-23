@@ -1,0 +1,63 @@
+1.npm init -y
+- 노드 초기화 작업
+
+2.npm i @types/node
+- 노드의 타입을 정의하는 작업
+
+3.npm i typescript -g // npm i typescript
+- TS를 JS로 컴파일링 시켜줄 수 있는 컴파일러 세팅하는 작업
+
+4.tsc -v
+- 컴파일러 설치여부를 확인(*버전확인)
+cmd > powershell (*관리자권한모드)
+Get-ExecutionPolicy
+Restricted
+Set-ExecutionPolicy RemoteSigned > y
+
+5.node src/index.js
+- 노드 기반에서 터미널 내 실행시키고자 하는 JS파일을 테스트
+
+6.npm i ts-node -g // npm i ts-node
+- JS 파일을 TS파일로 컴파일링 하는 것과 동시에 node에서 실행시켜주도록 해주는 역할!!!
+- node -18v
+- ts-node src/index.ts
+
+7.타입스크립트 컴파일러 옵션을 정의하기 위한 명령어
+- tsc --init
+
+> Node 버전 업그레이드 // ts-node에 대한 사용성(*목적) 불문명 의도!!!
+
+8.새롭게 업그레이드 된 컴파일링 + 노드실행 방법
+- npm i tsx -g // npm i tsx
+- tsx -v
+
+9.
+타입주석 && 타입추론
+number // 
+string // 
+boolean //
+array //
+any //
+void //
+
+type 별칭
+구조적 타입시스템
+interface // 
+implements // 
+extents // 
+abstract // 
+접근제어자 // 
+static
+
+// Enum => Enumerable : 열거형 타입
+// 리터럴 타입
+
+// 함수타입 : 매개변수 && 결과값
+// 콜백함수 타입 => 고차함수
+
+
+타입구조도
+슈퍼타입
+서브타입
+
+객체 타입선언 시, 타입단언!!! as || <>
