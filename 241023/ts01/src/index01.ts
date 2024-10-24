@@ -14,7 +14,7 @@ calc(30, (result: number) => console.log(`result is ${result}`));
 //   (b: number) =>
 //     a + b;
 
-// const result = add(1)(2);
+// const result = add(1)(2)(10)(20);
 
 // console.log(result);
 
