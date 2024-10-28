@@ -1,0 +1,28 @@
+React + TS 
+- Styled-Components 복습 & 내용
+ToDoList : []
+=> {}
+
+- props
+- styled-components
+- styled-components // theme
+> 외부 라이브러리 타입스크립트 x
+- 타입 정의!!!
+> definition
+- form
+- react-router-dom
+
+npm i styled-components
+npm i @types/styled-components -D
+npm i react-router-dom
+npm i @types/react-router-dom -D
+
+BrowserRouter
+Routes // Route
+
+createBrowserRouter
+> 가장 메인(*index페이지)이 되는 컴포넌트 페이지를 기준으로 자식요소의 컴포넌트 페이지들을 라우팅해가는 방식
+
+> 컴포넌트들간에 props 전달
+
+

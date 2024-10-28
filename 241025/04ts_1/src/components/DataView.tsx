@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import Title from "./Title";
 import ToDoList from "./ToDoList";
+import { ToDoListContext } from "../contexts/ToDoList";
 
 const Container = styled.div`
   display: flex;
@@ -12,6 +13,11 @@ const Container = styled.div`
   padding: 32px;
   border-radius: 8px;
 `;
+
+interface Props {
+  toDoList: Array<string>;
+  onDelete?: (todo: string) => void;
+}
 
 const DataView = () => {
   return (
