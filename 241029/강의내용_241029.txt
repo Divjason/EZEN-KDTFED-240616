@@ -1,0 +1,51 @@
+TS 기본문법
+
+TS 예제
+- Simple Counter
+- ToDoList
+
+TS 프로젝트
+- styled-components
+- form
+- react-router-dom
+
+useParams
+useSearchParams
+
+https://coinpaprika.com/ko/
+react-query
+
+*fetch( ) : 노드 20버전
+*cache : 전무x
+
+npm i styled-components
+npm i @types/styled-components -D
+npm i react-router-dom
+npm i @types/react-router-dom -D
+npm i @tanstack/react-query
+
+https://webgradients.com/
+https://flatuicolors.com/
+
+*Coins 컴포넌트에서 Link를 클릭했을 때, state 속성안에 값이 담겨서 Coin 컴포넌트로 이동시키게 한 이유?
+
+1) 외부 API 데이터 & Parameter 값을 비교해서 UI 출력!!!!
+(*loading... // 시간 & 비효율성)
+
+2) 많은 중요한 데이터를 state로 보내면 되는거 아닌가?
+주소값으로 즐겨찾기를 해놓은 상태라면, 다음번 동일페이지 접속 (*정상적인 최신 데이터를 찾아오지 못할 확률)
+
+탭2개
+
+첫번째 탭 : 코인에 대한 공통 정보
+두번째 탭 : 해당 코인에 대한 차트 정보
+
+
+
+
+
+
+
+
+
+
