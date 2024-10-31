@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { fetchCoinHistory } from "../api";
 import ApexChart from "react-apexcharts";
+import { useRecoilValue } from "recoil";
+import { isDarkAtom } from "../atoms";
 
 const Container = styled.div`
   margin-top: 10px;
@@ -21,14 +23,13 @@ interface CoinHistory {
 }
 
 const Chart = () => {
+  const isDark = useRecoilValue(isDarkAtom);
   const { coinId } = useParams();
   const { isLoading, data } = useQuery<CoinHistory[]>({
     queryKey: ["history", coinId],
     queryFn: () => fetchCoinHistory(coinId),
     refetchInterval: 5000,
   });
-
-  console.log(data);
 
   const chartData = Array.isArray(data) && data.length > 0 ? data : [];
 
@@ -48,7 +49,7 @@ const Chart = () => {
           ]}
           options={{
             theme: {
-              mode: "dark",
+              mode: isDark ? "dark" : "light",
             },
             stroke: {
               width: 4,

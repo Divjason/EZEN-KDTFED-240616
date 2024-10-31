@@ -1,0 +1,90 @@
+npm i styled-components
+npm i @types/styled-components -D
+
+npm i react-router-dom
+npm i @types/react-router-dom -D
+
+npm i @tanstack/react-query
+npm i recoil
+
+npm i react-hook-form
+
+1.본인이 IT업종에 들어오기 전에 했던 일들을 경력 및 히스토리!!!!
+- 네카라쿠배
+- 전공 
+- 학부 인턴 // 제작 작업물
+
+2.간호 & 건축 & 웹툰
+- 개발자
+- 전공 어드밴티지
+- 비전공 생각 // 아이디어
+
+3.가지고있는 달란트를 적극 사용
+- 프로필 "아바타"
+- 100명 // 90명 // 10명
+- 웹툰 드로잉 능력 => 이미지
+
+1.정보를 제공해주고 있는 API에서의 문제!!!
+- 2중 Filtering 정의
+- refetchInterval 정의
+
+2.ApexCharts 옵션 설정
+- yaxis 설정 변경
+- xaxis 설정 변경
+- color & gradient 설정 변경
+
+3.createGlobalStyle에서 @import 제거하기
+
+4.styled-components, transient Props
+> 컴포넌트 내에서 스타일을 정의하도록 도와주는 역할을 하는 것 까지만 승인, DOM에는 값이 전달되지 못하도록 처리하는 방식
+
+5.state를 관리할 수 있는 다양한 방법 중 하나!!!
+- useContext
+- useReducer
+- Redux
+- Redux-thunk
+- React-Query
+- Axios
+- Outlet
+- Recoil VS props & state management
+
+초기값 : 다크 이거나 라이트 둘 중 하나!!!
+장치 : 트리거 역할!!!
+> 다크 => 라이트
+> 라이트 => 다크
+
+state : 초기값
+setState : 초기값 제어
+> 최상위 루트 컴포넌트 제어
+
+Redux
+Recoil
+
+
+Coin 예제!!!!
+1.Outlet > useOutletContext
+2.useMatch
+3.React-Query
+4.Recoil > Atom > state
+5.type을 효율적으로 정의
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

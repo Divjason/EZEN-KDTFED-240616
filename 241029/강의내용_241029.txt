@@ -24,6 +24,8 @@ npm i react-router-dom
 npm i @types/react-router-dom -D
 npm i @tanstack/react-query
 
+79p~
+
 https://webgradients.com/
 https://flatuicolors.com/
 
@@ -39,6 +41,8 @@ https://flatuicolors.com/
 
 첫번째 탭 : 코인에 대한 공통 정보
 두번째 탭 : 해당 코인에 대한 차트 정보
+
+
 
 
 

@@ -1,9 +1,10 @@
-import React from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./theme";
 import { Outlet } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { isDarkAtom } from "./atoms";
+import { useRecoilValue } from "recoil";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -28,9 +29,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = () => {
+  const isDark = useRecoilValue(isDarkAtom);
   return (
     <>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
         <GlobalStyle />
         <Outlet />
         <ReactQueryDevtools

@@ -1,4 +1,10 @@
-import { useParams, useLocation, Outlet, useMatch } from "react-router-dom";
+import {
+  useParams,
+  useLocation,
+  Outlet,
+  useMatch,
+  useOutletContext,
+} from "react-router-dom";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
@@ -184,7 +190,11 @@ const Coin = () => {
         <title>{state ? state : loading ? "Loading..." : infoData?.name}</title>
       </Helmet>
       <Header>
-        <Title>{state ? state : loading ? "Loading..." : infoData?.name}</Title>
+        <Link to={"/"}>
+          <Title>
+            {state ? state : loading ? "Loading..." : infoData?.name}
+          </Title>
+        </Link>
       </Header>
       {loading ? (
         <Loader>Loading...</Loader>
