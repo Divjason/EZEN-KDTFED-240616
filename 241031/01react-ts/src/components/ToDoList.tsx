@@ -1,6 +1,8 @@
-import { useForm } from "react-hook-form";
 import styled from "styled-components";
-import { atom } from "recoil";
+import { useRecoilValue, useRecoilState } from "recoil";
+import CreateToDo from "./CreateToDo";
+import { toDoSelector, categoryState, Categories } from "../atoms";
+import ToDo from "./ToDo";
 
 const Container = styled.main`
   width: 100%;
@@ -18,45 +20,25 @@ const Title = styled.h1`
   border-bottom: 1px solid #000;
 `;
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
-
-interface Form {
-  toDo: string;
-}
-
-const toDoState = atom({
-  key: "toDo",
-  default: [],
-});
-
 const ToDoList = () => {
-  const { register, handleSubmit, setValue } = useForm<Form>();
+  const toDos = useRecoilValue(toDoSelector);
+  const [category, setCategory] = useRecoilState(categoryState);
 
-  const handleValid = () => {
-    setValue("toDo", "");
+  const onInput = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setCategory(event.currentTarget.value as any);
   };
-
   return (
     <Container>
       <Title>ToDo List</Title>
-      <Form onSubmit={handleSubmit(handleValid)}>
-        <input
-          {...register("toDo", {
-            required: "Please Write a ToDo...",
-          })}
-          type="text"
-          placeholder="Write a ToDo..."
-        />
-        <input type="submit" value={"ADD"} />
-      </Form>
-      <ul>
-        <li>리액트 복습하기</li>
-        <li>스타벅스 가서 커피한잔</li>
-      </ul>
+      <select value={category} onInput={onInput}>
+        <option value={Categories.TODO}>TODO</option>
+        <option value={Categories.DOING}>DOING</option>
+        <option value={Categories.DONE}>DONE</option>
+      </select>
+      <CreateToDo />
+      {toDos?.map((toDoItem) => (
+        <ToDo key={toDoItem.id} {...toDoItem} />
+      ))}
     </Container>
   );
 };
