@@ -1,0 +1,111 @@
+새로운 라이브러리 학습
+- 낯설다!!
+- 어색하다!!
+> 어렵다~!!
+
+재능 & 호기심 (*10~20내외)
+
+라이브러리들은 늘 항상 트랜드에 따라 변화!!! > 
+
+useContext > useReducer > Redux > Redux-thunk > Axio > React-Query > Recoil
+
+Recoil!!!
+- 전역적으로 state 관리
+- 1개의 컴포넌트 안에서 관리
+- props // 
+- atom( ) : state를 전역요소로 저장.관리 함수 => 키메세지(*닉네임)
+
+useRecoilValue( ) : state값을 찾아와서 사용
+useSetRecoilState( ) : state값을 setting해줄 수 있는 역할
+useRecoilState( ) : state값을 찾아오기도 하고, 찾아온 해당 값을 setting까지도 모두 할 수 있는 역할
+
+selector( ) : atom 함수안에 저장.관리되고있는 state값을 원하는 형식으로 편입.제어 => UI 전달 역할
+> 식별자를 항상 달고 다닌다!!!
+
+get : state의 값을 찾아와서 연산작업을 거쳐서 우리가 원하는 형태의 값을 최종 반환
+
+PI // 휴머노이드 2025년 상용화
+> 현대 // 무인자동차 // 휴머노이드
+> PI // 감정이입
+
+Canvan Board + Drag & Drop
+
+1.D&D 라이브러리 사용!!!
+
+- 드래그 & 드롭을 하고자 하는 문서를 반드시 DragDropContext 감싸안아야한다
+
+- Droppable 이라는 백그라운 영역이 존재
+
+- 실제 드래그를 하고자하는 요소들은 Draggable 이라는 속성을 가지고 있어야함
+
+npm install react-beautiful-dnd
+npm install @types/react-beautiful-dnd -D
+
+Droppable & Draggable : 모두 기본적으로 함수의 형태를 띄고 있어야합니다!!!
+
+> 함수 자료형태 : 매개변수 // 누군가 상호소통할 수 있는 자료형태
+
+> Droppable & Draggable : 고유의 id값을 가지고 있어야 합니다!!!
+
+> Droppable & Draggable : 자식요소로 태그를 가져갈 수 있습니다. => 함수!!!
+
+> Draggable : 고유한 index값을 부여해줘야한다 
+
+> DragEnd : D&D이 종료가 되면 실행 기능 정의
+
+*저 & 교무팀장 : 내년도 강의 + 2번째 SNS 외부강사 논의를 하다가 시간 => 행정 선생님
+
+*포트폴리오
+- 직장/회사생활
+- 보고서 & 기획서
+
+1) 목적 : why?
+
+2) 어떻게 : how?
+
+3) 결과 : what?
+
+나라는 작은회사 => 더 큰 회사 알려주기 위한 목적
+
+포트폴리오
+
+1) 이유 : "나"라는 사람이 어떤 교육과정 // 언어 // 결과물 낼 수 있는지 한눈에 보기 편한 방식으로 어필!!!
+
+2) 보는 사람 VS 만드는 사람
+- 현대자동차 회장
+- 미국식 포드 타입 오프로드 자동차
+> 힘 // 휘발유
+
+- 전기차 // 가성비 // 효율
+- 아담 & 스타일리시 자동차
+
+*Art > 요소!!!
+**이 포폴 누가볼 것 이냐?
+
+{ 
+todo : [ ]
+doing : [ ]
+done : [ ]
+}
+
+destination : 이동하고자 하는 최종 위치에 대한 정보값을 가지고 있음 (*droppable ID : todo || doing || done), index)
+
+source : 이동하고자 하는 요소들의 원래있었던 그 위치 정보값을 가지고 있음 (*droppable ID : todo || doing || done), index)
+
+누군가 어디론가 이동중에 있다는 사실
+
+snapshot : 찰나의 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
