@@ -1,0 +1,14 @@
+npm i styled-components
+npm i @types/styled-components -D
+
+npm i react-router-dom
+npm i @types/react-router-dom -D
+
+npm i recoil
+npm i framer-motion
+npm i react-hook-form
+
+npm i @tanstack/react-query
+
+
+
