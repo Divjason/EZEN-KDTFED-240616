@@ -30,3 +30,15 @@ export const getMovies = () => {
     (response) => response.json()
   );
 };
+
+export const searchContents = (keyword: string | null) => {
+  return fetch(
+    `${BASE_PATH}/search/multi?api_key=${API_KEY}&query=${keyword}`
+  ).then((response) => response.json());
+};
+
+export const searchGeneres = () => {
+  return fetch(`${BASE_PATH}/genre/movie/list?api_key=${API_KEY}`).then(
+    (response) => response.json()
+  );
+};
