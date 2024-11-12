@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useLocation } from "react-router-dom";
+import { Routes, useLocation, useMatch } from "react-router-dom";
 import styled from "styled-components";
 import {
   searchContents,
@@ -8,9 +8,12 @@ import {
   searchGeneres,
   getReviews,
   getVideos,
+  Movie,
 } from "../api";
 import { makeImagePath } from "../utils";
 import YouTube from "react-youtube";
+import { Link } from "react-router-dom";
+import Pagination from "react-js-pagination";
 
 const Container = styled.main`
   width: 100%;
@@ -119,9 +122,93 @@ const GenereSection = styled.div`
   border-radius: 8px;
 `;
 
+const Tabs = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 25px 0;
+  padding-left: 100px;
+`;
+
+const Tab = styled.span<{ isActive: boolean }>`
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 30px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+  color: ${(props) =>
+    props.isActive ? props.theme.red : props.theme.black.darker};
+  transition: all 0.3s;
+  &:hover {
+    background: ${(props) => props.theme.red};
+    color: #fff;
+  }
+`;
+
+const StyledPagination = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  background: crimson;
+  width: 20%;
+  padding: 20px;
+  border-radius: 10px;
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline;
+      margin: 0 5px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 50%;
+        transition: background 0.3s, color 0.3s;
+        &:hover {
+          background: ${(props) => props.theme.red};
+          color: #fff;
+        }
+      }
+      &.active a {
+        color: #fff;
+        background: ${(props) => props.theme.red};
+      }
+    }
+  }
+`;
+
+interface Obj {
+  id: Number;
+  name: string;
+}
+
+interface ReviewContents {
+  author: string;
+  author_details: {
+    name: string;
+    username: string;
+    avatar_path: string;
+    rating: number;
+  };
+  content: string;
+  created_at: string;
+  id: string;
+  updated_at: string;
+  url: string;
+}
+
+interface ContentState<T> {
+  [key: number]: T[];
+}
+
 const Search = () => {
-  const { search } = useLocation();
-  const keyword = new URLSearchParams(search).get("keyword");
+  const [videos, setVideos] = useState<ContentState<string>>({});
+  const location = useLocation();
+  const keyword = new URLSearchParams(location.search).get("keyword");
 
   const { data: movieData, isLoading: movieLoading } =
     useQuery<GetMoviesResult>({
@@ -150,39 +237,69 @@ const Search = () => {
     enabled: !!ids,
   });
 
-  console.log(videoData);
-  console.log(videoData?.[0].results[0]?.key);
+  useEffect(() => {
+    if (movieData && videoData) {
+      movieData.results.forEach((movie) => {
+        getVideos(movie.id).then((data) => {
+          if (data?.results) {
+            const videoIds = data.results.map((video: any) => video.key);
+            setVideos((prev) => ({
+              ...prev,
+              [movie.id]: videoIds,
+            }));
+          }
+        });
+      });
+    }
+  }, [movieData, videoData]);
 
-  interface Obj {
-    id: Number;
-    name: string;
-  }
+  const reviewMatch = useMatch("search/review");
+  const videoMatch = useMatch("search/video");
 
-  interface ReviewContents {
-    author: string;
-    author_details: {
-      name: string;
-      username: string;
-      avatar_path: string;
-      rating: number;
-    };
-    content: string;
-    created_at: string;
-    id: string;
-    updated_at: string;
-    url: string;
-  }
+  const [showReviewContent, setShowReviewContent] = useState(false);
+  const [showVideoContent, setShowVideoContent] = useState(false);
 
+  const toggleReviewContent = () => {
+    setShowReviewContent(!showReviewContent);
+  };
+
+  const toggleVideoContent = () => {
+    setShowVideoContent(!showVideoContent);
+  };
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [moviesPerPage, setMoviesPerPage] = useState(2);
+
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const indexOfLastMovie = currentPage * moviesPerPage;
+  const indexOfFirstMovie = indexOfLastMovie - moviesPerPage;
+  const currentMovies: Movie[] =
+    movieData?.results.slice(indexOfFirstMovie, indexOfLastMovie) || [];
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [currentPage]);
   return (
     <Container>
       {movieLoading ? (
         <div>Loading...</div>
       ) : (
         <>
-          {movieData?.results.map((movie, index) => (
+          {currentMovies?.map((movie, index) => (
             <SearchBox key={index}>
               <MovieSection>
-                <MovieImg src={makeImagePath(movie.backdrop_path)} />
+                {movie.backdrop_path ? (
+                  <MovieImg
+                    src={makeImagePath(movie.backdrop_path)}
+                    alt="img"
+                  />
+                ) : (
+                  <div style={{ width: "50%" }}>Ready for image</div>
+                )}
+
                 <MovieInfo>
                   <MovieTitle>{movie.original_title}</MovieTitle>
                   <MovieOverView>{movie.overview}</MovieOverView>
@@ -205,23 +322,22 @@ const Search = () => {
                           genereData?.genres.find((item: Obj) => item.id === id)
                             ?.name
                       )
-                      .filter((name) => name)
                       .join(", ")}
                   </GenereSection>
                 </MovieInfo>
               </MovieSection>
+
               <ReviewSection>
                 <h3>😎😜Review😎😍</h3>
                 {reviewLoading ? (
                   <div>Loading Reviews...</div>
                 ) : (
                   <ul>
-                    {reviewData &&
-                    reviewData[index]?.results &&
-                    Array.isArray(reviewData[index].results) ? (
+                    {reviewData && Array.isArray(reviewData[index].results) ? (
                       reviewData[index].results.map(
                         (review: ReviewContents) => (
                           <li key={review.id}>
+                            <div>{review.author}</div>
                             <ReviewTitle>{review.content}</ReviewTitle>
                           </li>
                         )
@@ -233,33 +349,35 @@ const Search = () => {
                 )}
               </ReviewSection>
               <div>
-                {videoLoading ? (
-                  <div>Video Loading...</div>
-                ) : videoData &&
-                  videoData[index] &&
-                  videoData[index].length > 0 ? (
+                {videos[movie.id]?.length > 0 ? (
                   <YouTube
-                    videoId={videoData[index].results[0]?.id}
+                    videoId={videos[movie.id][0]}
                     opts={{
-                      width: "1620px",
+                      width: "100%",
                       height: "800px",
                       playerVars: {
                         autoplay: 0,
                         modestbranding: 1,
                         loop: 0,
-                        playlist: videoData[index].results[0]?.id,
+                        playlist: videos[movie.id][0],
                       },
-                    }}
-                    onReady={(e: any) => {
-                      e.target.mute();
                     }}
                   />
                 ) : (
-                  <div>No Video</div>
+                  "No Available"
                 )}
               </div>
             </SearchBox>
           ))}
+          <StyledPagination>
+            <Pagination
+              onChange={handlePageChange}
+              activePage={currentPage}
+              itemsCountPerPage={moviesPerPage}
+              totalItemsCount={movieData?.results.length || 0}
+              pageRangeDisplayed={5}
+            />
+          </StyledPagination>
         </>
       )}
     </Container>

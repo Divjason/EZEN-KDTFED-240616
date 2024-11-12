@@ -1,7 +1,7 @@
 const API_KEY = "0bc8bd2db453d7413d1c2844ec617b61";
 const BASE_PATH = "https://api.themoviedb.org/3";
 
-interface Movie {
+export interface Movie {
   id: number;
   backdrop_path: string;
   genre_ids: number[];
