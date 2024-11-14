@@ -1,0 +1,27 @@
+.container {
+  background: #fff;
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: 0 0 30px rgba(100, 100, 100, 0.2);
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  font: bold 18px/1 "arial";
+  & > a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.main {
+  padding-top: 10px;
+}
+
+.footer {
+  padding: 100px 0;
+  color: gray;
+}

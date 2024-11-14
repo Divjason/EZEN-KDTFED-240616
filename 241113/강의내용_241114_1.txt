@@ -1,0 +1,13 @@
+1.메인페이지 안에 검색바를 삽입!!!!
+- searchable-layout.tsx
+
+2.메인페이지의 레이아웃을 관리해주는 파일!!!
+- <GlobalLayout> 해당 컴포넌트의 자식 컴포넌트 설정
+
+3.searchable-layout.tsx는 개발자가 원하는 페이지 컴포넌트에서만 출력!!! (*모든 페이지 컴포넌트에서 출력 x)
+
+4.searchable-layout.tsx 해당 요소가 출력되길 원하는 페이지 컴포넌트
+1) index & search 페이지 컴포넌트!!!!
+
+5.메인 페이지 컴포넌트의 index.tsx
+- getLayout
