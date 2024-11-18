@@ -2,11 +2,17 @@ https://supabase.com/
 > 클라우드 서버 플랫폼
 > scheme + db
 
+npx prisma db push
+
 npm run seed
 npm run build
 npm run start
 
 npm run dev
+
+npx prisma studio
+
+localhost:12345/
 
 1.Page Routing
 - Common Page Routing
@@ -35,6 +41,12 @@ npm run dev
 - 외부 API를 활용해서 데이터를 받아올 때, 동일한 데이터를 복수의 페이지에서 사용하고자 할 때 보다 효율적으로 관리해줄 수 있는 기능
 - supabase라는 cloud sever를 활용해서 data를 직접 불러올 예정
 - 메인페이지 // 검색페이지 // 개별 책정보페이지
+
+7.복수의 동적 파라미터값을 반영하는 path의 경우, Catch All Segment기능 사용!!!
+> 파일명 : [...파일명]
+
+8.Optional Catch All Segment기능 사용!!!
+> 파일명 : [[...파일명]]
 
 Bubble Sort (*버블 정렬)
 - 특정 배열안에 앞에있는 값과 뒤에있는 값을 연이어서 비교해서 최종적으로 배열 내 값을 정렬하는 것
