@@ -1,0 +1,84 @@
+*전통적인 방식 SSR
+- User // Client // Server
+- 현재 사용중인 페이지에서 사소한 1가지 요소가 변경되는 순간, 해당 페이지의 모든 데이터를 Server에 재요청!!
+- 사소한 1가지 때문에 굳이 불필요하게 모든 데이터를 다시 가져와야 하는 불편 (*메모리 공간 비효율적인 사용 // 돈)
+- 안정성 (*서버라는 확실 공간을 기반으로 데이터를 언제든지 최신화해서 가져올 수 있다 장점)
+
+*SSR방식의 비효율성을 개선하기 위해서 CSR
+- User // Client // Server
+- 아무런 값도 가지고 있지 않은 index.html
+- JS 파일들을 번들링
+- 서버가 전달한 index.html + Bundle (*최초에 서버한테 받은 원본 자료)
+- Virtual DOM <-> 서버에게 최초로 받은 데이터
+- 웹 페이지가 최초에 마운트가 된 이후에는 엄청나게 빠른 속도로 페이지 구현
+- SEO 누락 & 마운트가 되기 전까지의 Loading
+
+*SSR방식 (*현 시점) > CSR방식
+- Pre-Rendering (*사전렌더링) 사용
+- User // Client // Server
+- 기존에는 User가 Client를 통해서 Server에 무언가를 요청하는 시점에 맞춰서 데이터를 생성해서 전달하는 방식 VS 1차 렌더링 (*index.html + JS)
+- Client (2차 렌더링) : UI가 출력될 수 있도록 하는 단계
+- 최초에 브라우저에서 컴포넌트 마운트가 되기위한 이전 시간 현저히 줄어들게 됨
+- FCP : First ContentFul Painting
+- 실제 사용자가 버튼클릭 // 인풋태그 이벤트 실행 => 인터랙티브한 행동을 할 수 있는것은 아닙니다!!!
+- Hydration (*수화 = 물을 적시다 혹은 물을 뿌리다)
+- JS를 활용해서 User 참여 // 이벤트
+- TTI (Time To Interactive)
+
+Data Fetching 방법
+- 사전 렌더링을 하기 때문에, 사전 렌더링 시간 동안 먼저 fetching
+
+
+*Data Fetching
+1.SSR방식 : 사전 렌더링 기간 동안 데이터를 페칭 하는 방법
+> 무조건 가장 최신 업데이트가 되어진 데이터를 서버로부터 받아올 수 있음
+> 만약 서버가 사전 렌더링을 해줘야하는 로우 데이터가 만약 무거운경우에는 이 자체 단계에서 로딩시간을 잡아먹을 수 있다
+
+2.SSG방식 : 빌드 단계에서 최종적으로 정의된 데이터를 사전 페칭 하는 방법
+(Static Site Generation)
+> 서버에서 사전 렌더링 시 무거운데이터를 처리해야하는 부담을 빌드단계에서 압축한 데이터만 가지고 처리
+> 가장 최신 데이터를 받아올 수 없음!!!
+
+3.ISR방식 : 사전 렌더링 + 빌드 융합 => 최초에서 페이지의 데이터 패칭 방법을 상황에서 선택
+(Incremental Static Regeneration)
+
+http://localhost:12345/
+http://localhost:12345/book
+
+React.js => CSR // 파일 수정.변환 => Server 상관관계x
+Next.js => Server
+
+Cloud 방식으로 만들어진 Server 사용
+supabase 개인용 가상 Cloud 할당 > Server 구현!!!
+supabase.com
+
+npx prisma studio
+
+npm i 
+npx prisma db push
+npm run seed
+
+npm run build
+npm run start
+
+http://localhost:12345/
+http://localhost:5555/
+
+index.tsx : SSR
+
+http://localhost:3000
+http://localhost:3000/search?q=자바스크립트
+
+ui-main
+npm run dev
+http://localhost:3000/
+
+server-main
+npm run start
+http://localhost:12345/
+
+npx prisma studio
+http://localhost:5555/
+
+
+

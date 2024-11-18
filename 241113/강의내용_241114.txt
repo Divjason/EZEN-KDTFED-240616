@@ -8,10 +8,12 @@ npm run start
 
 npm run dev
 
-페이지 라우팅
-
-
 1.Page Routing
+- Common Page Routing
+- Page Routing
+- Query String
+- URL Parameter
+- 404 Page Routing
 
 2.Navigation
 - useRouter
