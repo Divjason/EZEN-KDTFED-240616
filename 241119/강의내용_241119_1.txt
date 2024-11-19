@@ -1,0 +1,54 @@
+npx create-next-app@latest .
+
+프로그래머스 사이트 Java / Javascript / Python
+민간자격시험 PCCP (*코딩 전문 역량 인증평가)
+
+Route Group : 경로상에서는 아무런 영향을 미치지 않습니다. 하지만 공통의 Layout을 적용시키고자 하는 컴포넌트 페이지들을 그룹핑!!!
+
+
+
+
+Next.js
+1.Page Router
+- 간편한 Page Routing (*폴더 혹은 파일명만으로 페이지 분기)
+- Pre-Rendering (*사전렌더링) // SSR => Client Data 전달하는 속도 효율 // FCP => TTI (Hydration)
+
+1) 페이지별 특정 컴포넌트 페이지의 출력여부를 일일히 설정 & 해당 컴포넌트 페이지 내부에 매개변수 및 타입정의 등 정리해야할 요소들이 생각보다 적지 않았다
+> 특정 페이지에 영향을 미치게 하는 공통 layout 이라는 개념
+/search
+
+2) 데이터 패칭이 특정 페이지 컴포넌트에 집중 (*과부하)
+
+3) 불필요한 JS Bundle 데이터를 제외하고 client에게 전달하고자하는 목적
+> Next.js는 SSR 방식으로 사전 렌더링을 하고 있기 때문에 무조건 build단계에서 정의된 JS 데이터를 반드시 client에게 전달!!!
+
+Next.js > App Router 버전 => 페이지 컴포넌트를 2가지의 형태로 구분!!!
+
+Server Component Page :
+서버측에서 사전 렌더링을 진행할 때, 딱 한 번한 실행 (*client)
+
+Client Component Page
+서버측에서 사전 렌더링을 진행할 때, 한 번 실행
+클라이언트에게 해당 컴포넌트 페이지가 전달된 이후 FCP => TTI (*하이드레이션 단계 한 번 실행)
+
+2.App Router
+
+- Page Routing
+> Common Layout
+
+- Data Fetching
+> SSR
+> SSG
+> ISR
+
+App router를 활용해서 페이지 컴포넌트를 만들면, 기본적으로 server 컴포넌트의 속성을 가집니다!!!
+
+=> client 컴포넌트
+
+동적 파라미터의 값이 2개 이상 : Catch All Segment [...아이디]
+동적 파라미터가 없을 때에도 대응 : Optional Catch All Segment [[...아이디]]
+
+> Catch All Segment 혹은 Optional Catch All Segment를 사용하면
+동적 파라미터의 값을 부담없이 사용할 수 있는 장점!!!
+
+> 동적 파라미터의 값이 존재 x => 404 에러메세지!!!
