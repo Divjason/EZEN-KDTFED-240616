@@ -1,0 +1,56 @@
+1.Node.js 설치
+
+2.npm
+
+3.npm init => package.json
+
+4.babel => JS 신문법 & 구문법 => 통일해서 최신문법 컴파일링
+
+5.nodeMon => 터미널 실시간으로 코드 잘 작동하는지 모니터링
+
+6.express 
+
+7.
+listen( ) => 몇 번 포트 // 어떤 기능 실행
+get( ) => 어떤 경로 // 어떤 기능 실행
+: 미들웨어 함수, 파이널웨어 함수
+use( )
+
+8.파이널웨어 함수 :
+end( ) : client가 요청한 페이지에서 종결
+send( ) : client가 요청한 페이지에 어떤 값을 전달
+
+*이제부터 본격적인 페이지 라우팅
+
+Node.js : 자바스크립트를 기반으로 탄생한 라이브러리 / 프레임워크 / "플랫폼 = 실행환경"
+
+구글 크롬 웹 브라우저 > V8 검색엔진 > JS 빠르고 & 효율적 스캐닝 & 실행
+
+npm = Node Package Manager
+
+Node = Server 인식!
+
+express
+
+BSD : Berkeley Software Distibution
+- 어떤 npm 혹은 라이브러리들을 사용할 때 사용, 수정, 배포는 자유롭게 하되, 재배포 시 에는 원저작자의 동의 및 오픈
+
+GPL : General Public License
+- BSD 라이센스 타입과 거의 동일하나, 재배포를 할 시에도 반드시 원저작자의 이름
+
+MIT : Massachusetts Institute of Technology
+- 엄격!! // 수정, 배포, 편집 허용!!! > 원저작자의 경제활동 및 표현 제약 => 즉각 정지 가능
+
+노드 명령어!!!
+
+ls : git-bash 터미널 > 현재 node 프로젝트 폴더 내 생성된 파일 목록 출력
+
+cls : 터미널 내 결과값을 clear
+
+res.end() : client의 요청이 발생된 이후 서버가 어떤 조치를 한 다음 종결을 짓고자 할 때
+
+res.send() : client가 도착한 해당 페이지에 어떤 값을 전달하고자 할 때
+
+콜백함수 > req, res, next => next() => 미들웨어 함수가 실행 후 파이널웨어 함수에게 실행권을 넘길 때 사용함수!!
+
+

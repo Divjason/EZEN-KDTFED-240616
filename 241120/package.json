@@ -1,0 +1,31 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "watch videos.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divjason/node-reloaded.git"
+  },
+  "author": "David",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Divjason/node-reloaded/issues"
+  },
+  "homepage": "https://github.com/Divjason/node-reloaded#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/node": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "nodemon": "^3.1.7"
+  }
+}
