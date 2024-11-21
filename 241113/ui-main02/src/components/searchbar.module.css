@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  & > input:nth-child(1) {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+  & > input:nth-child(2) {
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(37, 147, 255);
+    color: #fff;
+    cursor: pointer;
+  }
+}

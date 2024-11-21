@@ -1,0 +1,21 @@
+.container {
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 7px 30px rgba(100, 100, 110, 0.3);
+  & > header > a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+  }
+  & > main {
+    margin-top: 10px;
+  }
+  & > footer {
+    color: gray;
+    padding: 100px 0;
+  }
+}

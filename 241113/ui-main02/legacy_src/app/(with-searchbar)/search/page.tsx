@@ -1,4 +1,5 @@
 import React from "react";
+import ClientComponent from "@/components/client-component";
 
 const Page = async ({
   searchParams,
@@ -7,7 +8,14 @@ const Page = async ({
 }) => {
   const { q } = await searchParams;
   console.log(q);
-  return <div>Search 페이지 : {q}</div>;
+  return (
+    <div>
+      Search 페이지 : {q}
+      <ClientComponent>
+        <></>
+      </ClientComponent>
+    </div>
+  );
 };
 
 export default Page;
