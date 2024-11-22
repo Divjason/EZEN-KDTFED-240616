@@ -1,0 +1,34 @@
+1.IT 업계
+- Node.js (*Startup / F/E + B/E)
+> JS : Type Strict 현저하게 부족 => 신뢰 & 안정
+> TS : Bug // any
+
+- Java Spring (*전통적인 B/E)
+
+/Dynamic Parameter => Absolute URL
+
+Dynamic Parameter => Relative URL
+
+*App router 방식, 최신 문법
+
+1.Data Cache :
+- Cache : 어떤 페이지에 접속을 하게되었을 때, 해당 페이지에 대한 정보값을 메모리 공간에 저장!!!
+
+- 다른 페이지에 방문 => 해당 페이지 재방문 // 이미 방문했던 페이지의 정보를 많이 알고 있을 수록 접속 속도 및 로딩 속도 현저히 빠르기 때문!!!
+
+- 반드시 fetch( )함수 메서드를 활용해서 어떤 데이터를 불러올 시, 사용할 수 있는 옵션 기능!!!
+
+> 1회 찾아온 데이터를 재사용 // 속도 매우 효율적 개선
+
+- 항상 True x
+> 발생하는 false
+> 매번 cache 저장 // 컴퓨터 비효율적으로 cache 데이터가 많이 쌓여지게 => 로컬컴퓨터 속도 저하!!!
+
+"force-cache" : 무조건 캐시를 저장
+"no-store" : 무조건 캐시를 저장 x
+revalidate: 변수값 => 캐시를 저장 (*변수값으로 들어온 주기에 따라서 캐시를 저장 (*ex. ISR)
+
+2.Request Memoization :
+- 요청을 메모화 하겠다!!
+
+

@@ -1,4 +1,6 @@
 extends base.pug
 
 block content
-  h1 Watch Video!
+  h1=video.title
+  h3 #{video.views} #{video.views === 1 ? "view" : "views"}
+  a(href=`${video.id}/edit`) Edit Video &rarr;
