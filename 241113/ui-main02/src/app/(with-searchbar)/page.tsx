@@ -2,6 +2,14 @@ import styles from "./page.module.css";
 import BookItem from "@/components/book-item";
 import { BookData } from "@/types";
 
+export const dynamic = "force-dynamic";
+
+// 특정페이지의 유형을 강제로 static, dynamic 페이지로 설정하도록 하는 옵션들
+// 1. auto : 페이지 컴포넌트의 기본값을 보장 => 강제
+// 2. force-dynamic : 페이지를 강제적으로 Dynamic 페이지로 설정
+// 3. force-static
+// 4. error
+
 const RecoBooks = async () => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book/random`,
@@ -27,7 +35,7 @@ const RecoBooks = async () => {
 const AllBooks = async () => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book`,
-    { cache: "no-store" }
+    { cache: "force-cache" }
   );
   if (!response.ok) {
     return <div>오류가 발생했습니다...</div>;

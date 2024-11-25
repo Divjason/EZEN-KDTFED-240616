@@ -1,0 +1,75 @@
+Node.js
+
+babel (*Latest JS)
+
+Nodemon (*Terminal Monitoring)
+
+express
+
+Restful API
+- get
+- post
+
+Global Router
+- middleware function
+- finalware function
+
+Page Routing
+
+Action > Controller
+- end
+- send
+- render
+
+Pug > UI 값을 출력!!!
+
+Data : 순수한 자료 그 자체
+DB : DataBase => 저장하고 있는 자료의 구조까지 포함 (*포괄적 개념)
+
+How to!!!
+
+1.Java // Python
+- AI // 인공지능 // 딥러닝 // 머신러닝
+- 비교적 학습 용이
+
+2.F/E + @
+- Node.js // JS 기반으로 문법
+- Java 오랜 사용 x
+
+> mongoDB
+- 행 & 열 구성되어있는 DB
+- json 형태 DB
+- 문법 => Node.js x
+
+1) Mogodb 공홈 > 인스톨러 설치
+2) chocolatey = homebrew // 운영체제에서 외부 프로그램을 설치 > 보다 쉽게 설치할 수 있도록 도와주는 shell
+
+수동설치!!!!
+
+- chocolatey 설치 :
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+- chocolatey를 활용한 mongoDB
+choco install mongodb --pre 
+
+- cmd를 활용해서 mongoDB
+choco install mongodb-shell
+choco install mongodb-compass
+VS
+choco install mongodb-compass
+
+- 시스템 환경변수 설정
+> mongoDB > 경로를 로컬컴퓨터!!!
+
+> mongoose
+
+(Get-Downloader $url @ProxyConfiguration).DownloadFile($url, $fil ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+
+C
+R
+U
+D
+
