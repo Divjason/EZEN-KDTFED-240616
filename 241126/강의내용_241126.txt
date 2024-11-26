@@ -1,0 +1,13 @@
+6743fa5cf49c2d739303d8f5 : 24자
+6745163c7397bf8abd39bb60
+
+> 16진수 // 0-9a-f
+
+mongoDB
+
+mongoose
+> schema : DB의 형태 및 구조
+> model : Video
+
+db.videos.find()
+db.videos.remove({})
