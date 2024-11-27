@@ -18,14 +18,12 @@ const RecoBooks = async () => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book/random`,
     {
-      next: {
-        revalidate: 3,
-      },
+      cache: "no-store",
     }
   );
-  if (!response.ok) {
-    return <div>오류가 발생했습니다...</div>;
-  }
+  // if (!response.ok) {
+  //   return <div>오류가 발생했습니다...</div>;
+  // }
   const recoBooks: BookData[] = await response.json();
   return (
     <div>
@@ -40,11 +38,11 @@ const AllBooks = async () => {
   await delay(1500);
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_SERVER_URL}/book`,
-    { cache: "force-cache" }
+    { cache: "no-store" }
   );
-  if (!response.ok) {
-    return <div>오류가 발생했습니다...</div>;
-  }
+  // if (!response.ok) {
+  //   return <div>오류가 발생했습니다...</div>;
+  // }
   const allBooks: BookData[] = await response.json();
   return (
     <div>

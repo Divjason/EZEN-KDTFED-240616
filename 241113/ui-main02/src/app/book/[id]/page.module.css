@@ -1,44 +1,49 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  & > .cover_img_container {
+  gap: 50px;
+  & > section {
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    position: relative;
+    flex-direction: column;
+    gap: 10px;
+    & > .cover_img_container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      & > img {
+        z-index: 1;
+        height: 350px;
+      }
     }
-    & > img {
-      z-index: 1;
-      height: 350px;
+    & > .title {
+      font-size: large;
+      font-weight: bold;
     }
-  }
-  & > .title {
-    font-size: large;
-    font-weight: bold;
-  }
-  & > .subTitle {
-    color: gray;
-  }
-  & > .author {
-    color: gray;
-  }
-  & > .description {
-    background: rgb(245, 245, 245);
-    padding: 15px;
-    line-height: 1.6;
-    border-radius: 8px;
+    & > .subTitle {
+      color: gray;
+    }
+    & > .author {
+      color: gray;
+    }
+    & > .description {
+      background: rgb(245, 245, 245);
+      padding: 15px;
+      line-height: 1.6;
+      border-radius: 8px;
+    }
   }
 }

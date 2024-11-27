@@ -1,0 +1,43 @@
+findByIdAndDelete( ) : mongoDB안에 있는 데이터를 ID값을 기준으로 찾아서 자동으로 삭제해주는 미들웨어 함수
+
+1.찾아... : id를 상단 동적 파라미터 경로에서 찾아
+2.우리의 전체 데이터가 저장되어있는 mongoDB 찾아서 매칭
+3.리다이렉팅
+
+
+이 페이지를 사용하는 사용자들의 정보 (*User Information)를 서버에 저장 / 관리
+
+아무리 내부적으로 관리하는 DB더라도, 관리자가 해당 pw를 함부로 확인.탈취.수정 x
+
+password Hashing
+
+> reset( ) : 클라이언트 컴포넌트 페이지에서만 작동!!!
+- 에러가 발생
+- 서버를 정상작동
+- reset( ) : 클라이언트 컴포넌트 페이지 정상작동 x
+
+Next.js > Server Action 기능!!!!
+> 클라이언트 페이지에서 서버에서만 실행되는 비동기 함수를 호출해서 사용!!!
+
+Error
+1.Error Handling
+- ctrl + shift + R
+- cmd + shift + R
+
+1.원래 전통적인 error 핸들링 방법
+- 함수를 실행 > try // catch
+
+2.react ~ next => 컴포넌트 기반 모든 페이지 구성
+- 컴포넌트가 많아지면 많아질수록 에러가 발생될 수 있는 기회요소 // 에러를 핸들링하기 위해서 작성해야하는 catch
+
+3.next > error를 한번에 핸들링할 수 있는 컴포넌트 페이지 > 특정 폴더 페이지 삽입
+
+- page.tsx > try // catch
+- error.tsx
+
+reset( ) : 서버에서 정상적으로 데이터를 제공해주지 못했을 때 발생한 에러문제를 해결하지 못했다!!!
+
+window.location.reload( ) : 현재 보고있는 페이지 전체를 통으로 rerendering
+
+router.refresh( );
+reset( )

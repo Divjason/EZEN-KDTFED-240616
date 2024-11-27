@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
 
-export const formHashtags = (hashtags) => {
-  return hashtags
-    .split(",")
-    .map((word) => (word.startsWith("#") ? word : `#${word}`));
-};
+// export const formHashtags = (hashtags) => {
+//   return hashtags
+//     .split(",")
+//     .map((word) => (word.startsWith("#") ? word : `#${word}`));
+// };
 
 const videoSchema = new mongoose.Schema({
   title: {
@@ -21,6 +21,12 @@ const videoSchema = new mongoose.Schema({
     views: { type: Number, required: true, default: 0 },
     rating: { type: Number, required: true, default: 0 },
   },
+});
+
+videoSchema.static("formatHashtags", (hashtags) => {
+  return hashtags
+    .split(",")
+    .map((word) => (word.startsWith("#") ? word : `#${word}`));
 });
 
 // videoSchema.pre("save", async function () {
