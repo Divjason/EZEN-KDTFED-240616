@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Divjason/node-reloaded#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.21.1",
     "mongoose": "^8.8.2",
     "morgan": "^1.10.0",
