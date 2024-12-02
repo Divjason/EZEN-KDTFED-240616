@@ -1,0 +1,44 @@
+1) 고급 라우팅 패턴
+- page routing
+- 1개의 페이지안에 여러개의 컴포넌트 페이지 삽입
+- modal
+
+> Parallel Route = 병렬 라우트
+=> 하나의 화면안에 여러개의 컴포넌트 페이지를 병렬방식으로 라우팅하고자 할 때 사용할 수 있는 라우트 방식
+> @이라는 예약어로 시작하는 병렬 라우트를 사용 => 별도 페이지 x
+=> slot 페이지의 경우에는 무제한으로 생성
+
+Next.js > 특정 몇몇 페이지에서만 공통으로 어떤 컴포넌트를 사용하고자 하는 경우 => ( ) : Route Group // 공통으로 어떤 컴포넌트를 사용할 수는 있으나 그렇다고 해서 해당 페이지가 별도로 생성 x
+
+> Parallel Route의 특징 : Link와 같은 컴포넌트를 통해서 이동할 때에만 페이지 정상적으로 출력 // 만약 Link를 거치지 않고 사용자가 직접 동적 파라미터의 값을 사용해서 페이지 접속 x
+
+> Intercepting Route = 인터셉팅 라우트
+=> user가 어떤 페이지로 이동하려고 할 때, user의 어떤 행동이 특정 조건을 만족하게 되면, 가로채서 redirectin을 실행시켜주는 역할!!!
+
+모달 : 
+
+(.)
+
+2) 최적화
+> jpeg > webp // avif => 경량화된 이미지 포맷 변경!!!
+
+3) 배포 (*page router // app router)
+
+
+
+https://onebite-books-server02.vercel.app/
+
+1차로 정상적인 배포 > vercel --prod
+
+deployment 배포
+> vercel 사이트
+https://vercel.com/
+
+npm i vercel -g
+
+vercel login
+
+vercel
+
+onebite-books-page02
+

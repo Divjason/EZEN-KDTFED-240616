@@ -28,7 +28,8 @@
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "swagger-themes": "^1.4.3",
-    "text": "^0.1.0"
+    "text": "^0.1.0",
+    "vercel": "^39.1.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
