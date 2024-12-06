@@ -1,0 +1,23 @@
+github를 활용해서 로그인 사용자!!!
+
+- 계정정보 수정/편집
+- 이미 저장되어있는 정보가 있을 경우에는 해당 내용을 저장하지 못하도록 해야하는 경우의 수!!!
+
+1) 직접 가입한 계정
+- 통키 / sejinp007@gmail.com
+
+2) 깃헙을 통해 가입한 계정
+- Divjason / sejinpark@tcocs.com
+
+*이미지 // 동영상 업로드
+> 백엔드 영역 : 데이터를 업로드
+> user information || multimedia source x
+> 1군데에서 모두 통합해서 관리하는 경우, 불필요한 loading시간을 생성
+> AWS (*multimedia source)
+
+> 사용자가 회원가입 // 외부 SNS 로그인 => nodejs > users > model(*_id) => (*_id)
+> 사용자가 신규컨텐츠 업로드 => nodejs > videos > model(*_id) => (*_id)
+
+> 관계형 
+
+sample video com

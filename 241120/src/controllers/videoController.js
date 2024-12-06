@@ -8,6 +8,7 @@ export const home = async (req, res) => {
     return res.render("server-error", { error });
   }
 };
+
 export const search = async (req, res) => {
   const { keyword } = req.query;
   let videos = [];
@@ -20,6 +21,7 @@ export const search = async (req, res) => {
   }
   return res.render("search", { pageTitle: "Search", videos });
 };
+
 export const watch = async (req, res) => {
   const { id } = req.params;
   const video = await Video.findById(id);
@@ -29,6 +31,7 @@ export const watch = async (req, res) => {
   }
   return res.render("watch", { pageTitle: video.title, video });
 };
+
 export const getEdit = async (req, res) => {
   const { id } = req.params;
   const video = await Video.findById(id);
@@ -59,9 +62,11 @@ export const getUplold = (req, res) => {
 };
 
 export const postUplold = async (req, res) => {
+  const { file } = req;
   const { title, description, hashtags } = req.body;
   try {
     await Video.create({
+      fileUrl: file.path.replace(/\\/g, "/"),
       title,
       description,
       hashtags: Video.formatHashtags(hashtags),
