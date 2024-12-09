@@ -1,0 +1,27 @@
+show dbs
+
+use nodejs
+
+show collections
+
+db.users.remove({})
+
+db.videos.remove({})
+
+db.users.find({})
+
+db.videos.find({})
+
+1) git-hub 계정
+2) 직접가입 계정
+
+own : 
+
+1.video + user 데이터를 하나로 연결하는 작업
+- user에는 user가 직접 업로드한 모든 영상의 "id"값을 저장!!!
+- video에는 실제 해당 영상을 업로드한 user의 "id"값을 저장!!!
+
+2.User // Video => MongoDB // Schema // model
+
+*MongoDB <-> Node.js // mongoose
+

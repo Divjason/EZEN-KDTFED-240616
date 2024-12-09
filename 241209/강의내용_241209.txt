@@ -1,0 +1,15 @@
+1.Node.js 프로젝트 현재 진행률 : 60%
+
+1) UI (*30%)
+- webpack
+- scss
+- 라이브러리 > 비디오 플레이어 옵션 설정 추가
+- 실제 SNS 채널 직접 동영상 녹화 기능 (*라이브러리)
+
+2) B/E (5%)
+- 댓글 기능 (*DM)
+
+3) Deployment (5%)
+- AWS
+
+2.React + "Three.js" + GSAP
