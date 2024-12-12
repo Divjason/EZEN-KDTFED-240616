@@ -1,0 +1,127 @@
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/scss/style.scss ***!
+  \*********************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__logo {
+  color: #ff1300;
+  font-size: 38px;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+header ul li {
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header ul i {
+  font-size: 16px;
+}
+header ul .header__btn {
+  background: #fff;
+  color: #191919;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 50px;
+}
+
+.video-mixin .video-mixin__thumb {
+  width: 100%;
+  height: 140px;
+  background: ivory;
+  border-radius: 7px;
+}
+.video-mixin .video-mixin__data {
+  padding: 0 15px;
+}
+.video-mixin .video-mixin__data .video-mixin__title {
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
+.video-mixin .video-mixin__data .video-mixin__meta {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.empty__message {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.video__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.videos__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.search__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.search__form input {
+  margin-bottom: 5px;
+  padding: 15px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.search__form input[type=submit] {
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #191919;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}

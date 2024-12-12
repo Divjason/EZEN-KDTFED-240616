@@ -4,7 +4,8 @@
   "description": "watch videos.",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/init.js"
+    "dev:server": "nodemon",
+    "dev:assets": "webpack"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,14 @@
     "@babel/node": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
-    "nodemon": "^3.1.7"
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "nodemon": "^3.1.7",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
   }
 }

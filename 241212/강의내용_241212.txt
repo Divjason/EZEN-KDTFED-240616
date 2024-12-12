@@ -1,0 +1,76 @@
+1.vscode
+- root folder 편리하게 세팅 옵션 선택!!!
+
+- 환경설정 :
+> Tab Size : 4 => 2
+> Word wrap : On 선택
+> Mouse Wheel Zoom : On 선택
+> emmet > Variables : lang / ko
+
+- 확장프로그램 :
+live-server
+prettier
+html tag wrap
+material icon theme
+
+2.git :
+- cmd > 관리자 모드 실행
+- git -v
+- git 소유주 정보 등록
+- git config --global user.name "여러분들의 git 네임"
+- git config --global user.email "여러분들의 git 이메일"
+- git config --list (*로컬 컴퓨터 내 등록된 소유주 정보)
+- git clone "여러분들의 레포지토리 주소 || 강사 레포지토리 주소"
+
+3.node :
+- node 사이트 접속 > node 프로그램 다운로드
+- cmd > node -v || npm -v : 노드 설치 여부 확인 명령어
+
+4.mongoDB
+1) Mac 유저 : Homebrew || window 유저 : chocolatey
+- https://chocolatey.org 사이트 접속 > 우측상단 install 메뉴
+- Choose How to Install Chocolatey : Generic 선택 > Get Your Scripts
+> Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('http://internal/odata/repo/ChocolateyInstall.ps1'))
+(*위 명령어를 window power shell 관리자 모드 변경 입력!)
+만약 정상적으로 설치가 되었다면 cmd 명령어 > choco : Chocolatey v2.3.U
+
+Get-ExecutionPolicy 명령어 입력 후 현재 로컬 컴퓨터 실행정책 확인!!!
+Set-ExecutionPolicy AllSigned : 실행정책 변경
+
+2) chocolatey에서 수동으로 설치하는 방법
+
+> windows powershell 터미널 > 
+choco install mongodb --pre
+choco install mongodb-compass
+choco install mongodb-shell
+
+mongod
+
+mongosh
+
+npm i webpack webpack-cli -D
+
+webpack.config.js
+
+client > js > main.js
+
+npm i babel-loader -D
+
+class > 프로토타입 을 생성 > 인스턴스 객체 (*메서드 함수 || 속성)
+
+static
+
+db.videos.remove({})
+db.users.remove({})
+
+Global router를 활용해서 세부적인 page router들이 작동!!
+
+page router를 활용해서 controller 함수들을 호출
+
+controller 함수를 통해서 pug 파일 호출
+
+현재 사용자가 보고있는 화면은 pug를 통해서 출력
+
+*현재 node라는 큰 영역에서 css로 작동되는 요소들이 모두 js기반에서 입력.변환.실행이 되고 있다!!!
+
+

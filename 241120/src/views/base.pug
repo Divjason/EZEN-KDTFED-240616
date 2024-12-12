@@ -1,7 +1,9 @@
 doctype html
 html(lang="ko")
   head
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+    //- <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" >
+    <link rel="stylesheet" href="/assets/css/style.css"> 
     title #{pageTitle} | #{siteName}
     style.
       nav ul {
@@ -9,28 +11,8 @@ html(lang="ko")
           gap: 4px;
         }
   body
-    header 
-      h1=pageTitle
-      nav
-        ul 
-          li
-            a(href="/") Home
-          if loggedIn
-            li 
-              a(href="/users/logout") Log Out 
-            li
-              a(href="/videos/upload") Upload Video
-            li
-              a(href=`/users/${loggedInUser._id}`) My Profile
-            li
-              a(href="/users/edit") Edit Profile
-          else
-            li
-              a(href="/login") Login
-            li
-              a(href="/join") Join
-          li
-            a(href="/search") Search
+    include partials/header.pug
     main
       block content
     include partials/footer.pug
+    script(src="/assets/js/main.js") 
